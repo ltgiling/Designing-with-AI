@@ -149,7 +149,6 @@ void setup() {
 
 void draw() {
   background(bgColor);
-  text("selected: "+ prefcuisine, 100, 300);
 }
 
 // button handler -------------------------------------------------------------------
