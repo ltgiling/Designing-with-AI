@@ -86,7 +86,7 @@ void setup() {
     .setId(2);
 
   submit = cp5.addButton("submit")
-    .setPosition(37, 400)
+    .setPosition(37, 430)
     .setSize(100, 46)
     .setId(3);
 
@@ -103,7 +103,6 @@ void setup() {
     .setValue("Suggested meals:")
     .setId(5)
     .hide();
-
 
   cuisine = cp5.addScrollableList("cuisine")
     .setPosition(185, 185)
@@ -178,7 +177,6 @@ public void submit() {
     cp5.getController("actualtime").show();
     cp5.getController("timelabel").show();
     cp5.getController("rating").show();
-    cp5.getController("submit").setPosition(37, 425);
     cp5.getController("username").hide();
     cp5.getController("prefertime").hide();
     cp5.getController("cuisine").hide();
@@ -197,6 +195,14 @@ public void submit() {
       .data("cuisine", prefcuisine)
       .data("rating", rate)
       .log();
+    state = 0;
+
+    cp5.getController("actualtime").hide();
+    cp5.getController("timelabel").hide();
+    cp5.getController("rating").hide();
+    cp5.getController("username").show();
+    cp5.getController("prefertime").show();
+    cp5.getController("cuisine").show();
 
     // System.out.print("\nTotal plays: " + totalentries + ", relative speed: " + db_speed);
   }
