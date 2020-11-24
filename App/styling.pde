@@ -1,5 +1,5 @@
 
-// styling ---------------------------------------------------------------------------
+// styling of UI ---------------------------------------------------------------------------
 
 void setTextfieldStyle(controlP5.Textfield tf, ControlFont cf, String txt) {
   tf.getCaptionLabel()
