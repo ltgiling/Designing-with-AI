@@ -33,6 +33,8 @@ DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 String uname = "";
 String preftime = "";
 String acttime = "";
+String prefcuisine = "";
+String rate = "";
 boolean isStart;
 color bgColor;
 int state;
@@ -46,6 +48,9 @@ controlP5.Textfield username;
 controlP5.Textfield prefertime;
 controlP5.Textfield actualtime;
 controlP5.Textlabel timelabel;
+controlP5.ScrollableList cuisine;
+controlP5.ScrollableList rating;
+
 
 void setup() {
   // initiate canvas in mobile resolution
@@ -59,10 +64,11 @@ void setup() {
   isStart = false;
 
   // set text style
-  PFont pfont = createFont("Arial", 24);
-  ControlFont font = new ControlFont(pfont, 24);
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);
 
   // init ControlerP5
+  Label.setUpperCaseDefault(false);
   cp5 = new ControlP5(this);
 
   // init components
@@ -80,7 +86,7 @@ void setup() {
     .setId(2);
 
   submit = cp5.addButton("submit")
-    .setPosition(37, 250)
+    .setPosition(37, 400)
     .setSize(100, 46)
     .setId(3);
 
@@ -98,6 +104,43 @@ void setup() {
     .setId(5)
     .hide();
 
+
+  cuisine = cp5.addScrollableList("cuisine")
+    .setPosition(185, 185)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Asian", 2)
+    .addItem("Dutch", 3)
+    .addItem("Indian", 4)
+    .addItem("Italian", 5)
+    .setValue(2)
+    .setLabel("cuisine");
+  this.cuisine.setItemHeight(25);
+  cuisine.getCaptionLabel().getStyle().marginTop = 5;
+  cuisine.getValueLabel().getStyle().marginTop = 5;
+
+  rating = cp5.addScrollableList("rating")
+    .setPosition(185, 385)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(70, 120)
+    .addItem("1", 1)
+    .addItem("2", 2)
+    .addItem("3", 3)
+    .addItem("4", 4)
+    .addItem("5", 5)
+    .setValue(0)
+    .setLabel("rating")
+    .hide();
+  this.rating.setItemHeight(25);
+  rating.getCaptionLabel().getStyle().marginTop = 5;
+  rating.getValueLabel().getStyle().marginTop = 5;
+
+
   // set components style to display: textfields, buttons
   setTextfieldStyle(username, font, "User name");
   setTextfieldStyle(prefertime, font, "Preferred cooking time");
@@ -107,37 +150,52 @@ void setup() {
 
 void draw() {
   background(bgColor);
+  text("selected: "+ prefcuisine, 100, 300);
 }
 
 // button handler -------------------------------------------------------------------
+void cuisine(int index) {
+  prefcuisine = cp5.get(ScrollableList.class, "cuisine").getItem(index).get("name").toString();
+}
+
+void rating(int n) {
+  rate = cp5.get(ScrollableList.class, "rating").getItem(n).get("name").toString();
+}
 
 public void submit() {
   if (state == 0) {
     setUname();
 
+    print("\nusername: " + uname, "\npreferred time: " + preftime, "\npreferred cuisine: " + prefcuisine);
+
     entityDS.id(uname).token(uname);
-    entityDS.data("preferred time", preftime).update();
+    entityDS.data("preferred time", preftime).data("cuisine", prefcuisine).update();
     iotDS.device(uname).activity("time")
       .data("preferred time", preftime)
+      .data("cuisine", prefcuisine)
       .log();
 
     cp5.getController("actualtime").show();
     cp5.getController("timelabel").show();
+    cp5.getController("rating").show();
     cp5.getController("submit").setPosition(37, 425);
     cp5.getController("username").hide();
     cp5.getController("prefertime").hide();
+    cp5.getController("cuisine").hide();
     state = 1;
     return;
   }
   if (state == 1) {
     setActual();
     fetchData();
-
+    print("\nusername: " + uname, "\npreferred time: " + preftime, "actual time: " + acttime, "\nrating: " + rate);
     entityDS.id(uname).token(uname);
-    entityDS.data("actual time", acttime).data("plays", c_clicks).data("relative speed", c_speed).update();
+    entityDS.data("actual time", acttime).data("plays", c_clicks).data("relative speed", c_speed).data("rating", rate).update();
     iotDS.device(uname).activity("time")
       .data("preferred time", preftime)
       .data("actual time", acttime)
+      .data("cuisine", prefcuisine)
+      .data("rating", rate)
       .log();
 
     // System.out.print("\nTotal plays: " + totalentries + ", relative speed: " + db_speed);
