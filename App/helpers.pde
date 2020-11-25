@@ -1,7 +1,7 @@
 
 //get the user name and preferred time from the text field.
 void setUname() {
-  uname = cp5.get(Textfield.class, "username").getText();
+  uname = cp5.get(Textfield.class, "Username").getText();
   preftime = cp5.get(Textfield.class, "prefertime").getText();
 
   // if the text field is empty, random Id!
@@ -16,7 +16,7 @@ void setUname() {
 }
 //on the second screen, get the values that were submitted
 void setActual() {
-  uname = cp5.get(Textfield.class, "username").getText();
+  uname = cp5.get(Textfield.class, "Username").getText();
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   acttime = cp5.get(Textfield.class, "actualtime").getText();
 } 
@@ -36,7 +36,22 @@ void fetchData() {
   c_speed = (((t_entries * db_speed) + local_speed) / (t_entries + 1));
   print("\nlocal speed: " + local_speed + ", relative speed: " + c_speed);
 }
+// ------------------------------------------------------------------------
+// different methods to properly read the dropdown box values 
+void cuisine(int index) {
+  prefcuisine = cp5.get(ScrollableList.class, "cuisine").getItem(index).get("name").toString();
+}
 
+void basis(int index3) {
+  base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
+}
+
+void Difficulty(int c_diff){
+  diffrating = c_diff;
+}
+void Rating(int c_rate){
+  rate = c_rate;
+}
 //makes sure calculations aren't done with empty fields
 String checkProfileItem(Object profileItem, String defaultValue) {
   return profileItem != null && ((String) profileItem).length() != 0 ? (String) profileItem : defaultValue;
