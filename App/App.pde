@@ -77,13 +77,11 @@ void setup() {
 
   weekday = cal.get(Calendar.DAY_OF_WEEK);
 }
-
 // ------------------------------------------------------------------------
 //very basic draw method of just the background
 void draw() {
   background(0);
 }
-
 // ------------------------------------------------------------------------
 //On submit button press
 public void submit() {

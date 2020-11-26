@@ -76,7 +76,8 @@ void cp5components() {
     .addItem("Rice", 2)
     .addItem("Potato", 3)
     .addItem("Bread", 4)
-    .addItem("Lettuce", 5)
+    .addItem("Pasta", 5)
+    .addItem("Lettuce", 6)
     .setValue(0)
     .setLabel("base ingredient"); 
   this.basis.setItemHeight(25);
