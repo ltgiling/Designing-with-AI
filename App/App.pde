@@ -38,6 +38,7 @@ String userage = "";
 String userweight = "";
 String prefcuisine = "";
 String prefprice = "";
+String userdietgoal = "";
 String usergender = "";
 String t_pref = "";
 String t_base = "";
@@ -70,6 +71,7 @@ controlP5.Textlabel timelabel2;
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList price;
 controlP5.ScrollableList gender;
+controlP5.ScrollableList dietgoal;
 controlP5.ScrollableList basis;
 Slider abc;
 
@@ -116,6 +118,7 @@ public void submit() {
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
       .data("gender", usergender)
+      .data("dietgoal", userdietgoal)
       .data("base ingredient", base)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
@@ -126,6 +129,7 @@ public void submit() {
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
       .data("gender", usergender)
+      .data("dietgoal", userdietgoal)
       .data("weekday (sun-sat)", weekday)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
@@ -152,6 +156,8 @@ public void submit() {
       .data("preferred time", preftime)
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
+      .data("dietgoal", userdietgoal)
+      .data("gender", usergender)
       .data("base ingredient", base)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
@@ -161,6 +167,8 @@ public void submit() {
       .data("preferred time", preftime)
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
+      .data("dietgoal", userdietgoal)
+      .data("gender", usergender)
       .data("weekday (sun-sat)", weekday)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)

@@ -142,6 +142,22 @@ void cp5components() {
   this.gender.setItemHeight(25);
   gender.getCaptionLabel().getStyle().marginTop = 5;
   gender.getValueLabel().getStyle().marginTop = 5;
+
+  dietgoal = cp5.addScrollableList("dietgoal")
+    .setPosition(185, 255)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Maintain Weight", 2)
+    .addItem("Gain Weight", 3)
+    .addItem("Lose Weight", 4)
+    .setValue(0)
+    .setLabel("diet goal");
+  this.dietgoal.setItemHeight(25);
+  dietgoal.getCaptionLabel().getStyle().marginTop = 5;
+  dietgoal.getValueLabel().getStyle().marginTop = 5;  
   
     price = cp5.addScrollableList("price")
     .setPosition(185, 255)
@@ -175,6 +191,7 @@ void interface1() {
   cp5.getController("Username").show();
   cp5.getController("age").show();
   cp5.getController("gender").show();
+  cp5.getController("dietgoal").show();
   cp5.getController("weight").show();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
@@ -195,6 +212,7 @@ void interface2() {
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
+  cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
   cp5.getController("preferkcal").show();
   cp5.getController("price").show();
@@ -213,6 +231,7 @@ void interface3() {
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
+  cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
@@ -232,6 +251,7 @@ void interface4() {
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
+  cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
