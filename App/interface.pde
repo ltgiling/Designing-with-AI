@@ -26,8 +26,7 @@ void cp5components() {
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
     .setLabel("Rating:")
-    .setFont(font)
-    .hide();
+    .setFont(font);
   cp5.getController("Rating").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
   username = cp5.addTextfield("Username")
@@ -45,22 +44,22 @@ void cp5components() {
     .setId(2);
     
   preferkcal = cp5.addTextfield("preferkcal")
-    .setPosition(37, 205)
+    .setPosition(37, 225)
     .setSize(40, 30)
     .setFont(font)
     .setId(8);
     
   age = cp5.addTextfield("age")
-    .setPosition(37, 175)
+    .setPosition(37, 265)
     .setSize(40, 30)
     .setFont(font)
-    .setId(8);
+    .setId(10);
     
   weight = cp5.addTextfield("weight")
-    .setPosition(37, 205)
+    .setPosition(37, 305)
     .setSize(40, 30)
     .setFont(font)
-    .setId(8);
+    .setId(9);
 
   submit = cp5.addButton("submit")
     .setPosition(37, 430)
@@ -71,8 +70,7 @@ void cp5components() {
     .setPosition(37, 375)
     .setSize(100, 40)
     .setFont(font)
-    .setId(4)
-    .hide();   
+    .setId(4);   
 
   title = cp5.addTextlabel("title")
     .setPosition(25, 10)
@@ -84,8 +82,7 @@ void cp5components() {
     .setPosition(25, 45)
     .setFont(font)
     .setValue("Suggested meals:")
-    .setId(5)
-    .hide();
+    .setId(5);
 
   timelabel2 = cp5.addTextlabel("timelabel2")
     .setPosition(182, 145)
@@ -129,7 +126,7 @@ void cp5components() {
   cuisine.getValueLabel().getStyle().marginTop = 5;
 
   gender = cp5.addScrollableList("gender")
-    .setPosition(185, 145)
+    .setPosition(185, 135)
     .setFont(font)
     .setItemHeight(10)
     .setBarHeight(30)

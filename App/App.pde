@@ -90,7 +90,7 @@ void setup() {
   cp5 = new ControlP5(this);
   // all of the components (buttons, fields, dropdown menu's)
   cp5components();
-
+    interface1();
   weekday = cal.get(Calendar.DAY_OF_WEEK);
 }
 // ------------------------------------------------------------------------
@@ -133,9 +133,9 @@ public void submit() {
       .data("weekday (sun-sat)", weekday)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
-      .log();
+      .log(); 
 
-    interface1();
+    interface2();
     state = 1;
     return;
   }
@@ -174,7 +174,7 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
 
-    interface2();
+    interface3();
     state = 2;
     return;
   }
@@ -204,7 +204,7 @@ public void submit() {
       .data("weekday (sun-sat)", weekday)
       .log();
 
-    interface3();
+    interface4();
     state = 3;
   }
     if (state == 3) {
@@ -232,7 +232,7 @@ public void submit() {
       .data("weekday (sun-sat)", weekday)
       .log();
 
-    interface4();
+    interface1();
     state = 0;
   }
 }
