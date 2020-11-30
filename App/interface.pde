@@ -128,7 +128,22 @@ void cp5components() {
   cuisine.getCaptionLabel().getStyle().marginTop = 5;
   cuisine.getValueLabel().getStyle().marginTop = 5;
 
-  price = cp5.addScrollableList("price")
+  gender = cp5.addScrollableList("gender")
+    .setPosition(185, 145)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Female", 2)
+    .addItem("Male", 3)
+    .setValue(0)
+    .setLabel("gender");
+  this.gender.setItemHeight(25);
+  gender.getCaptionLabel().getStyle().marginTop = 5;
+  gender.getValueLabel().getStyle().marginTop = 5;
+  
+    price = cp5.addScrollableList("price")
     .setPosition(185, 255)
     .setFont(font)
     .setItemHeight(10)
@@ -159,6 +174,7 @@ void interface1() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").show();
   cp5.getController("age").show();
+  cp5.getController("gender").show();
   cp5.getController("weight").show();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
@@ -178,6 +194,7 @@ void interface2() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("gender").hide();
   cp5.getController("weight").hide();
   cp5.getController("preferkcal").show();
   cp5.getController("price").show();
@@ -195,6 +212,7 @@ void interface3() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("gender").hide();
   cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
@@ -213,6 +231,7 @@ void interface4() {
   cp5.getController("Rating").show();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("gender").hide();
   cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();

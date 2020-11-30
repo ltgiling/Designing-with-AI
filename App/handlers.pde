@@ -3,7 +3,7 @@ void setUname() {
   uname = cp5.get(Textfield.class, "Username").getText();
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   prefkcal = cp5.get(Textfield.class, "preferkcal").getText();
-  userage = cp5.get(Textfield.class, "preferkcal").getText();
+  userage = cp5.get(Textfield.class, "preferage").getText();
   userweight = cp5.get(Textfield.class, "weight").getText();
 
   // if the text field is empty, random Id!
@@ -65,6 +65,9 @@ void cuisine(int index) {
 }
 void price(int index) {
   prefprice = cp5.get(ScrollableList.class, "price").getItem(index).get("name").toString();
+}
+void gender(int index) {
+  usergender = cp5.get(ScrollableList.class, "gender").getItem(index).get("name").toString();
 }
 void basis(int index3) {
   base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
