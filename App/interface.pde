@@ -139,12 +139,12 @@ void cp5components() {
   setButtonStyle(submit, font, "Submit");
 }
 void interface1() {
-  //show and hide components for second interface
-  //cp5.getController("actualtime").show();
-  cp5.getController("timelabel").show();
-  cp5.getController("timelabel2").hide();
-  cp5.getController("Rating").show();
-  cp5.getController("Username").hide();
+  //show and hide components for first interface
+  //cp5.getController("actualtime").hide();
+  cp5.getController("timelabel").hide();
+  cp5.getController("timelabel2").show();
+  cp5.getController("Rating").hide();
+  cp5.getController("Username").show();
   cp5.getController("prefertime").hide();
   cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
@@ -153,7 +153,7 @@ void interface1() {
   cp5.getController("Difficulty").hide();
 }
 void interface2() {
-  //show and hide components for first interface
+  //show and hide components for second interface
   //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
@@ -167,12 +167,26 @@ void interface2() {
   cp5.getController("Difficulty").show();
 }
 void interface3() {
-  //show and hide components for first interface
+  //show and hide components for third interface
   //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Rating").hide();
-  cp5.getController("Username").show();
+  cp5.getController("Username").hide();
+  cp5.getController("prefertime").hide();
+  cp5.getController("price").hide();
+  cp5.getController("cuisine").hide();
+  cp5.getController("Spiciness").hide();
+  cp5.getController("basis").hide();
+  cp5.getController("Difficulty").hide();
+}
+void interface4() {
+  //show and hide components for fourth interface
+  //cp5.getController("actualtime").show();
+  cp5.getController("timelabel").show();
+  cp5.getController("timelabel2").hide();
+  cp5.getController("Rating").show();
+  cp5.getController("Username").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("price").hide();
   cp5.getController("cuisine").hide();

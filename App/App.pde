@@ -123,14 +123,15 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
 
-    interface3();
+    interface1();
     state = 1;
     return;
   }
   //if the user has not cooked yet (start interface)
   if (state == 1) {
     //collect values from the boxes (see helpers tab)
-    setUname();
+    setActual();
+    fetchData();
 
     //print results in console
     print("\nusername: " + uname, "\npreferred time: " + preftime, 
@@ -157,7 +158,7 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
 
-    interface1();
+    interface2();
     state = 2;
     return;
   }
@@ -187,7 +188,35 @@ public void submit() {
       .data("weekday (sun-sat)", weekday)
       .log();
 
-    interface2();
+    interface3();
+    state = 3;
+  }
+    if (state == 3) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, "\nrating: " + rate, "\nactual time: " + acttime);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .data("actual time", acttime)
+      .data("plays", c_clicks)
+      .data("relative speed", c_speed)
+      .data("rating", rate)
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("preferred time", preftime)
+      .data("actual time", acttime)
+      .data("cuisine", prefcuisine)
+      .data("rating", rate)
+      .data("weekday (sun-sat)", weekday)
+      .log();
+
+    interface4();
     state = 0;
   }
 }
