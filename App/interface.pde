@@ -49,6 +49,12 @@ void cp5components() {
     .setSize(40, 30)
     .setFont(font)
     .setId(8);
+    
+  age = cp5.addTextfield("age")
+    .setPosition(37, 175)
+    .setSize(40, 30)
+    .setFont(font)
+    .setId(8);
 
   submit = cp5.addButton("submit")
     .setPosition(37, 430)
@@ -140,12 +146,15 @@ void cp5components() {
 }
 void interface1() {
   //show and hide components for first interface
+  //first interface for user data
   //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Rating").hide();
   cp5.getController("Username").show();
+  cp5.getController("age").show();
   cp5.getController("prefertime").hide();
+  cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   cp5.getController("Spiciness").hide();
@@ -154,12 +163,15 @@ void interface1() {
 }
 void interface2() {
   //show and hide components for second interface
+  //second interface for meal data
   //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Spiciness").show();
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
+  cp5.getController("age").hide();
+  cp5.getController("preferkcal").show();
   cp5.getController("price").show();
   cp5.getController("cuisine").show();
   cp5.getController("prefertime").show();
@@ -168,12 +180,15 @@ void interface2() {
 }
 void interface3() {
   //show and hide components for third interface
+  //third interface for meal suggestion
   //cp5.getController("actualtime").hide();
-  cp5.getController("timelabel").hide();
-  cp5.getController("timelabel2").show();
+  cp5.getController("timelabel").show();
+  cp5.getController("timelabel2").hide();
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
+  cp5.getController("age").hide();
   cp5.getController("prefertime").hide();
+  cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   cp5.getController("Spiciness").hide();
@@ -182,12 +197,15 @@ void interface3() {
 }
 void interface4() {
   //show and hide components for fourth interface
+  //fourth interface for meal (suggestion) rating
   //cp5.getController("actualtime").show();
   cp5.getController("timelabel").show();
   cp5.getController("timelabel2").hide();
   cp5.getController("Rating").show();
   cp5.getController("Username").hide();
+  cp5.getController("age").hide();
   cp5.getController("prefertime").hide();
+  cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   cp5.getController("Spiciness").hide();
