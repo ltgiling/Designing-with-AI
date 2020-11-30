@@ -15,8 +15,8 @@ void setUname() {
   }
   
   if (prefkcal.isEmpty()) {
-    preftime = "0";
-    prefertime.setText(preftime);
+    prefkcal = "0";
+    preferkcal.setText(prefkcal);
   }
 }
 //on the second screen, get the values that were submitted
@@ -25,6 +25,11 @@ void setActual() {
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   prefkcal = cp5.get(Textfield.class, "preferkcal").getText();
   acttime = cp5.get(Textfield.class, "actualtime").getText();
+  
+  if (acttime.isEmpty()) {
+    acttime = "0";
+    actualtime.setText(acttime);
+  }
 } 
 
 //fetch data from data foundry and parse strings to integers where needed
@@ -47,17 +52,19 @@ void fetchData() {
 void cuisine(int index) {
   prefcuisine = cp5.get(ScrollableList.class, "cuisine").getItem(index).get("name").toString();
 }
-
 void basis(int index3) {
   base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
 }
-
 void Difficulty(int c_diff){
   diffrating = c_diff;
 }
 void Rating(int c_rate){
   rate = c_rate;
 }
+void Spiciness(int c_spice){
+  spicyrating = c_spice;
+}
+
 //makes sure calculations aren't done with empty fields
 String checkProfileItem(Object profileItem, String defaultValue) {
   return profileItem != null && ((String) profileItem).length() != 0 ? (String) profileItem : defaultValue;

@@ -25,6 +25,7 @@ DataFoundry df = new DataFoundry(host);
 // access to two datasets: iotDS and entityDS
 DFDataset iotDS = df.dataset(iot_id, iot_api_token);
 DFDataset entityDS = df.dataset(entity_id, entity_api_token);
+
 Calendar cal = Calendar.getInstance();
 
 // variables
@@ -42,8 +43,10 @@ int state;
 int c_clicks;
 int weekday;
 int Difficulty = 1;
+int Spiciness = 1;
 int Rating = 1;
 int diffrating;
+int spicyrating;
 int rate;
 float c_speed;
 
@@ -53,6 +56,7 @@ controlP5.Button submit;
 controlP5.Textfield username;
 controlP5.Textfield prefertime;
 controlP5.Textfield actualtime;
+controlP5.Textfield preferkcal;
 controlP5.Textlabel title;
 controlP5.Textlabel timelabel;
 controlP5.Textlabel timelabel2;
@@ -98,10 +102,12 @@ public void submit() {
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
-    entityDS.data("preferred time", preftime)
+    entityDS
+      .data("preferred time", preftime)
       .data("cuisine", prefcuisine)
       .data("base ingredient", base)
       .data("difficulty", diffrating)
+      .data("Spiciness", spicyrating)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
@@ -109,6 +115,7 @@ public void submit() {
       .data("cuisine", prefcuisine)
       .data("weekday (sun-sat)", weekday)
       .data("difficulty", diffrating)
+      .data("Spiciness", spicyrating)
       .log();
 
     interface1();
@@ -122,12 +129,12 @@ public void submit() {
     fetchData();
 
     //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "actual time: " + acttime, "\nrating: " + rate);
+    print("\nusername: " + uname, "\npreferred time: " + preftime, "\nrating: " + rate, "\nactual time: " + acttime);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
-    entityDS.data("actual time", acttime)
+    entityDS
+      .data("actual time", acttime)
       .data("plays", c_clicks)
       .data("relative speed", c_speed)
       .data("rating", rate)

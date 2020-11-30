@@ -11,14 +11,14 @@ void cp5components() {
     .setFont(font);
   cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
   
- cp5.addSlider("Preferred spiciness")
+ cp5.addSlider("Spiciness")
     .setPosition(185, 340)
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
     .setLabel("Preferred spiciness:")
     .setFont(font);
-  cp5.getController("Preferred spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+  cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
   cp5.addSlider("Rating")
     .setPosition(235, 385)
@@ -60,7 +60,7 @@ void cp5components() {
     .setSize(100, 40)
     .setFont(font)
     .setId(4)
-    .hide();    
+    .hide();   
 
   title = cp5.addTextlabel("title")
     .setPosition(25, 10)
@@ -124,7 +124,7 @@ void cp5components() {
 }
 void interface1() {
   //show and hide components for second interface
-  cp5.getController("actualtime").show();
+  //cp5.getController("actualtime").show();
   cp5.getController("timelabel").show();
   cp5.getController("timelabel2").hide();
   cp5.getController("Rating").show();
@@ -136,7 +136,7 @@ void interface1() {
 }
 void interface2() {
   //show and hide components for first interface
-  cp5.getController("actualtime").hide();
+  //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Rating").hide();
