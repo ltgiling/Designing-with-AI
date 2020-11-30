@@ -10,6 +10,15 @@ void cp5components() {
     .setLabel("Difficulty:")
     .setFont(font);
   cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+  
+ cp5.addSlider("Preferred spiciness")
+    .setPosition(185, 340)
+    .setSize(100, 20)
+    .setRange(1, 5)
+    .setNumberOfTickMarks(5)
+    .setLabel("Preferred spiciness:")
+    .setFont(font);
+  cp5.getController("Preferred spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
   cp5.addSlider("Rating")
     .setPosition(235, 385)
@@ -34,6 +43,12 @@ void cp5components() {
     .setSize(40, 30)
     .setFont(font)
     .setId(2);
+    
+  preferkcal = cp5.addTextfield("preferkcal")
+    .setPosition(37, 205)
+    .setSize(40, 30)
+    .setFont(font)
+    .setId(8);
 
   submit = cp5.addButton("submit")
     .setPosition(37, 430)

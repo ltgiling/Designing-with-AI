@@ -30,6 +30,7 @@ Calendar cal = Calendar.getInstance();
 // variables
 String uname = "";
 String preftime = "";
+String prefkcal = "";
 String acttime = "";
 String prefcuisine = "";
 String t_pref = "";
