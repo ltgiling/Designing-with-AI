@@ -55,6 +55,12 @@ void cp5components() {
     .setSize(40, 30)
     .setFont(font)
     .setId(8);
+    
+  weight = cp5.addTextfield("weight")
+    .setPosition(37, 205)
+    .setSize(40, 30)
+    .setFont(font)
+    .setId(8);
 
   submit = cp5.addButton("submit")
     .setPosition(37, 430)
@@ -153,6 +159,7 @@ void interface1() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").show();
   cp5.getController("age").show();
+  cp5.getController("weight").show();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -171,6 +178,7 @@ void interface2() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("weight").hide();
   cp5.getController("preferkcal").show();
   cp5.getController("price").show();
   cp5.getController("cuisine").show();
@@ -187,6 +195,7 @@ void interface3() {
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -204,6 +213,7 @@ void interface4() {
   cp5.getController("Rating").show();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
+  cp5.getController("weight").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();

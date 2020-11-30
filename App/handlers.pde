@@ -4,6 +4,7 @@ void setUname() {
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   prefkcal = cp5.get(Textfield.class, "preferkcal").getText();
   userage = cp5.get(Textfield.class, "preferkcal").getText();
+  userweight = cp5.get(Textfield.class, "weight").getText();
 
   // if the text field is empty, random Id!
   if (uname.isEmpty()) {
@@ -22,6 +23,10 @@ void setUname() {
     userage = "0";
     age.setText(userage);
   }
+   if (userweight.isEmpty()) {
+    userweight = "0";
+    weight.setText(userweight);
+  }
 }
 //on the second screen, get the values that were submitted
 void setActual() {
@@ -29,6 +34,7 @@ void setActual() {
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   prefkcal = cp5.get(Textfield.class, "preferkcal").getText();
   userage = cp5.get(Textfield.class, "age").getText();
+  userweight = cp5.get(Textfield.class, "weight").getText();
   acttime = cp5.get(Textfield.class, "actualtime").getText();
   
   if (acttime.isEmpty()) {
