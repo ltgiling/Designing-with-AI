@@ -1,6 +1,7 @@
 // ********************************************************
-// Authors: Lars Giling
-// Date: Nov. 17, 2020
+// Author: Lars Giling 
+// Co-Author: Mervyn Franssen
+// Date: Nov. 30, 2020
 // Description: Code  to  collect and parse cooking data of
 //              users,  sending  interaction  data  to Data 
 //              Foundry and providing personalized feedback
@@ -34,6 +35,7 @@ String preftime = "";
 String prefkcal = "";
 String acttime = "";
 String prefcuisine = "";
+String prefprice = "";
 String t_pref = "";
 String t_base = "";
 String base = "";
@@ -61,6 +63,7 @@ controlP5.Textlabel title;
 controlP5.Textlabel timelabel;
 controlP5.Textlabel timelabel2;
 controlP5.ScrollableList cuisine;
+controlP5.ScrollableList price;
 controlP5.ScrollableList basis;
 Slider abc;
 
@@ -105,6 +108,7 @@ public void submit() {
     entityDS
       .data("preferred time", preftime)
       .data("cuisine", prefcuisine)
+      .data("price", prefprice)
       .data("base ingredient", base)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
@@ -113,6 +117,7 @@ public void submit() {
     iotDS.device(uname).activity("time")
       .data("preferred time", preftime)
       .data("cuisine", prefcuisine)
+      .data("price", prefprice)
       .data("weekday (sun-sat)", weekday)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)

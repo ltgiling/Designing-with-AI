@@ -52,6 +52,9 @@ void fetchData() {
 void cuisine(int index) {
   prefcuisine = cp5.get(ScrollableList.class, "cuisine").getItem(index).get("name").toString();
 }
+void price(int index) {
+  prefprice = cp5.get(ScrollableList.class, "price").getItem(index).get("name").toString();
+}
 void basis(int index3) {
   base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
 }

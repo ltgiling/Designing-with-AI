@@ -3,7 +3,7 @@ void cp5components() {
   ControlFont font = new ControlFont(pfont, 18);  
 
   cp5.addSlider("Difficulty")
-    .setPosition(185, 280)
+    .setPosition(185, 325)
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
@@ -12,7 +12,7 @@ void cp5components() {
   cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
   
  cp5.addSlider("Spiciness")
-    .setPosition(185, 340)
+    .setPosition(185, 380)
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
@@ -115,6 +115,22 @@ void cp5components() {
   this.cuisine.setItemHeight(25);
   cuisine.getCaptionLabel().getStyle().marginTop = 5;
   cuisine.getValueLabel().getStyle().marginTop = 5;
+
+  price = cp5.addScrollableList("price")
+    .setPosition(185, 255)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("$", 2)
+    .addItem("$$", 3)
+    .addItem("$$$", 4)
+    .setValue(0)
+    .setLabel("price range");
+  this.price.setItemHeight(25);
+  price.getCaptionLabel().getStyle().marginTop = 5;
+  price.getValueLabel().getStyle().marginTop = 5;
 
   // set components style to display: textfields, buttons
   //setTextfieldStyle(username, font, "User name");
