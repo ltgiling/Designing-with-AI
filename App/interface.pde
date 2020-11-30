@@ -146,7 +146,9 @@ void interface1() {
   cp5.getController("Rating").show();
   cp5.getController("Username").hide();
   cp5.getController("prefertime").hide();
+  cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
+  cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
   cp5.getController("Difficulty").hide();
 }
@@ -155,10 +157,26 @@ void interface2() {
   //cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
+  cp5.getController("Spiciness").show();
   cp5.getController("Rating").hide();
-  cp5.getController("Username").show();
-  cp5.getController("prefertime").show();
+  cp5.getController("Username").hide();
+  cp5.getController("price").show();
   cp5.getController("cuisine").show();
+  cp5.getController("prefertime").show();
   cp5.getController("basis").show();
   cp5.getController("Difficulty").show();
+}
+void interface3() {
+  //show and hide components for first interface
+  //cp5.getController("actualtime").hide();
+  cp5.getController("timelabel").hide();
+  cp5.getController("timelabel2").show();
+  cp5.getController("Rating").hide();
+  cp5.getController("Username").show();
+  cp5.getController("prefertime").hide();
+  cp5.getController("price").hide();
+  cp5.getController("cuisine").hide();
+  cp5.getController("Spiciness").hide();
+  cp5.getController("basis").hide();
+  cp5.getController("Difficulty").hide();
 }

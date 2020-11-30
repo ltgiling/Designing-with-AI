@@ -123,12 +123,46 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
 
-    interface1();
+    interface3();
     state = 1;
     return;
   }
-  //if the user has cooked (second interface) and submits
+  //if the user has not cooked yet (start interface)
   if (state == 1) {
+    //collect values from the boxes (see helpers tab)
+    setUname();
+
+    //print results in console
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .data("preferred time", preftime)
+      .data("cuisine", prefcuisine)
+      .data("price", prefprice)
+      .data("base ingredient", base)
+      .data("difficulty", diffrating)
+      .data("Spiciness", spicyrating)
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("preferred time", preftime)
+      .data("cuisine", prefcuisine)
+      .data("price", prefprice)
+      .data("weekday (sun-sat)", weekday)
+      .data("difficulty", diffrating)
+      .data("Spiciness", spicyrating)
+      .log();
+
+    interface1();
+    state = 2;
+    return;
+  }
+  //if the user has cooked (second interface) and submits
+  if (state == 2) {
     //collect data from entries and data foundry
     setActual();
     fetchData();
