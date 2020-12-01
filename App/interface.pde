@@ -21,7 +21,7 @@ void cp5components() {
   cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
   
  cp5.addSlider("Householdsize")
-    .setPosition(185, 380)
+    .setPosition(185, 420)
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
@@ -134,6 +134,24 @@ void cp5components() {
   cuisine.getCaptionLabel().getStyle().marginTop = 5;
   cuisine.getValueLabel().getStyle().marginTop = 5;
 
+  educationlvl = cp5.addScrollableList("educationlvl")
+    .setPosition(185, 355)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("None", 1)
+    .addItem("Primary School", 2)
+    .addItem("High School", 3)
+    .addItem("MBO", 4)
+    .addItem("HBO", 5)
+    .addItem("WO", 6)
+    .setValue(0)
+    .setLabel("Current level of education"); 
+  this.educationlvl.setItemHeight(25);
+  educationlvl.getCaptionLabel().getStyle().marginTop = 5;
+  educationlvl.getValueLabel().getStyle().marginTop = 5; 
+
   gender = cp5.addScrollableList("gender")
     .setPosition(185, 135)
     .setFont(font)
@@ -217,6 +235,7 @@ void interface1() {
   cp5.getController("dietpref").show();
   cp5.getController("weight").show();
   cp5.getController("Householdsize").show();
+  cp5.getController("educationlvl").show();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -240,6 +259,7 @@ void interface2() {
   cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
+  cp5.getController("educationlvl").hide();
   cp5.getController("preferkcal").show();
   cp5.getController("price").show();
   cp5.getController("cuisine").show();
@@ -261,6 +281,7 @@ void interface3() {
   cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
+  cp5.getController("educationlvl").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -283,6 +304,7 @@ void interface4() {
   cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
+  cp5.getController("educationlvl").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
