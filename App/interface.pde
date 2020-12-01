@@ -19,6 +19,15 @@ void cp5components() {
     .setLabel("Preferred spiciness:")
     .setFont(font);
   cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+  
+ cp5.addSlider("Householdsize")
+    .setPosition(185, 380)
+    .setSize(100, 20)
+    .setRange(1, 5)
+    .setNumberOfTickMarks(5)
+    .setLabel("Size household:")
+    .setFont(font);
+  cp5.getController("Householdsize").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
   cp5.addSlider("Rating")
     .setPosition(235, 385)
@@ -190,6 +199,7 @@ void interface1() {
   cp5.getController("gender").show();
   cp5.getController("dietgoal").show();
   cp5.getController("weight").show();
+  cp5.getController("Householdsize").show();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -211,6 +221,7 @@ void interface2() {
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
+  cp5.getController("Householdsize").hide();
   cp5.getController("preferkcal").show();
   cp5.getController("price").show();
   cp5.getController("cuisine").show();
@@ -230,6 +241,7 @@ void interface3() {
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
+  cp5.getController("Householdsize").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();
@@ -250,6 +262,7 @@ void interface4() {
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
   cp5.getController("weight").hide();
+  cp5.getController("Householdsize").hide();
   cp5.getController("prefertime").hide();
   cp5.getController("preferkcal").hide();
   cp5.getController("price").hide();

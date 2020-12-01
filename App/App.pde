@@ -53,6 +53,7 @@ int Spiciness = 1;
 int Rating = 1;
 int diffrating;
 int spicyrating;
+int housesize;
 int rate;
 float c_speed;
 

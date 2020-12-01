@@ -84,6 +84,9 @@ void Rating(int c_rate){
 void Spiciness(int c_spice){
   spicyrating = c_spice;
 }
+void Householdsize(int c_hsize){
+  housesize = c_hsize;
+}
 
 //makes sure calculations aren't done with empty fields
 String checkProfileItem(Object profileItem, String defaultValue) {
