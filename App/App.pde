@@ -119,16 +119,36 @@ public void submit() {
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      //Dropdown
       .data("gender", usergender)
       .data("dietgoal", userdietgoal)
+      .data("dietpref", userdietpref)
+      .data("educationlvl", usereducationlvl)
+      //Open questions
+      .data("age", userage)
+      .data("weight", userweight)
+      //Sliders
+      .data("Householdsize", housesize)
       .update();
+    
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      //Data that gets checked automatically
+      .data("weekday (sun-sat)", weekday)
+      //Data filled in by user
+      //Dropdowns
       .data("gender", usergender)
       .data("dietgoal", userdietgoal)
-      .data("weekday (sun-sat)", weekday)
+      .data("dietpref", userdietpref)
+      .data("educationlvl", usereducationlvl)
+      //Open questions
+      .data("age", userage)
+      .data("weight", userweight)
+      //Sliders
+      .data("Householdsize", housesize)
       .log(); 
-
+    
+    //Switch interface after Submit
     interface2();
     state = 1;
     return;
@@ -167,7 +187,8 @@ public void submit() {
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
       .log();
-
+    
+    //Switch interface after Submit
     interface3();
     state = 2;
     return;
@@ -184,20 +205,13 @@ public void submit() {
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
-      .data("actual time", acttime)
-      .data("plays", c_clicks)
-      .data("relative speed", c_speed)
-      .data("rating", rate)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
-      .data("preferred time", preftime)
-      .data("actual time", acttime)
-      .data("cuisine", prefcuisine)
-      .data("rating", rate)
       .data("weekday (sun-sat)", weekday)
       .log();
-
+    
+    //Switch interface after Submit
     interface4();
     state = 3;
   }
@@ -212,20 +226,20 @@ public void submit() {
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
-      .data("actual time", acttime)
-      .data("plays", c_clicks)
-      .data("relative speed", c_speed)
+      //Data filled in by user
+      //Sliders
       .data("rating", rate)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
-      .data("preferred time", preftime)
-      .data("actual time", acttime)
-      .data("cuisine", prefcuisine)
-      .data("rating", rate)
+       //Data that gets checked automatically
       .data("weekday (sun-sat)", weekday)
+      //Data filled in by user
+      //Sliders
+      .data("rating", rate)
       .log();
-
+    
+    //Switch interface after Submit
     interface1();
     state = 0;
   }
