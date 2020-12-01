@@ -168,10 +168,9 @@ public void submit() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("preferred time", preftime)
+      .data("preferred kcal", prefkcal)
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
-      .data("dietgoal", userdietgoal)
-      .data("gender", usergender)
       .data("base ingredient", base)
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
@@ -179,6 +178,7 @@ public void submit() {
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
       .data("preferred time", preftime)
+      .data("preferred kcal", prefkcal)
       .data("cuisine", prefcuisine)
       .data("price", prefprice)
       .data("dietgoal", userdietgoal)
@@ -200,7 +200,9 @@ public void submit() {
     fetchData();
 
     //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, "\nrating: " + rate, "\nactual time: " + acttime);
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
