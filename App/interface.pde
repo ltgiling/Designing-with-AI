@@ -56,7 +56,7 @@ void cp5components() {
     .setId(10);
     
   weight = cp5.addTextfield("weight")
-    .setPosition(37, 305)
+    .setPosition(37, 335)
     .setSize(40, 30)
     .setFont(font)
     .setId(9);
@@ -173,7 +173,7 @@ void cp5components() {
   price.getValueLabel().getStyle().marginTop = 5;
 
   // set components style to display: textfields, buttons
-  //setTextfieldStyle(username, font, "User name");
+  setTextfieldStyle(username, font, "User name");
   setTextfieldStyle(prefertime, font, "Preferred \ncooking time");
   setTextfieldStyle(actualtime, font, "Actual cooking time");
   setButtonStyle(submit, font, "Submit");
@@ -181,7 +181,7 @@ void cp5components() {
 void interface1() {
   //show and hide components for first interface
   //first interface for user data
-  //cp5.getController("actualtime").hide();
+  cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Rating").hide();
@@ -201,7 +201,7 @@ void interface1() {
 void interface2() {
   //show and hide components for second interface
   //second interface for meal data
-  //cp5.getController("actualtime").hide();
+  cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
   cp5.getController("Spiciness").show();
@@ -221,7 +221,7 @@ void interface2() {
 void interface3() {
   //show and hide components for third interface
   //third interface for meal suggestion
-  //cp5.getController("actualtime").hide();
+  cp5.getController("actualtime").hide();
   cp5.getController("timelabel").show();
   cp5.getController("timelabel2").hide();
   cp5.getController("Rating").hide();
@@ -241,7 +241,7 @@ void interface3() {
 void interface4() {
   //show and hide components for fourth interface
   //fourth interface for meal (suggestion) rating
-  //cp5.getController("actualtime").show();
+  cp5.getController("actualtime").show();
   cp5.getController("timelabel").show();
   cp5.getController("timelabel2").hide();
   cp5.getController("Rating").show();

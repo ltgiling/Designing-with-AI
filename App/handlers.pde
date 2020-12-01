@@ -3,7 +3,7 @@ void setUname() {
   uname = cp5.get(Textfield.class, "Username").getText();
   preftime = cp5.get(Textfield.class, "prefertime").getText();
   prefkcal = cp5.get(Textfield.class, "preferkcal").getText();
-  userage = cp5.get(Textfield.class, "preferage").getText();
+  userage = cp5.get(Textfield.class, "age").getText();
   userweight = cp5.get(Textfield.class, "weight").getText();
 
   // if the text field is empty, random Id!

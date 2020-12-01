@@ -114,25 +114,14 @@ public void submit() {
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
-      .data("preferred time", preftime)
-      .data("cuisine", prefcuisine)
-      .data("price", prefprice)
       .data("gender", usergender)
       .data("dietgoal", userdietgoal)
-      .data("base ingredient", base)
-      .data("difficulty", diffrating)
-      .data("Spiciness", spicyrating)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
-      .data("preferred time", preftime)
-      .data("cuisine", prefcuisine)
-      .data("price", prefprice)
       .data("gender", usergender)
       .data("dietgoal", userdietgoal)
       .data("weekday (sun-sat)", weekday)
-      .data("difficulty", diffrating)
-      .data("Spiciness", spicyrating)
       .log(); 
 
     interface2();
