@@ -72,6 +72,9 @@ void gender(int index) {
 void dietgoal(int index) {
   userdietgoal = cp5.get(ScrollableList.class, "dietgoal").getItem(index).get("name").toString();
 }
+void dietpref(int index) {
+  userdietpref = cp5.get(ScrollableList.class, "dietpref").getItem(index).get("name").toString();
+}
 void basis(int index3) {
   base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
 }

@@ -165,6 +165,22 @@ void cp5components() {
   dietgoal.getCaptionLabel().getStyle().marginTop = 5;
   dietgoal.getValueLabel().getStyle().marginTop = 5;  
   
+  dietpref = cp5.addScrollableList("dietpref")
+    .setPosition(185, 305)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Vegan", 2)
+    .addItem("Vegitariant", 3)
+    .addItem("Meat", 4)
+    .setValue(0)
+    .setLabel("diet preference");
+  this.dietpref.setItemHeight(25);
+  dietpref.getCaptionLabel().getStyle().marginTop = 5;
+  dietpref.getValueLabel().getStyle().marginTop = 5; 
+  
     price = cp5.addScrollableList("price")
     .setPosition(185, 255)
     .setFont(font)
@@ -198,6 +214,7 @@ void interface1() {
   cp5.getController("age").show();
   cp5.getController("gender").show();
   cp5.getController("dietgoal").show();
+  cp5.getController("dietpref").show();
   cp5.getController("weight").show();
   cp5.getController("Householdsize").show();
   cp5.getController("prefertime").hide();
@@ -220,6 +237,7 @@ void interface2() {
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
+  cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("preferkcal").show();
@@ -240,6 +258,7 @@ void interface3() {
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
+  cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("prefertime").hide();
@@ -261,6 +280,7 @@ void interface4() {
   cp5.getController("age").hide();
   cp5.getController("gender").hide();
   cp5.getController("dietgoal").hide();
+  cp5.getController("dietpref").hide();
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("prefertime").hide();

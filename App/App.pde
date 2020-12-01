@@ -39,6 +39,7 @@ String userweight = "";
 String prefcuisine = "";
 String prefprice = "";
 String userdietgoal = "";
+String userdietpref = "";
 String usergender = "";
 String t_pref = "";
 String t_base = "";
@@ -73,6 +74,7 @@ controlP5.ScrollableList cuisine;
 controlP5.ScrollableList price;
 controlP5.ScrollableList gender;
 controlP5.ScrollableList dietgoal;
+controlP5.ScrollableList dietpref;
 controlP5.ScrollableList basis;
 Slider abc;
 
