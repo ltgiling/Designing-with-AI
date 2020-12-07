@@ -13,7 +13,7 @@ class Dish {
     ingredient5 = in5;
     ingredient6 = in6;
   }
-} 
+}
 
 void CheckDish(String i) {
   
