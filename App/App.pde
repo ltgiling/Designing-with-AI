@@ -59,6 +59,27 @@ int housesize;
 int rate;
 float c_speed;
 
+Dish d1 = new Dish("Jamaican Jerk Chicken", "Chicken", "", "", "", "", "");
+Dish d2 = new Dish("Pasta Salad", "Kielbasa", "Noodles", "", "", "", "");
+Dish d3 = new Dish("Lasagna", "Sausage", "Noodles", "", "", "", "");
+Dish d4 = new Dish("Hearty Pancakes", "Milk", "Eggs", "Corn Meal", "", "", "");
+Dish d5 = new Dish("Spaghetti", "Noodles", "Marinara Sauce", "", "", "", "");
+Dish d6 = new Dish("White beans, tomatoes, and spinach", "Rice", "Vegetarian", "Beans", "eggs", "", "");
+Dish d7 = new Dish("Cashew Chicken with Noodles", "Noodles", "Chicken", "", "", "", "");
+Dish d8 = new Dish("Asian Shredded Beef", "Beef", "Noodles", "", "", "", "");
+Dish d9 = new Dish("Shepherd's Pie", "Beef", "Potatoes", "", "", "", "");
+Dish d10 = new Dish("Thai Chicken", "Chicken", "Noodles", "Eggs", "", "", "");
+Dish d11 = new Dish("One Pot Chicken & Potatoes", "Potatoes", "Chicken", "Carrots", "Onion", "", "");
+Dish d12 = new Dish("Honey Lime Chicken", "Chicken", "Rice", "", "", "", "");
+Dish d13 = new Dish("Lentil Curry", "Lentils", "Carrots", "Onion", "", "", "");
+Dish d14 = new Dish("Potato Apple Roast", "Apple", "Potatoes", "Ham", "", "", "");
+Dish d15 = new Dish("Bucatini all'Amatriciana", "Noodles", "Tomatoes", "Bacon", "", "", "");
+Dish d16 = new Dish("Potato Currry", "Potatoes", "Vegetarian", "", "", "", "");
+Dish d17 = new Dish("Balsamic Dijon Root Vegetables", "Potatoes", "Onion", "Carrots", "Parsnips", "", "");
+Dish d18 = new Dish("Best Baked Chicken Legs", "Chicken", "Rice", "", "", "", "");
+Dish d19 = new Dish("Chickpea Broccoli Pesto", "Broccoli", "Chickpeas", "", "", "", "");
+Dish d20 = new Dish("Soy Mustard Salmon", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
+  
 // UI elements
 ControlP5 cp5;
 controlP5.Button submit;
@@ -97,6 +118,10 @@ void setup() {
   cp5components();
     interface1();
   weekday = cal.get(Calendar.DAY_OF_WEEK);
+  
+  /*
+  CheckDish("Chicken");
+  */
 }
 // ------------------------------------------------------------------------
 //very basic draw method of just the background
@@ -153,6 +178,7 @@ public void submit() {
     state = 1;
     return;
   }
+  /********************************************************************************************/
   //if the user has not cooked yet (start interface)
   if (state == 1) {
     //collect values from the boxes (see helpers tab)
@@ -193,6 +219,7 @@ public void submit() {
     state = 2;
     return;
   }
+  /********************************************************************************************/
   //if the user has cooked (second interface) and submits
   if (state == 2) {
     //collect data from entries and data foundry
@@ -217,6 +244,7 @@ public void submit() {
     interface4();
     state = 3;
   }
+  /********************************************************************************************/
     if (state == 3) {
     //collect data from entries and data foundry
     setActual();
@@ -245,4 +273,5 @@ public void submit() {
     interface1();
     state = 0;
   }
+  /********************************************************************************************/
 }
