@@ -19,11 +19,11 @@ void setUname() {
     prefkcal = "0";
     preferkcal.setText(prefkcal);
   }
-   if (userage.isEmpty()) {
+  if (userage.isEmpty()) {
     userage = "0";
     age.setText(userage);
   }
-   if (userweight.isEmpty()) {
+  if (userweight.isEmpty()) {
     userweight = "0";
     weight.setText(userweight);
   }
@@ -36,7 +36,7 @@ void setActual() {
   userage = cp5.get(Textfield.class, "age").getText();
   userweight = cp5.get(Textfield.class, "weight").getText();
   acttime = cp5.get(Textfield.class, "actualtime").getText();
-  
+
   if (acttime.isEmpty()) {
     acttime = "0";
     actualtime.setText(acttime);
@@ -81,16 +81,16 @@ void dietpref(int index) {
 void basis(int index3) {
   base = cp5.get(ScrollableList.class, "basis").getItem(index3).get("name").toString();
 }
-void Difficulty(int c_diff){
+void Difficulty(int c_diff) {
   diffrating = c_diff;
 }
-void Rating(int c_rate){
+void Rating(int c_rate) {
   rate = c_rate;
 }
-void Spiciness(int c_spice){
+void Spiciness(int c_spice) {
   spicyrating = c_spice;
 }
-void Householdsize(int c_hsize){
+void Householdsize(int c_hsize) {
   housesize = c_hsize;
 }
 

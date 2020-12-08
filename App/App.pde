@@ -119,16 +119,15 @@ void setup() {
   dishes[17] = new Dish("Best Baked Chicken Legs", "Chicken", "Rice", "", "", "", "");
   dishes[18] = new Dish("Chickpea Broccoli Pesto", "Broccoli", "Chickpeas", "", "", "", "");
   dishes[19] = new Dish("Soy Mustard Salmon", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
-  
+
 
   // initiate ControlerP5
   Label.setUpperCaseDefault(false);
   cp5 = new ControlP5(this);
   // all of the components (buttons, fields, dropdown menu's)
   cp5components();
-    interface1();
+  interface1();
   weekday = cal.get(Calendar.DAY_OF_WEEK);
-  
 }
 // ------------------------------------------------------------------------
 //very basic draw method of just the background
@@ -139,6 +138,8 @@ void draw() {
 //On submit button press
 public void submit() {
   /********************************************************************************************/
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
   //if the user has not cooked yet (start interface)
   if (state == 0) {
     //collect values from the boxes (see helpers tab)
@@ -163,7 +164,7 @@ public void submit() {
       //Sliders
       .data("Householdsize", housesize)
       .update();
-    
+
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
       //Data that gets checked automatically
@@ -180,7 +181,7 @@ public void submit() {
       //Sliders
       .data("Householdsize", housesize)
       .log(); 
-    
+    setButtonStyle(submit, font, "Submit"); 
     //Switch interface after Submit
     interface2();
     state = 1;
@@ -221,10 +222,11 @@ public void submit() {
       .data("difficulty", diffrating)
       .data("Spiciness", spicyrating)
       .log();
-    
+
     CheckDish(base);  //test - this should actually read the selected ingredient of <basis> (cp5)
-    
+
     //Switch interface after Submit
+    setButtonStyle(submit, font, "<continue with \n5 buttons>"); 
     interface3();
     state = 2;
     return;
@@ -248,15 +250,15 @@ public void submit() {
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
       .data("weekday (sun-sat)", weekday)
-      .log();
-      
+      .log();  
+    setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
     state = 3;
     return;
   }
   /********************************************************************************************/
-    if (state == 3) {
+  if (state == 3) {
     //collect data from entries and data foundry
     setActual();
     fetchData();
@@ -273,14 +275,15 @@ public void submit() {
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
-       //Data that gets checked automatically
+      //Data that gets checked automatically
       .data("weekday (sun-sat)", weekday)
       //Data filled in by user
       //Sliders
       .data("rating", rate)
       .log();
-    
+
     //Switch interface after Submit
+    setButtonStyle(submit, font, "Continue");
     interface1();
     state = 0;
     return;

@@ -1,4 +1,4 @@
-void cp5components() {
+void cp5components() { //<>//
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
 
@@ -10,8 +10,8 @@ void cp5components() {
     .setLabel("Difficulty:")
     .setFont(font);
   cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
-  
- cp5.addSlider("Spiciness")
+
+  cp5.addSlider("Spiciness")
     .setPosition(185, 380)
     .setSize(100, 20)
     .setRange(1, 5)
@@ -19,9 +19,9 @@ void cp5components() {
     .setLabel("Preferred spiciness:")
     .setFont(font);
   cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
-  
- cp5.addSlider("Householdsize")
-    .setPosition(185, 420)
+
+  cp5.addSlider("Householdsize")
+    .setPosition(185, 355)
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
@@ -34,7 +34,7 @@ void cp5components() {
     .setSize(100, 20)
     .setRange(1, 5)
     .setNumberOfTickMarks(5)
-    .setLabel("Rating:")
+    .setLabel("Meal rating:")
     .setFont(font);
   cp5.getController("Rating").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
@@ -43,7 +43,7 @@ void cp5components() {
     .setSize(300, 30)
     .setFont(font)
     .setId(1);
-  cp5.getController("Username").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+  // cp5.getController("Username").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
 
   prefertime = cp5.addTextfield("prefertime")
@@ -51,21 +51,21 @@ void cp5components() {
     .setSize(40, 30)
     .setFont(font)
     .setId(2);
-    
+
   preferkcal = cp5.addTextfield("preferkcal")
-    .setPosition(37, 225)
+    .setPosition(37, 255)
     .setSize(40, 30)
     .setFont(font)
     .setId(8);
-    
+
   age = cp5.addTextfield("age")
-    .setPosition(37, 265)
+    .setPosition(37, 155)
     .setSize(40, 30)
     .setFont(font)
     .setId(10);
-    
+
   weight = cp5.addTextfield("weight")
-    .setPosition(37, 335)
+    .setPosition(37, 235)
     .setSize(40, 30)
     .setFont(font)
     .setId(9);
@@ -77,7 +77,7 @@ void cp5components() {
 
   actualtime = cp5.addTextfield("actualtime")
     .setPosition(37, 375)
-    .setSize(100, 40)
+    .setSize(40, 30)
     .setFont(font)
     .setId(4);   
 
@@ -98,7 +98,7 @@ void cp5components() {
     .setFont(font)
     .setValue("Meal Preferences:")
     .setId(6);
-/******************* dish labels *****************************/
+  /******************* dish labels *****************************/
   dishlabel1 = cp5.addTextlabel("dishlabel1")
     .setPosition(25, 75)
     .setFont(font)
@@ -124,7 +124,24 @@ void cp5components() {
     .setFont(font)
     .setValue("")
     .setId(15);
-/*************************************************************/
+  /*************************************************************/
+
+  price = cp5.addScrollableList("price")
+    .setPosition(185, 255)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("$", 2)
+    .addItem("$$", 3)
+    .addItem("$$$", 4)
+    .setValue(0)
+    .setLabel("price range");
+  this.price.setItemHeight(25);
+  price.getCaptionLabel().getStyle().marginTop = 5;
+  price.getValueLabel().getStyle().marginTop = 5;
+
   basis = cp5.addScrollableList("basis")
     .setPosition(185, 215)
     .setFont(font)
@@ -161,7 +178,7 @@ void cp5components() {
   cuisine.getValueLabel().getStyle().marginTop = 5;
 
   educationlvl = cp5.addScrollableList("educationlvl")
-    .setPosition(185, 355)
+    .setPosition(185, 285)
     .setFont(font)
     .setItemHeight(10)
     .setBarHeight(30)
@@ -173,10 +190,42 @@ void cp5components() {
     .addItem("HBO", 5)
     .addItem("WO", 6)
     .setValue(0)
-    .setLabel("Current level of education"); 
+    .setLabel("education level"); 
   this.educationlvl.setItemHeight(25);
   educationlvl.getCaptionLabel().getStyle().marginTop = 5;
   educationlvl.getValueLabel().getStyle().marginTop = 5; 
+
+  dietpref = cp5.addScrollableList("dietpref")
+    .setPosition(185, 235)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Vegan", 2)
+    .addItem("Vegetarian", 3)
+    .addItem("Meat", 4)
+    .setValue(0)
+    .setLabel("diet preference");
+  this.dietpref.setItemHeight(25);
+  dietpref.getCaptionLabel().getStyle().marginTop = 5;
+  dietpref.getValueLabel().getStyle().marginTop = 5; 
+
+  dietgoal = cp5.addScrollableList("dietgoal")
+    .setPosition(185, 185)
+    .setFont(font)
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(150, 150)
+    .addItem("No preference", 1)
+    .addItem("Maintain Weight", 2)
+    .addItem("Gain Weight", 3)
+    .addItem("Lose Weight", 4)
+    .setValue(0)
+    .setLabel("diet goal");
+  this.dietgoal.setItemHeight(25);
+  dietgoal.getCaptionLabel().getStyle().marginTop = 5;
+  dietgoal.getValueLabel().getStyle().marginTop = 5;  
 
   gender = cp5.addScrollableList("gender")
     .setPosition(185, 135)
@@ -193,59 +242,12 @@ void cp5components() {
   gender.getCaptionLabel().getStyle().marginTop = 5;
   gender.getValueLabel().getStyle().marginTop = 5;
 
-  dietgoal = cp5.addScrollableList("dietgoal")
-    .setPosition(185, 255)
-    .setFont(font)
-    .setItemHeight(10)
-    .setBarHeight(30)
-    .setSize(150, 150)
-    .addItem("No preference", 1)
-    .addItem("Maintain Weight", 2)
-    .addItem("Gain Weight", 3)
-    .addItem("Lose Weight", 4)
-    .setValue(0)
-    .setLabel("diet goal");
-  this.dietgoal.setItemHeight(25);
-  dietgoal.getCaptionLabel().getStyle().marginTop = 5;
-  dietgoal.getValueLabel().getStyle().marginTop = 5;  
-  
-  dietpref = cp5.addScrollableList("dietpref")
-    .setPosition(185, 305)
-    .setFont(font)
-    .setItemHeight(10)
-    .setBarHeight(30)
-    .setSize(150, 150)
-    .addItem("No preference", 1)
-    .addItem("Vegan", 2)
-    .addItem("Vegitariant", 3)
-    .addItem("Meat", 4)
-    .setValue(0)
-    .setLabel("diet preference");
-  this.dietpref.setItemHeight(25);
-  dietpref.getCaptionLabel().getStyle().marginTop = 5;
-  dietpref.getValueLabel().getStyle().marginTop = 5; 
-  
-    price = cp5.addScrollableList("price")
-    .setPosition(185, 255)
-    .setFont(font)
-    .setItemHeight(10)
-    .setBarHeight(30)
-    .setSize(150, 150)
-    .addItem("No preference", 1)
-    .addItem("$", 2)
-    .addItem("$$", 3)
-    .addItem("$$$", 4)
-    .setValue(0)
-    .setLabel("price range");
-  this.price.setItemHeight(25);
-  price.getCaptionLabel().getStyle().marginTop = 5;
-  price.getValueLabel().getStyle().marginTop = 5;
-
   // set components style to display: textfields, buttons
-  setTextfieldStyle(username, font, "User name");
+  // setTextfieldStyle(username, font, "User name");
   setTextfieldStyle(prefertime, font, "Preferred \ncooking time");
-  setTextfieldStyle(actualtime, font, "Actual cooking time");
-  setButtonStyle(submit, font, "Submit");
+  setTextfieldStyle(preferkcal, font, "Preferred \nkcal in meal");
+  setTextfieldStyle(actualtime, font, "Actual time \nspent cooking");
+  setButtonStyle(submit, font, "Continue");
 }
 void interface1() {
   //show and hide components for first interface
