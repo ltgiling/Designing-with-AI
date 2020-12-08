@@ -98,7 +98,33 @@ void cp5components() {
     .setFont(font)
     .setValue("Meal Preferences:")
     .setId(6);
-
+/******************* dish labels *****************************/
+  dishlabel1 = cp5.addTextlabel("dishlabel1")
+    .setPosition(25, 75)
+    .setFont(font)
+    .setValue("")
+    .setId(11);
+  dishlabel2 = cp5.addTextlabel("dishlabel2")
+    .setPosition(25, 95)
+    .setFont(font)
+    .setValue("")
+    .setId(12);
+  dishlabel3 = cp5.addTextlabel("dishlabel3")
+    .setPosition(25, 115)
+    .setFont(font)
+    .setValue("")
+    .setId(13);
+  dishlabel4 = cp5.addTextlabel("dishlabel4")
+    .setPosition(25, 135)
+    .setFont(font)
+    .setValue("")
+    .setId(14);
+  dishlabel5 = cp5.addTextlabel("dishlabel5")
+    .setPosition(25, 155)
+    .setFont(font)
+    .setValue("")
+    .setId(15);
+/*************************************************************/
   basis = cp5.addScrollableList("basis")
     .setPosition(185, 215)
     .setFont(font)
@@ -107,9 +133,9 @@ void cp5components() {
     .setSize(150, 150)
     .addItem("No preference", 1)
     .addItem("Rice", 2)
-    .addItem("Potato", 3)
-    .addItem("Bread", 4)
-    .addItem("Pasta", 5)
+    .addItem("Potatoes", 3)
+    .addItem("Chicken", 4)
+    .addItem("Noodles", 5)
     .addItem("Lettuce", 6)
     .setValue(0)
     .setLabel("base ingredient"); 
