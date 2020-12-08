@@ -1,10 +1,12 @@
 class Dish {
+  //note: some of these variables are not used yet
   String name, easeOfPrep, notes, type, link;
   String ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, ingredient6;
   int rating, prepTime;
   boolean containsIngredient;
   
-  Dish(String na, String in1, String in2, String in3, String in4, String in5, String in6) {
+  //The constructor takes the name of the dish, and 6 ingredients as argument.
+  Dish (String na, String in1, String in2, String in3, String in4, String in5, String in6) {
     name = na;
     ingredient1 = in1;
     ingredient2 = in2;
@@ -15,47 +17,36 @@ class Dish {
   }
 }
 
-void CheckDish(String i) {
+//CheckDish() takes the String of an ingredient as argument.
+void CheckDish(String ingr) {
   
-  if (d1.ingredient1 == i || d1.ingredient2 == i || d1.ingredient3 == i || d1.ingredient4 == i || d1.ingredient5 == i || d1.ingredient6 == i) {
-    d1.containsIngredient = true;
-    print(d1.name + "\n");
-  } 
-  if (d2.ingredient1 == i || d2.ingredient2 == i || d2.ingredient3 == i || d2.ingredient4 == i || d2.ingredient5 == i || d2.ingredient6 == i) {
-    d2.containsIngredient = true;
-    print(d2.name + "\n");
-  } 
-  if (d3.ingredient1 == i || d3.ingredient2 == i || d3.ingredient3 == i || d3.ingredient4 == i || d3.ingredient5 == i || d3.ingredient6 == i) {
-    d3.containsIngredient = true;
-    print(d3.name + "\n");
-  } 
-  if (d1.ingredient1 == i || d4.ingredient2 == i || d4.ingredient3 == i || d4.ingredient4 == i || d4.ingredient5 == i || d4.ingredient6 == i) {
-    d4.containsIngredient = true;
-    print(d4.name + "\n");
-  } 
-  if (d5.ingredient1 == i || d5.ingredient2 == i || d5.ingredient3 == i || d5.ingredient4 == i || d5.ingredient5 == i || d5.ingredient6 == i) {
-    d5.containsIngredient = true;
-    print(d5.name + "\n");
-  }
-  if (d6.ingredient1 == i || d6.ingredient2 == i || d6.ingredient3 == i || d6.ingredient4 == i || d6.ingredient5 == i || d6.ingredient6 == i) {
-    d6.containsIngredient = true;
-    print(d6.name + "\n");
-  }
-  if (d7.ingredient1 == i || d7.ingredient2 == i || d7.ingredient3 == i || d7.ingredient4 == i || d7.ingredient5 == i || d7.ingredient6 == i) {
-    d7.containsIngredient = true;
-    print(d7.name + "\n");
-  }
-  if (d8.ingredient1 == i || d8.ingredient2 == i || d8.ingredient3 == i || d8.ingredient4 == i || d8.ingredient5 == i || d8.ingredient6 == i) {
-    d8.containsIngredient = true;
-    print(d8.name + "\n");
-  }
-  if (d9.ingredient1 == i || d9.ingredient2 == i || d9.ingredient3 == i || d9.ingredient4 == i || d9.ingredient5 == i || d9.ingredient6 == i) {
-    d9.containsIngredient = true;
-    print(d9.name + "\n");
-  }
-  if (d10.ingredient1 == i || d10.ingredient2 == i || d10.ingredient3 == i || d10.ingredient4 == i || d10.ingredient5 == i || d10.ingredient6 == i) {
-    d10.containsIngredient = true;
-    print(d10.name + "\n");
+  //loop through the ingredients of all dishes to check for a match. Set the value of the dishlabels to the dishes that contain the ingredient
+  for (int i=0; i<20; i++) {
+    if (dishes[i].ingredient1 == ingr || dishes[i].ingredient2 == ingr || dishes[i].ingredient3 == ingr || dishes[i].ingredient4 == ingr || dishes[i].ingredient5 == ingr || dishes[i].ingredient6 == ingr) {
+      dishes[i].containsIngredient = true;
+                                                          //print(dishes[i].name + "\n"); //test
+      if (dishlabel1.getStringValue() != "") {
+        if (dishlabel2.getStringValue() != "") {
+          if (dishlabel3.getStringValue() != "") {
+            if (dishlabel4.getStringValue() != "") {
+              if (dishlabel5.getStringValue() != "") {
+                return;  //if there are already 5 dishes listed with the particular ingredient, do nothing
+              } else {
+                dishlabel5.setValue(dishes[i].name);
+              }
+            } else {
+              dishlabel4.setValue(dishes[i].name);
+            }
+          } else {
+            dishlabel3.setValue(dishes[i].name);
+          }
+        } else {
+          dishlabel2.setValue(dishes[i].name);
+        }
+      } else {
+        dishlabel1.setValue(dishes[i].name);
+      }
+    }
   }
   
 }
