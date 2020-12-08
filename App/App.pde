@@ -221,7 +221,7 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
     
-    CheckDish("Potatoes");  //test - this should actually read the selected ingredient of <basis> (cp5)
+    CheckDish(base);  //test - this should actually read the selected ingredient of <basis> (cp5)
     
     //Switch interface after Submit
     interface3();
