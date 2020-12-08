@@ -119,6 +119,7 @@ void setup() {
   dishes[17] = new Dish("Best Baked Chicken Legs", "Chicken", "Rice", "", "", "", "");
   dishes[18] = new Dish("Chickpea Broccoli Pesto", "Broccoli", "Chickpeas", "", "", "", "");
   dishes[19] = new Dish("Soy Mustard Salmon", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
+  
 
   // initiate ControlerP5
   Label.setUpperCaseDefault(false);
@@ -252,6 +253,7 @@ public void submit() {
     //Switch interface after Submit
     interface4();
     state = 3;
+    return;
   }
   /********************************************************************************************/
     if (state == 3) {
@@ -281,6 +283,7 @@ public void submit() {
     //Switch interface after Submit
     interface1();
     state = 0;
+    return;
   }
   /********************************************************************************************/
 }
