@@ -21,7 +21,7 @@ class Dish {
 void CheckDish(String ingr) {
 
   //loop through the ingredients of all dishes to check for a match. Set the value of the dishlabels to the dishes that contain the ingredient
-  for (int i=0; i<20; i++) {
+  for (int i=0; i<dishes.length; i++) {
     if (dishes[i].ingredient1 == ingr || dishes[i].ingredient2 == ingr || dishes[i].ingredient3 == ingr || dishes[i].ingredient4 == ingr || dishes[i].ingredient5 == ingr || dishes[i].ingredient6 == ingr) {
       dishes[i].containsIngredient = true;
       //print(dishes[i].name + "\n"); //test

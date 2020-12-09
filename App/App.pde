@@ -60,7 +60,7 @@ int rate;
 float c_speed;
 
 //create array of class (object) Dish (so it's easy to search through the dishes with a for-loop)
-Dish[] dishes = new Dish[20];
+Dish[] dishes = new Dish[50];
 
 // UI elements
 ControlP5 cp5;
@@ -109,6 +109,9 @@ void setup() {
   isStart = false;
 
   //add dishes to the dishes array
+  //careful: be sure to spellcheck the ingredients, as they have to match in all dishes
+  //   Exact spelling of some common ingredients: 
+  //   Noodles, Potatoes, Rice, Chicken, Beef, Pork, Eggs, Beans, Carrots, Onion, Tomatoes, Soy Sauce, Bell Pepper, Lettuce
   dishes[0] = new Dish("Jamaican Jerk Chicken", "Chicken", "", "", "", "", "");
   dishes[1] = new Dish("Pasta Salad", "Kielbasa", "Noodles", "", "", "", "");
   dishes[2] = new Dish("Lasagna", "Sausage", "Noodles", "", "", "", "");
@@ -129,7 +132,36 @@ void setup() {
   dishes[17] = new Dish("Best Baked Chicken Legs", "Chicken", "Rice", "", "", "", "");
   dishes[18] = new Dish("Chickpea Broccoli Pesto", "Broccoli", "Chickpeas", "", "", "", "");
   dishes[19] = new Dish("Soy Mustard Salmon", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
-
+  dishes[20] = new Dish("Swedish Meatballs", "Beef", "Noodles", "Eggs", "", "", "");
+  dishes[21] = new Dish("Southwest Beef & Rice Skillet", "Beef", "Rice", "Beans", "", "", "");
+  dishes[22] = new Dish("Fried Rice", "Chicken", "Eggs", "Rice", "", "", "");
+  dishes[23] = new Dish("Baked Cheddag Eggs & Potatoes", "Potatoes", "Bacon", "Cheese", "Eggs", "", "");
+  dishes[24] = new Dish("Ravioli with Snap Peas", "Noodles", "Milk", "Cheese", "", "", "");
+  dishes[25] = new Dish("Tostadas", "Chicken", "Cheese", "", "", "", "");
+  dishes[26] = new Dish("Paprika Pork with Roasted Potatoes and Dill Cream", "Pork", "Potatoes", "", "", "", "");
+  dishes[27] = new Dish("Pork and Veggie Stir Fry", "Rice", "Pork", "Mushrooms", "Carrots", "Bell Pepper", "Onion"); //https://www.goodhousekeeping.com/food-recipes/easy/a28639176/pork-and-veggie-stir-fry-recipe/
+  dishes[28] = new Dish("Pork Chops with Bok Choy and Coconut Rice", "Soy Sauce", "Pork", "Rice", "Scallions", "Ginger", "Garlic"); //https://www.goodhousekeeping.com/food-recipes/easy/a29831862/pork-chops-with-bok-choy-and-coconut-rice-recipe/
+  dishes[29] = new Dish("Quick Pork Ragu with Ravioli", "Ravioli", "Pork", "Garlic", "White Wine", "", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a25657117/quick-pork-ragu-with-ravioli-recipe/
+  dishes[30] = new Dish("Pork Chops with Bloody Mary Tomato Salad", "Tomatoes", "Celery", "Onion", "Pork", "Lettuce", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a28469802/pork-chops-with-bloody-mary-tomato-salad-recipe/
+  dishes[31] = new Dish("Fennel and Thyme Pork Roast with Root Vegetables", "Garlic", "Pork", "Potatoes", "Radishes", "Scallions", ""); //https://www.goodhousekeeping.com/food-recipes/a26767593/fennel-and-thyme-pork-roast-with-root-vegetables-recipe/
+  dishes[32] = new Dish("Rice noodles with meatballs and bok choy", "Beef", "Noodles", "", "", "", "");
+  dishes[33] = new Dish("Italian Fagoli Vegetable Soup", "Vegetarian", "Beans", "Noodles", "", "", "");
+  dishes[34] = new Dish("Lentil Soup", "Lentils", "Vegetarian", "Carrots", "Onion", "", "");
+  dishes[35] = new Dish("", "", "", "", "", "", "");
+  dishes[36] = new Dish("", "", "", "", "", "", "");
+  dishes[37] = new Dish("", "", "", "", "", "", "");
+  dishes[38] = new Dish("", "", "", "", "", "", "");
+  dishes[39] = new Dish("", "", "", "", "", "", "");
+  dishes[40] = new Dish("", "", "", "", "", "", "");
+  dishes[41] = new Dish("", "", "", "", "", "", "");
+  dishes[42] = new Dish("", "", "", "", "", "", "");
+  dishes[43] = new Dish("", "", "", "", "", "", "");
+  dishes[44] = new Dish("", "", "", "", "", "", "");
+  dishes[45] = new Dish("", "", "", "", "", "", "");
+  dishes[46] = new Dish("", "", "", "", "", "", "");
+  dishes[47] = new Dish("", "", "", "", "", "", "");
+  dishes[48] = new Dish("", "", "", "", "", "", "");
+  dishes[49] = new Dish("", "", "", "", "", "", "");
 
   // initiate ControlerP5
   Label.setUpperCaseDefault(false);
