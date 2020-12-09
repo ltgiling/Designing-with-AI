@@ -303,6 +303,12 @@ void interface1() {
   cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
   cp5.getController("Difficulty").hide();
+  //Hide dish buttons
+  cp5.getController("dish1").hide();
+  cp5.getController("dish2").hide();
+  cp5.getController("dish3").hide();
+  cp5.getController("dish4").hide();
+  cp5.getController("dish5").hide();
 }
 void interface2() {
   //show and hide components for second interface
@@ -326,6 +332,12 @@ void interface2() {
   cp5.getController("prefertime").show();
   cp5.getController("basis").show();
   cp5.getController("Difficulty").show();
+  //Hide dish buttons
+  cp5.getController("dish1").hide();
+  cp5.getController("dish2").hide();
+  cp5.getController("dish3").hide();
+  cp5.getController("dish4").hide();
+  cp5.getController("dish5").hide();
 }
 void interface3() {
   //show and hide components for third interface
@@ -349,6 +361,12 @@ void interface3() {
   cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
   cp5.getController("Difficulty").hide();
+  //Show dish buttons
+  cp5.getController("dish1").show();
+  cp5.getController("dish2").show();
+  cp5.getController("dish3").show();
+  cp5.getController("dish4").show();
+  cp5.getController("dish5").show();
 }
 void interface4() {
   //show and hide components for fourth interface
@@ -372,4 +390,10 @@ void interface4() {
   cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
   cp5.getController("Difficulty").hide();
+  //Hide dish buttons
+  cp5.getController("dish1").hide();
+  cp5.getController("dish2").hide();
+  cp5.getController("dish3").hide();
+  cp5.getController("dish4").hide();
+  cp5.getController("dish5").hide();
 }
