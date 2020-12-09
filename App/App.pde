@@ -147,21 +147,21 @@ void setup() {
   dishes[32] = new Dish("Rice noodles with meatballs and bok choy", "Beef", "Noodles", "", "", "", "");
   dishes[33] = new Dish("Italian Fagoli Vegetable Soup", "Vegetarian", "Beans", "Noodles", "", "", "");
   dishes[34] = new Dish("Lentil Soup", "Lentils", "Vegetarian", "Carrots", "Onion", "", "");
-  dishes[35] = new Dish("", "", "", "", "", "", "");
-  dishes[36] = new Dish("", "", "", "", "", "", "");
-  dishes[37] = new Dish("", "", "", "", "", "", "");
-  dishes[38] = new Dish("", "", "", "", "", "", "");
-  dishes[39] = new Dish("", "", "", "", "", "", "");
-  dishes[40] = new Dish("", "", "", "", "", "", "");
-  dishes[41] = new Dish("", "", "", "", "", "", "");
-  dishes[42] = new Dish("", "", "", "", "", "", "");
-  dishes[43] = new Dish("", "", "", "", "", "", "");
-  dishes[44] = new Dish("", "", "", "", "", "", "");
-  dishes[45] = new Dish("", "", "", "", "", "", "");
-  dishes[46] = new Dish("", "", "", "", "", "", "");
-  dishes[47] = new Dish("", "", "", "", "", "", "");
-  dishes[48] = new Dish("", "", "", "", "", "", "");
-  dishes[49] = new Dish("", "", "", "", "", "", "");
+  dishes[35] = new Dish("Chicken Ceasar salad", "Chicken", "Eggs", "Lettuce", "Cheese", "", "");
+  dishes[36] = new Dish("Buttery herb chicken", "Chicken", "Rice", "", "", "", "");
+  dishes[37] = new Dish("Pesto tomato penne", "Noodles", "Tomatoes", "Pesto", "", "", "");
+  dishes[38] = new Dish("Pasta with salmon and dill", "Noodles", "Salmon", "Cream", "Dill", "", "");
+  dishes[39] = new Dish("Baked potato with bacon", "Potatoes", "Butter", "Pork", "", "", "");
+  dishes[40] = new Dish("Porkchop with mashed potato and gravy", "Potatoes", "Pork", "", "", "", "");
+  dishes[41] = new Dish("Homemade Chicken nuggets", "Chicken", "Eggs", "Flour", "", "", "");
+  dishes[42] = new Dish("Stuffed Bell pepper", "Bell pepper", "Rice", "Beef", "Onion", "", "");
+  dishes[43] = new Dish("Cherry tomato avocado salad", "Lettuce", "Avocado", "Tomatoes", "Onion", "Carrots", "Vegetarian");
+  dishes[44] = new Dish("Greek salad", "Lettuce", "Tomatoes", "Cheese", "Onion", "", "");
+  dishes[45] = new Dish("Beef burrito's", "Lettuce", "Beef", "Onion", "Garlic", "", "");
+  dishes[46] = new Dish("Asian chicken green bean noodles", "Chicken", "Noodles", "Beans", "Soy Sauce", "", "");
+  dishes[47] = new Dish("Boerenkool Stamppot", "Potatoes", "Boerenkool", "Butter", "Milk", "", "");
+  dishes[48] = new Dish("Pasta Carbonara", "Noodles", "Cheese", "Milk", "Pork", "Garlic", "");
+  dishes[49] = new Dish("Salmon Sushi roll", "Rice", "Salmon", "Soy Sauce", "Avocado", "", "");
 
   // initiate ControlerP5
   Label.setUpperCaseDefault(false);
