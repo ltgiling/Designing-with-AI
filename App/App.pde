@@ -64,13 +64,21 @@ Dish[] dishes = new Dish[20];
 
 // UI elements
 ControlP5 cp5;
+// Buttons
 controlP5.Button submit;
+controlP5.Button dish1;
+controlP5.Button dish2;
+controlP5.Button dish3;
+controlP5.Button dish4;
+controlP5.Button dish5;
+//Textfields
 controlP5.Textfield username;
 controlP5.Textfield prefertime;
 controlP5.Textfield actualtime;
 controlP5.Textfield preferkcal;
 controlP5.Textfield age;
 controlP5.Textfield weight;
+//Textlabels
 controlP5.Textlabel title;
 controlP5.Textlabel timelabel;
 controlP5.Textlabel timelabel2;
@@ -79,6 +87,7 @@ controlP5.Textlabel dishlabel2;
 controlP5.Textlabel dishlabel3;
 controlP5.Textlabel dishlabel4;
 controlP5.Textlabel dishlabel5;
+//Scroll-lists
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList educationlvl;
 controlP5.ScrollableList price;
@@ -86,6 +95,7 @@ controlP5.ScrollableList gender;
 controlP5.ScrollableList dietgoal;
 controlP5.ScrollableList dietpref;
 controlP5.ScrollableList basis;
+//Slider
 Slider abc;
 
 // ------------------------------------------------------------------------

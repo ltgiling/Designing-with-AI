@@ -98,6 +98,33 @@ void cp5components() { //<>//
     .setFont(font)
     .setValue("Meal Preferences:")
     .setId(6);
+  
+  /********************dish buttons*****************************/
+    dish1 = cp5.addButton("dish1")
+    .setPosition(137, 430)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish2 = cp5.addButton("dish2")
+    .setPosition(237, 430)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish3 = cp5.addButton("dish3")
+    .setPosition(37, 380)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish4 = cp5.addButton("dish4")
+    .setPosition(137, 380)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish5 = cp5.addButton("dish5")
+    .setPosition(237, 380)
+    .setSize(100, 46)
+    .setId(16);
+  
   /******************* dish labels *****************************/
   dishlabel1 = cp5.addTextlabel("dishlabel1")
     .setPosition(25, 75)
@@ -248,6 +275,11 @@ void cp5components() { //<>//
   setTextfieldStyle(preferkcal, font, "Preferred \nkcal in meal");
   setTextfieldStyle(actualtime, font, "Actual time \nspent cooking");
   setButtonStyle(submit, font, "Continue");
+  setButtonStyle(dish1, font, "Dish 1");
+  setButtonStyle(dish2, font, "Dish 2");
+  setButtonStyle(dish3, font, "Dish 3");
+  setButtonStyle(dish4, font, "Dish 4");
+  setButtonStyle(dish5, font, "Dish 5");
 }
 void interface1() {
   //show and hide components for first interface
