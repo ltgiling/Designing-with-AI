@@ -265,7 +265,8 @@ public void submit() {
       .data("Spiciness", spicyrating)
       .log();
 
-    CheckDish(base);  //test - this should actually read the selected ingredient of <basis> (cp5)
+    //CheckDish(base); was used before to suggest meals with a certain ingredient
+    PickRandomDish();
 
     //Switch interface after Submit
     setButtonStyle(submit, font, "<continue with \n5 buttons>"); 

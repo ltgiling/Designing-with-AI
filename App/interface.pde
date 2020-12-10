@@ -310,6 +310,12 @@ void interface1() {
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
   cp5.getController("submit").show();
+  //dishlabels
+  cp5.getController("dishlabel1").hide();
+  cp5.getController("dishlabel2").hide();
+  cp5.getController("dishlabel3").hide();
+  cp5.getController("dishlabel4").hide();
+  cp5.getController("dishlabel5").hide();
 }
 void interface2() {
   //show and hide components for second interface
@@ -340,6 +346,12 @@ void interface2() {
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
   cp5.getController("submit").show();
+  //dishlabels
+  cp5.getController("dishlabel1").hide();
+  cp5.getController("dishlabel2").hide();
+  cp5.getController("dishlabel3").hide();
+  cp5.getController("dishlabel4").hide();
+  cp5.getController("dishlabel5").hide();
 }
 void interface3() {
   //show and hide components for third interface
@@ -370,6 +382,12 @@ void interface3() {
   cp5.getController("dish4").show();
   cp5.getController("dish5").show();
   cp5.getController("submit").hide();
+  //dishlabels
+  cp5.getController("dishlabel1").show();
+  cp5.getController("dishlabel2").show();
+  cp5.getController("dishlabel3").show();
+  cp5.getController("dishlabel4").show();
+  cp5.getController("dishlabel5").show();
 }
 void interface4() {
   //show and hide components for fourth interface
@@ -400,4 +418,10 @@ void interface4() {
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
   cp5.getController("submit").show();
+  //dishlabels
+  cp5.getController("dishlabel1").hide();
+  cp5.getController("dishlabel2").hide();
+  cp5.getController("dishlabel3").hide();
+  cp5.getController("dishlabel4").hide();
+  cp5.getController("dishlabel5").hide();
 }

@@ -49,3 +49,26 @@ void CheckDish(String ingr) {
     }
   }
 }
+
+//sets the 5 dishlabels to a random dish
+void PickRandomDish() {
+  int r1 = int(random(50));
+  int r2 = int(random(50));
+  int r3 = int(random(50));
+  int r4 = int(random(50));
+  int r5 = int(random(50));
+  
+  //this loop makes sure that multiple dishlabels don't display the same dish
+  while ((r2 == r1 || r2 == r3 || r2 == r4 || r2 == r5) || (r3 == r1 || r3 == r4 || r3 == r5) || (r4 == r1 || r4 == r5) || (r5 == r1)) {
+    r2 = int(random(50));
+    r3 = int(random(50));
+    r4 = int(random(50));
+    r5 = int(random(50));
+  }
+  
+  dishlabel1.setValue(dishes[r1].name);
+  dishlabel2.setValue(dishes[r2].name);
+  dishlabel3.setValue(dishes[r3].name);
+  dishlabel4.setValue(dishes[r4].name);
+  dishlabel5.setValue(dishes[r5].name);
+}
