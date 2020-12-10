@@ -101,27 +101,27 @@ void cp5components() { //<>//
   
   /********************dish buttons*****************************/
     dish1 = cp5.addButton("dish1")
-    .setPosition(137, 430)
-    .setSize(100, 46)
-    .setId(16);
-    
-    dish2 = cp5.addButton("dish2")
-    .setPosition(237, 430)
-    .setSize(100, 46)
-    .setId(16);
-    
-    dish3 = cp5.addButton("dish3")
     .setPosition(37, 380)
     .setSize(100, 46)
     .setId(16);
     
-    dish4 = cp5.addButton("dish4")
+    dish2 = cp5.addButton("dish2")
     .setPosition(137, 380)
     .setSize(100, 46)
     .setId(16);
     
-    dish5 = cp5.addButton("dish5")
+    dish3 = cp5.addButton("dish3")
     .setPosition(237, 380)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish4 = cp5.addButton("dish4")
+    .setPosition(37, 430)
+    .setSize(100, 46)
+    .setId(16);
+    
+    dish5 = cp5.addButton("dish5")
+    .setPosition(137, 430)
     .setSize(100, 46)
     .setId(16);
   
@@ -309,6 +309,7 @@ void interface1() {
   cp5.getController("dish3").hide();
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
+  cp5.getController("submit").show();
 }
 void interface2() {
   //show and hide components for second interface
@@ -338,6 +339,7 @@ void interface2() {
   cp5.getController("dish3").hide();
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
+  cp5.getController("submit").show();
 }
 void interface3() {
   //show and hide components for third interface
@@ -367,6 +369,7 @@ void interface3() {
   cp5.getController("dish3").show();
   cp5.getController("dish4").show();
   cp5.getController("dish5").show();
+  cp5.getController("submit").hide();
 }
 void interface4() {
   //show and hide components for fourth interface
@@ -396,4 +399,5 @@ void interface4() {
   cp5.getController("dish3").hide();
   cp5.getController("dish4").hide();
   cp5.getController("dish5").hide();
+  cp5.getController("submit").show();
 }

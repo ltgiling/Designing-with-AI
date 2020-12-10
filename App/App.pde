@@ -332,3 +332,153 @@ public void submit() {
   }
   /********************************************************************************************/
 }
+
+public void dish1(){
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
+  
+  if (state == 2) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("weekday (sun-sat)", weekday)
+      .log();  
+    setButtonStyle(submit, font, "Return");  
+    //Switch interface after Submit
+    interface4();
+    state = 3;
+    return;
+  }
+}
+
+public void dish2(){
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
+  
+  if (state == 2) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("weekday (sun-sat)", weekday)
+      .log();  
+    setButtonStyle(submit, font, "Return");  
+    //Switch interface after Submit
+    interface4();
+    state = 3;
+    return;
+  }
+}
+
+public void dish3(){
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
+  
+  if (state == 2) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("weekday (sun-sat)", weekday)
+      .log();  
+    setButtonStyle(submit, font, "Return");  
+    //Switch interface after Submit
+    interface4();
+    state = 3;
+    return;
+  }
+}
+
+public void dish4(){
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
+  
+  if (state == 2) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("weekday (sun-sat)", weekday)
+      .log();  
+    setButtonStyle(submit, font, "Return");  
+    //Switch interface after Submit
+    interface4();
+    state = 3;
+    return;
+  }
+}
+
+public void dish5(){
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);  
+  
+  if (state == 2) {
+    //collect data from entries and data foundry
+    setActual();
+    fetchData();
+
+    //print results of entries and calculations
+    print("\nusername: " + uname, "\npreferred time: " + preftime, 
+      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
+      "\ndifficulty: " + diffrating);
+
+    //send data to data foundry entity database
+    entityDS.id(uname).token(uname);
+    entityDS
+      .update();
+    //send data to data foundry iot database
+    iotDS.device(uname).activity("time")
+      .data("weekday (sun-sat)", weekday)
+      .log();  
+    setButtonStyle(submit, font, "Return");  
+    //Switch interface after Submit
+    interface4();
+    state = 3;
+    return;
+  }
+}
