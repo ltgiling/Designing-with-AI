@@ -132,8 +132,8 @@ void setup() {
   dishes[11] = new Dish("Honey Lime Chicken", "$$", "2", "1", "", "", "Chicken", "Rice", "", "", "", "");
   dishes[12] = new Dish("Lentil Curry", "$", "3", "1", "", "", "Lentils", "Carrots", "Onion", "", "", "");
   dishes[13] = new Dish("Potato Apple Roast", "$", "4", "1", "", "", "Apple", "Potatoes", "Ham", "", "", "");
-  dishes[14] = new Dish("Bucatini all'Amatriciana", "$$$", "5", "2", "", "", "Noodles", "Tomatoes", "Bacon", "", "", "");
-  dishes[15] = new Dish("Potato Currry", "$", "2", "1", "", "", "Potatoes", "Vegetarian", "", "", "", "");
+  dishes[14] = new Dish("Pasta Puttanesca", "$$$", "5", "2", "", "", "Noodles", "Tomatoes", "Bacon", "Cheese", "", "");
+  dishes[15] = new Dish("Potato Currry", "$", "2", "3", "", "", "Potatoes", "Vegetarian", "", "", "", "");
   dishes[16] = new Dish("Balsamic Dijon Root Vegetables", "$$", "4", "1", "", "", "Potatoes", "Onion", "Carrots", "Parsnips", "", "");
   dishes[17] = new Dish("Best Baked Chicken Legs", "$$", "1", "2", "", "", "Chicken", "Rice", "", "", "", "");
   dishes[18] = new Dish("Chickpea Broccoli Pesto", "$$", "1", "1", "", "", "Broccoli", "Chickpeas", "", "", "", "");
@@ -206,7 +206,7 @@ public void submit() {
       .data("educationlvl", usereducationlvl)
       //Open questions
       .data("age", userage)
-      .data("weight", userweight)
+      .data("a_weight", userweight)
       //Sliders
       .data("Householdsize", housesize)
       .update();
@@ -223,7 +223,7 @@ public void submit() {
       .data("educationlvl", usereducationlvl)
       //Open questions
       .data("age", userage)
-      .data("weight", userweight)
+      .data("a_weight", userweight)
       //Sliders
       .data("Householdsize", housesize)
       .log(); 
@@ -344,11 +344,11 @@ public void dish1() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("meal choice", dishes[r1].name)
-      .data("price", dishes[r1].price)
-      .data("Spicyness", dishes[r1].spice)
-      .data("difficulty", dishes[r1].difficulty)
-      .data("kcal", dishes[r1].kcal)
-      .data("cooking time", dishes[r1].time)
+      .data("meal price", dishes[r1].price)
+      .data("meal Spicyness", dishes[r1].spice)
+      .data("meal difficulty", dishes[r1].difficulty)
+      .data("meal kcal", dishes[r1].kcal)
+      .data("meal cooking time", dishes[r1].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
@@ -373,11 +373,11 @@ public void dish2() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("meal choice", dishes[r2].name)
-      .data("price", dishes[r2].price)
-      .data("Spicyness", dishes[r2].spice)
-      .data("difficulty", dishes[r2].difficulty)
-      .data("kcal", dishes[r2].kcal)
-      .data("cooking time", dishes[r2].time)
+      .data("meal price", dishes[r2].price)
+      .data("meal Spicyness", dishes[r2].spice)
+      .data("meal difficulty", dishes[r2].difficulty)
+      .data("meal kcal", dishes[r2].kcal)
+      .data("meal cooking time", dishes[r2].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
@@ -402,11 +402,11 @@ public void dish3() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("meal choice", dishes[r3].name)
-      .data("price", dishes[r3].price)
-      .data("Spicyness", dishes[r3].spice)
-      .data("difficulty", dishes[r3].difficulty)
-      .data("kcal", dishes[r3].kcal)
-      .data("cooking time", dishes[r3].time)
+      .data("meal price", dishes[r3].price)
+      .data("meal Spicyness", dishes[r3].spice)
+      .data("meal difficulty", dishes[r3].difficulty)
+      .data("meal kcal", dishes[r3].kcal)
+      .data("meal cooking time", dishes[r3].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
@@ -431,11 +431,11 @@ public void dish4() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("meal choice", dishes[r4].name)
-      .data("price", dishes[r4].price)
-      .data("Spicyness", dishes[r4].spice)
-      .data("difficulty", dishes[r4].difficulty)
-      .data("kcal", dishes[r4].kcal)
-      .data("cooking time", dishes[r4].time)
+      .data("meal price", dishes[r4].price)
+      .data("meal Spicyness", dishes[r4].spice)
+      .data("meal difficulty", dishes[r4].difficulty)
+      .data("meal kcal", dishes[r4].kcal)
+      .data("meal cooking time", dishes[r4].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
@@ -460,11 +460,11 @@ public void dish5() {
     entityDS.id(uname).token(uname);
     entityDS
       .data("meal choice", dishes[r5].name)
-      .data("price", dishes[r5].price)
-      .data("Spicyness", dishes[r5].spice)
-      .data("difficulty", dishes[r5].difficulty)
-      .data("kcal", dishes[r5].kcal)
-      .data("cooking time", dishes[r5].time)
+      .data("meal price", dishes[r5].price)
+      .data("meal Spicyness", dishes[r5].spice)
+      .data("meal difficulty", dishes[r5].difficulty)
+      .data("meal kcal", dishes[r5].kcal)
+      .data("meal cooking time", dishes[r5].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
