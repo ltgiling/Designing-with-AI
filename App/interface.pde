@@ -2,24 +2,24 @@ void cp5components() { //<>//
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
 
-  cp5.addSlider("Difficulty")
-    .setPosition(185, 325)
-    .setSize(100, 20)
-    .setRange(1, 5)
-    .setNumberOfTickMarks(5)
-    .setLabel("Difficulty:")
-    .setFont(font);
-  cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
-
-  cp5.addSlider("Spiciness")
-    .setPosition(185, 380)
-    .setSize(100, 20)
-    .setRange(1, 5)
-    .setNumberOfTickMarks(5)
-    .setLabel("Preferred spiciness:")
-    .setFont(font);
-  cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
-
+  /*  cp5.addSlider("Difficulty")
+   .setPosition(185, 325)
+   .setSize(100, 20)
+   .setRange(1, 5)
+   .setNumberOfTickMarks(5)
+   .setLabel("Difficulty:")
+   .setFont(font);
+   cp5.getController("Difficulty").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+   
+   cp5.addSlider("Spiciness")
+   .setPosition(185, 380)
+   .setSize(100, 20)
+   .setRange(1, 5)
+   .setNumberOfTickMarks(5)
+   .setLabel("Preferred spiciness:")
+   .setFont(font);
+   cp5.getController("Spiciness").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+   */
   cp5.addSlider("Householdsize")
     .setPosition(185, 355)
     .setSize(100, 20)
@@ -45,30 +45,56 @@ void cp5components() { //<>//
     .setId(1);
   // cp5.getController("Username").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
 
-
+  /*
   prefertime = cp5.addTextfield("prefertime")
-    .setPosition(37, 175)
-    .setSize(40, 30)
-    .setFont(font)
-    .setId(2);
-
-  preferkcal = cp5.addTextfield("preferkcal")
+   .setPosition(37, 175)
+   .setSize(40, 30)
+   .setFont(font)
+   .setId(2);
+   
+   preferkcal = cp5.addTextfield("preferkcal")
+   .setPosition(37, 255)
+   .setSize(40, 30)
+   .setFont(font)
+   .setId(8);
+   */
+  weight = cp5.addScrollableList("weight")
     .setPosition(37, 255)
-    .setSize(40, 30)
     .setFont(font)
-    .setId(8);
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(130, 150)
+    .addItem("55-65", 1)
+    .addItem("65-75", 2)
+    .addItem("75-85", 3)
+    .addItem("85-95", 4)
+    .addItem("95-105", 5)
+    .addItem("105-115", 6)
+    .addItem("115+", 7)
+    .setValue(0)
+    .setLabel("weight (kg)");
+  this.weight.setItemHeight(25);
+  weight.getCaptionLabel().getStyle().marginTop = 5;
+  weight.getValueLabel().getStyle().marginTop = 5;
 
-  age = cp5.addTextfield("age")
+  age = cp5.addScrollableList("age")
     .setPosition(37, 155)
-    .setSize(40, 30)
     .setFont(font)
-    .setId(10);
-
-  weight = cp5.addTextfield("weight")
-    .setPosition(37, 235)
-    .setSize(40, 30)
-    .setFont(font)
-    .setId(9);
+    .setItemHeight(10)
+    .setBarHeight(30)
+    .setSize(130, 150)
+    .addItem("18-25", 1)
+    .addItem("25-35", 2)
+    .addItem("35-45", 3)
+    .addItem("45-55", 4)
+    .addItem("55-65", 5)
+    .addItem("65-75", 6)
+    .addItem("75+", 7)
+    .setValue(0)
+    .setLabel("age");
+  this.age.setItemHeight(25);
+  age.getCaptionLabel().getStyle().marginTop = 5;
+  age.getValueLabel().getStyle().marginTop = 5;
 
   submit = cp5.addButton("submit")
     .setPosition(37, 430)
@@ -98,33 +124,33 @@ void cp5components() { //<>//
     .setFont(font)
     .setValue("Meal Preferences:")
     .setId(6);
-  
+
   /********************dish buttons*****************************/
-    dish1 = cp5.addButton("dish1")
+  dish1 = cp5.addButton("dish1")
     .setPosition(37, 380)
     .setSize(100, 46)
     .setId(16);
-    
-    dish2 = cp5.addButton("dish2")
+
+  dish2 = cp5.addButton("dish2")
     .setPosition(137, 380)
     .setSize(100, 46)
     .setId(16);
-    
-    dish3 = cp5.addButton("dish3")
+
+  dish3 = cp5.addButton("dish3")
     .setPosition(237, 380)
     .setSize(100, 46)
     .setId(16);
-    
-    dish4 = cp5.addButton("dish4")
+
+  dish4 = cp5.addButton("dish4")
     .setPosition(37, 430)
     .setSize(100, 46)
     .setId(16);
-    
-    dish5 = cp5.addButton("dish5")
+
+  dish5 = cp5.addButton("dish5")
     .setPosition(137, 430)
     .setSize(100, 46)
     .setId(16);
-  
+
   /******************* dish labels *****************************/
   dishlabel1 = cp5.addTextlabel("dishlabel1")
     .setPosition(25, 75)
@@ -152,23 +178,23 @@ void cp5components() { //<>//
     .setValue("")
     .setId(15);
   /*************************************************************/
-
+  /*
   price = cp5.addScrollableList("price")
-    .setPosition(185, 255)
-    .setFont(font)
-    .setItemHeight(10)
-    .setBarHeight(30)
-    .setSize(150, 150)
-    .addItem("No preference", 1)
-    .addItem("$", 2)
-    .addItem("$$", 3)
-    .addItem("$$$", 4)
-    .setValue(0)
-    .setLabel("price range");
-  this.price.setItemHeight(25);
-  price.getCaptionLabel().getStyle().marginTop = 5;
-  price.getValueLabel().getStyle().marginTop = 5;
-
+   .setPosition(185, 255)
+   .setFont(font)
+   .setItemHeight(10)
+   .setBarHeight(30)
+   .setSize(150, 150)
+   .addItem("No preference", 1)
+   .addItem("$", 2)
+   .addItem("$$", 3)
+   .addItem("$$$", 4)
+   .setValue(0)
+   .setLabel("price range");
+   this.price.setItemHeight(25);
+   price.getCaptionLabel().getStyle().marginTop = 5;
+   price.getValueLabel().getStyle().marginTop = 5;
+   */
   basis = cp5.addScrollableList("basis")
     .setPosition(185, 215)
     .setFont(font)
@@ -182,7 +208,7 @@ void cp5components() { //<>//
     .addItem("Noodles", 5)
     .addItem("Lettuce", 6)
     .setValue(0)
-    .setLabel("base ingredient"); 
+    .setLabel("Ingredient preference"); 
   this.basis.setItemHeight(25);
   basis.getCaptionLabel().getStyle().marginTop = 5;
   basis.getValueLabel().getStyle().marginTop = 5; 
@@ -271,8 +297,8 @@ void cp5components() { //<>//
 
   // set components style to display: textfields, buttons
   // setTextfieldStyle(username, font, "User name");
-  setTextfieldStyle(prefertime, font, "Preferred \ncooking time");
-  setTextfieldStyle(preferkcal, font, "Preferred \nkcal in meal");
+  //setTextfieldStyle(prefertime, font, "Preferred \ncooking time");
+  //setTextfieldStyle(preferkcal, font, "Preferred \nkcal in meal");
   setTextfieldStyle(actualtime, font, "Actual time \nspent cooking");
   setButtonStyle(submit, font, "Continue");
   setButtonStyle(dish1, font, "Dish 1");
@@ -296,13 +322,13 @@ void interface1() {
   cp5.getController("weight").show();
   cp5.getController("Householdsize").show();
   cp5.getController("educationlvl").show();
-  cp5.getController("prefertime").hide();
-  cp5.getController("preferkcal").hide();
-  cp5.getController("price").hide();
+  //cp5.getController("prefertime").hide();
+  //cp5.getController("preferkcal").hide();
+  //cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
-  cp5.getController("Spiciness").hide();
+  //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
-  cp5.getController("Difficulty").hide();
+  //cp5.getController("Difficulty").hide();
   //Hide dish buttons
   cp5.getController("dish1").hide();
   cp5.getController("dish2").hide();
@@ -323,7 +349,7 @@ void interface2() {
   cp5.getController("actualtime").hide();
   cp5.getController("timelabel").hide();
   cp5.getController("timelabel2").show();
-  cp5.getController("Spiciness").show();
+  //cp5.getController("Spiciness").show();
   cp5.getController("Rating").hide();
   cp5.getController("Username").hide();
   cp5.getController("age").hide();
@@ -333,12 +359,12 @@ void interface2() {
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("educationlvl").hide();
-  cp5.getController("preferkcal").show();
-  cp5.getController("price").show();
+  //cp5.getController("preferkcal").show();
+  //cp5.getController("price").show();
   cp5.getController("cuisine").show();
-  cp5.getController("prefertime").show();
+  //cp5.getController("prefertime").show();
   cp5.getController("basis").show();
-  cp5.getController("Difficulty").show();
+  //cp5.getController("Difficulty").show();
   //Hide dish buttons
   cp5.getController("dish1").hide();
   cp5.getController("dish2").hide();
@@ -368,13 +394,13 @@ void interface3() {
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("educationlvl").hide();
-  cp5.getController("prefertime").hide();
-  cp5.getController("preferkcal").hide();
-  cp5.getController("price").hide();
+  //cp5.getController("prefertime").hide();
+  //cp5.getController("preferkcal").hide();
+  //cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
-  cp5.getController("Spiciness").hide();
+  //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
-  cp5.getController("Difficulty").hide();
+  //cp5.getController("Difficulty").hide();
   //Show dish buttons
   cp5.getController("dish1").show();
   cp5.getController("dish2").show();
@@ -404,13 +430,13 @@ void interface4() {
   cp5.getController("weight").hide();
   cp5.getController("Householdsize").hide();
   cp5.getController("educationlvl").hide();
-  cp5.getController("prefertime").hide();
-  cp5.getController("preferkcal").hide();
-  cp5.getController("price").hide();
+  //cp5.getController("prefertime").hide();
+  //cp5.getController("preferkcal").hide();
+  //cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
-  cp5.getController("Spiciness").hide();
+  //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
-  cp5.getController("Difficulty").hide();
+  //cp5.getController("Difficulty").hide();
   //Hide dish buttons
   cp5.getController("dish1").hide();
   cp5.getController("dish2").hide();

@@ -31,14 +31,11 @@ Calendar cal = Calendar.getInstance();
 
 // variables
 String uname = "";
-String preftime = "";
-String prefkcal = "";
 String acttime = "";
 String userage = "";
 String userweight = "";
 String prefcuisine = "";
 String usereducationlvl = ""; 
-String prefprice = "";
 String userdietgoal = "";
 String userdietpref = "";
 String usergender = "";
@@ -50,14 +47,22 @@ color bgColor;
 int state;
 int c_clicks;
 int weekday;
-int Difficulty = 1;
-int Spiciness = 1;
+//int Difficulty = 1;
+//int Spiciness = 1;
+//int spicyrating;
+//float c_speed;
+//String prefprice = "";
+//String preftime = "";
+//String prefkcal = "";
 int Rating = 1;
 int diffrating;
-int spicyrating;
 int housesize;
 int rate;
-float c_speed;
+int r1;
+int r2;
+int r3;
+int r4;
+int r5;
 
 //create array of class (object) Dish (so it's easy to search through the dishes with a for-loop)
 Dish[] dishes = new Dish[50];
@@ -73,11 +78,9 @@ controlP5.Button dish4;
 controlP5.Button dish5;
 //Textfields
 controlP5.Textfield username;
-controlP5.Textfield prefertime;
 controlP5.Textfield actualtime;
-controlP5.Textfield preferkcal;
-controlP5.Textfield age;
-controlP5.Textfield weight;
+//controlP5.Textfield prefertime;
+//controlP5.Textfield preferkcal;
 //Textlabels
 controlP5.Textlabel title;
 controlP5.Textlabel timelabel;
@@ -90,11 +93,13 @@ controlP5.Textlabel dishlabel5;
 //Scroll-lists
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList educationlvl;
-controlP5.ScrollableList price;
 controlP5.ScrollableList gender;
 controlP5.ScrollableList dietgoal;
 controlP5.ScrollableList dietpref;
 controlP5.ScrollableList basis;
+controlP5.ScrollableList age;
+controlP5.ScrollableList weight;
+//controlP5.ScrollableList price;
 //Slider
 Slider abc;
 
@@ -112,56 +117,57 @@ void setup() {
   //careful: be sure to spellcheck the ingredients, as they have to match in all dishes
   //   Exact spelling of some common ingredients: 
   //   Noodles, Potatoes, Rice, Chicken, Beef, Pork, Eggs, Beans, Carrots, Onion, Tomatoes, Soy Sauce, Bell Pepper, Lettuce
-  dishes[0] = new Dish("Jamaican Jerk Chicken", "Chicken", "", "", "", "", "");
-  dishes[1] = new Dish("Pasta Salad", "Kielbasa", "Noodles", "", "", "", "");
-  dishes[2] = new Dish("Lasagna", "Sausage", "Noodles", "", "", "", "");
-  dishes[3] = new Dish("Hearty Pancakes", "Milk", "Eggs", "Corn Meal", "", "", "");
-  dishes[4] = new Dish("Spaghetti", "Noodles", "Marinara Sauce", "", "", "", "");
-  dishes[5] = new Dish("White beans, tomatoes, and spinach", "Rice", "Vegetarian", "Beans", "Eggs", "", "");
-  dishes[6] = new Dish("Cashew Chicken with Noodles", "Noodles", "Chicken", "", "", "", "");
-  dishes[7] = new Dish("Asian Shredded Beef", "Beef", "Noodles", "", "", "", "");
-  dishes[8] = new Dish("Shepherd's Pie", "Beef", "Potatoes", "", "", "", "");
-  dishes[9] = new Dish("Thai Chicken", "Chicken", "Noodles", "Eggs", "", "", "");
-  dishes[10] = new Dish("One Pot Chicken & Potatoes", "Potatoes", "Chicken", "Carrots", "Onion", "", "");
-  dishes[11] = new Dish("Honey Lime Chicken", "Chicken", "Rice", "", "", "", "");
-  dishes[12] = new Dish("Lentil Curry", "Lentils", "Carrots", "Onion", "", "", "");
-  dishes[13] = new Dish("Potato Apple Roast", "Apple", "Potatoes", "Ham", "", "", "");
-  dishes[14] = new Dish("Bucatini all'Amatriciana", "Noodles", "Tomatoes", "Bacon", "", "", "");
-  dishes[15] = new Dish("Potato Currry", "Potatoes", "Vegetarian", "", "", "", "");
-  dishes[16] = new Dish("Balsamic Dijon Root Vegetables", "Potatoes", "Onion", "Carrots", "Parsnips", "", "");
-  dishes[17] = new Dish("Best Baked Chicken Legs", "Chicken", "Rice", "", "", "", "");
-  dishes[18] = new Dish("Chickpea Broccoli Pesto", "Broccoli", "Chickpeas", "", "", "", "");
-  dishes[19] = new Dish("Soy Mustard Salmon", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
-  dishes[20] = new Dish("Swedish Meatballs", "Beef", "Noodles", "Eggs", "", "", "");
-  dishes[21] = new Dish("Southwest Beef & Rice Skillet", "Beef", "Rice", "Beans", "", "", "");
-  dishes[22] = new Dish("Fried Rice", "Chicken", "Eggs", "Rice", "", "", "");
-  dishes[23] = new Dish("Baked Cheddag Eggs & Potatoes", "Potatoes", "Bacon", "Cheese", "Eggs", "", "");
-  dishes[24] = new Dish("Ravioli with Snap Peas", "Noodles", "Milk", "Cheese", "", "", "");
-  dishes[25] = new Dish("Tostadas", "Chicken", "Cheese", "", "", "", "");
-  dishes[26] = new Dish("Paprika Pork with Roasted Potatoes and Dill Cream", "Pork", "Potatoes", "", "", "", "");
-  dishes[27] = new Dish("Pork and Veggie Stir Fry", "Rice", "Pork", "Mushrooms", "Carrots", "Bell Pepper", "Onion"); //https://www.goodhousekeeping.com/food-recipes/easy/a28639176/pork-and-veggie-stir-fry-recipe/
-  dishes[28] = new Dish("Pork Chops with Bok Choy and Coconut Rice", "Soy Sauce", "Pork", "Rice", "Scallions", "Ginger", "Garlic"); //https://www.goodhousekeeping.com/food-recipes/easy/a29831862/pork-chops-with-bok-choy-and-coconut-rice-recipe/
-  dishes[29] = new Dish("Quick Pork Ragu with Ravioli", "Ravioli", "Pork", "Garlic", "White Wine", "", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a25657117/quick-pork-ragu-with-ravioli-recipe/
-  dishes[30] = new Dish("Pork Chops with Bloody Mary Tomato Salad", "Tomatoes", "Celery", "Onion", "Pork", "Lettuce", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a28469802/pork-chops-with-bloody-mary-tomato-salad-recipe/
-  dishes[31] = new Dish("Fennel and Thyme Pork Roast with Root Vegetables", "Garlic", "Pork", "Potatoes", "Radishes", "Scallions", ""); //https://www.goodhousekeeping.com/food-recipes/a26767593/fennel-and-thyme-pork-roast-with-root-vegetables-recipe/
-  dishes[32] = new Dish("Rice noodles with meatballs and bok choy", "Beef", "Noodles", "", "", "", "");
-  dishes[33] = new Dish("Italian Fagoli Vegetable Soup", "Vegetarian", "Beans", "Noodles", "", "", "");
-  dishes[34] = new Dish("Lentil Soup", "Lentils", "Vegetarian", "Carrots", "Onion", "", "");
-  dishes[35] = new Dish("Chicken Ceasar salad", "Chicken", "Eggs", "Lettuce", "Cheese", "", "");
-  dishes[36] = new Dish("Buttery herb chicken", "Chicken", "Rice", "", "", "", "");
-  dishes[37] = new Dish("Pesto tomato penne", "Noodles", "Tomatoes", "Pesto", "", "", "");
-  dishes[38] = new Dish("Pasta with salmon and dill", "Noodles", "Salmon", "Cream", "Dill", "", "");
-  dishes[39] = new Dish("Baked potato with bacon", "Potatoes", "Butter", "Pork", "", "", "");
-  dishes[40] = new Dish("Porkchop with mashed potato and gravy", "Potatoes", "Pork", "", "", "", "");
-  dishes[41] = new Dish("Homemade Chicken nuggets", "Chicken", "Eggs", "Flour", "", "", "");
-  dishes[42] = new Dish("Stuffed Bell pepper", "Bell pepper", "Rice", "Beef", "Onion", "", "");
-  dishes[43] = new Dish("Cherry tomato avocado salad", "Lettuce", "Avocado", "Tomatoes", "Onion", "Carrots", "Vegetarian");
-  dishes[44] = new Dish("Greek salad", "Lettuce", "Tomatoes", "Cheese", "Onion", "", "");
-  dishes[45] = new Dish("Beef burrito's", "Lettuce", "Beef", "Onion", "Garlic", "", "");
-  dishes[46] = new Dish("Asian chicken green bean noodles", "Chicken", "Noodles", "Beans", "Soy Sauce", "", "");
-  dishes[47] = new Dish("Boerenkool Stamppot", "Potatoes", "Boerenkool", "Butter", "Milk", "", "");
-  dishes[48] = new Dish("Pasta Carbonara", "Noodles", "Cheese", "Milk", "Pork", "Garlic", "");
-  dishes[49] = new Dish("Salmon Sushi roll", "Rice", "Salmon", "Soy Sauce", "Avocado", "", "");
+  //   Structure: Name, Price ($ - $$$), Difficulty (1-5), Spicyness (1-3), Kcal, Cooking time, Ingredients 1-6
+  dishes[0] = new Dish("Jamaican Jerk Chicken", "$$$", "5", "3", "", "", "Chicken", "", "", "", "", "");
+  dishes[1] = new Dish("Pasta Salad", "$", "2", "1", "", "", "Kielbasa", "Noodles", "", "", "", "");
+  dishes[2] = new Dish("Lasagna", "$$", "4", "2", "", "", "Sausage", "Noodles", "", "", "", "");
+  dishes[3] = new Dish("Hearty Pancakes", "$", "2", "1", "", "", "Milk", "Eggs", "Corn Meal", "", "", "");
+  dishes[4] = new Dish("Spaghetti", "$", "2", "1", "", "", "Noodles", "Marinara Sauce", "", "", "", "");
+  dishes[5] = new Dish("White beans, tomatoes, and spinach", "$", "1", "1", "", "", "Rice", "Vegetarian", "Beans", "Eggs", "", "");
+  dishes[6] = new Dish("Cashew Chicken with Noodles", "$$$", "3", "1", "", "", "Noodles", "Chicken", "", "", "", "");
+  dishes[7] = new Dish("Asian Shredded Beef", "$$$", "4", "2", "", "", "Beef", "Noodles", "", "", "", "");
+  dishes[8] = new Dish("Shepherd's Pie", "$$$", "5", "1", "", "", "Beef", "Potatoes", "", "", "", "");
+  dishes[9] = new Dish("Thai Chicken", "$$", "3", "3", "", "", "Chicken", "Noodles", "Eggs", "", "", "");
+  dishes[10] = new Dish("One Pot Chicken & Potatoes", "$$", "1", "1", "", "", "Potatoes", "Chicken", "Carrots", "Onion", "", "");
+  dishes[11] = new Dish("Honey Lime Chicken", "$$", "2", "1", "", "", "Chicken", "Rice", "", "", "", "");
+  dishes[12] = new Dish("Lentil Curry", "$", "3", "1", "", "", "Lentils", "Carrots", "Onion", "", "", "");
+  dishes[13] = new Dish("Potato Apple Roast", "$", "4", "1", "", "", "Apple", "Potatoes", "Ham", "", "", "");
+  dishes[14] = new Dish("Bucatini all'Amatriciana", "$$$", "5", "2", "", "", "Noodles", "Tomatoes", "Bacon", "", "", "");
+  dishes[15] = new Dish("Potato Currry", "$", "2", "1", "", "", "Potatoes", "Vegetarian", "", "", "", "");
+  dishes[16] = new Dish("Balsamic Dijon Root Vegetables", "$$", "4", "1", "", "", "Potatoes", "Onion", "Carrots", "Parsnips", "", "");
+  dishes[17] = new Dish("Best Baked Chicken Legs", "$$", "1", "2", "", "", "Chicken", "Rice", "", "", "", "");
+  dishes[18] = new Dish("Chickpea Broccoli Pesto", "$$", "1", "1", "", "", "Broccoli", "Chickpeas", "", "", "", "");
+  dishes[19] = new Dish("Soy Mustard Salmon", "$$$", "3", "1", "", "", "Salmon", "Soy Sauce", "Dijon Mustard", "Garlic", "Ginger", "");
+  dishes[20] = new Dish("Swedish Meatballs", "$$", "3", "1", "", "", "Beef", "Noodles", "Eggs", "", "", "");
+  dishes[21] = new Dish("Southwest Beef & Rice Skillet", "$$$", "5", "2", "", "", "Beef", "Rice", "Beans", "", "", "");
+  dishes[22] = new Dish("Fried Rice", "$", "2", "1", "", "", "Chicken", "Eggs", "Rice", "", "", "");
+  dishes[23] = new Dish("Baked Cheddag Eggs & Potatoes", "$$", "1", "1", "", "", "Potatoes", "Bacon", "Cheese", "Eggs", "", "");
+  dishes[24] = new Dish("Ravioli with Snap Peas", "$", "2", "1", "", "", "Noodles", "Milk", "Cheese", "", "", "");
+  dishes[25] = new Dish("Tostadas", "$$", "2", "1", "", "", "Chicken", "Cheese", "", "", "", "");
+  dishes[26] = new Dish("Paprika Pork with Roasted Potatoes and Dill Cream", "$$", "3", "3", "", "", "Pork", "Potatoes", "", "", "", "");
+  dishes[27] = new Dish("Pork and Veggie Stir Fry", "$$", "2", "2", "", "", "Rice", "Pork", "Mushrooms", "Carrots", "Bell Pepper", "Onion"); //https://www.goodhousekeeping.com/food-recipes/easy/a28639176/pork-and-veggie-stir-fry-recipe/
+  dishes[28] = new Dish("Pork Chops with Bok Choy and Coconut Rice", "$$$", "5", "2", "", "", "Soy Sauce", "Pork", "Rice", "Scallions", "Ginger", "Garlic"); //https://www.goodhousekeeping.com/food-recipes/easy/a29831862/pork-chops-with-bok-choy-and-coconut-rice-recipe/
+  dishes[29] = new Dish("Quick Pork Ragu with Ravioli", "$$", "3", "1", "", "", "Ravioli", "Pork", "Garlic", "White Wine", "", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a25657117/quick-pork-ragu-with-ravioli-recipe/
+  dishes[30] = new Dish("Pork Chops with Bloody Mary Tomato Salad", "$$", "4", "1", "", "", "Tomatoes", "Celery", "Onion", "Pork", "Lettuce", ""); //https://www.goodhousekeeping.com/food-recipes/easy/a28469802/pork-chops-with-bloody-mary-tomato-salad-recipe/
+  dishes[31] = new Dish("Fennel and Thyme Pork Roast with Root Vegetables", "$", "3", "1", "", "", "Garlic", "Pork", "Potatoes", "Radishes", "Scallions", ""); //https://www.goodhousekeeping.com/food-recipes/a26767593/fennel-and-thyme-pork-roast-with-root-vegetables-recipe/
+  dishes[32] = new Dish("Rice noodles with meatballs and bok choy", "$$", "2", "2", "", "", "Beef", "Noodles", "", "", "", "");
+  dishes[33] = new Dish("Italian Fagoli Vegetable Soup", "$", "4", "1", "", "", "Vegetarian", "Beans", "Noodles", "", "", "");
+  dishes[34] = new Dish("Lentil Soup", "$", "1", "1", "", "", "Lentils", "Vegetarian", "Carrots", "Onion", "", "");
+  dishes[35] = new Dish("Chicken Ceasar salad", "$$", "1", "1", "", "", "Chicken", "Eggs", "Lettuce", "Cheese", "", "");
+  dishes[36] = new Dish("Buttery herb chicken", "$$", "2", "2", "", "", "Chicken", "Rice", "", "", "", "");
+  dishes[37] = new Dish("Pesto tomato penne", "$", "1", "1", "", "", "Noodles", "Tomatoes", "Pesto", "", "", "");
+  dishes[38] = new Dish("Pasta with salmon and dill", "$$$", "1", "1", "", "", "Noodles", "Salmon", "Cream", "Dill", "", "");
+  dishes[39] = new Dish("Baked potato with bacon", "$", "1", "1", "", "", "Potatoes", "Butter", "Pork", "", "", "");
+  dishes[40] = new Dish("Porkchop with mashed potato and gravy", "$$", "2", "1", "", "", "Potatoes", "Pork", "", "", "", "");
+  dishes[41] = new Dish("Homemade Chicken nuggets", "$", "2", "1", "", "", "Chicken", "Eggs", "Flour", "", "", "");
+  dishes[42] = new Dish("Stuffed Bell pepper", "$$", "2", "2", "", "", "Bell pepper", "Rice", "Beef", "Onion", "", "");
+  dishes[43] = new Dish("Cherry tomato avocado salad", "$$", "2", "1", "", "", "Lettuce", "Avocado", "Tomatoes", "Onion", "Carrots", "Vegetarian");
+  dishes[44] = new Dish("Greek salad", "$", "2", "1", "", "", "Lettuce", "Tomatoes", "Cheese", "Onion", "", "");
+  dishes[45] = new Dish("Beef burritos", "$", "2", "3", "", "", "Lettuce", "Beef", "Onion", "Garlic", "", "");
+  dishes[46] = new Dish("Asian chicken green bean noodles", "$$", "3", "3", "", "", "Chicken", "Noodles", "Beans", "Soy Sauce", "", "");
+  dishes[47] = new Dish("Boerenkool Stamppot", "$", "1", "1", "", "", "Potatoes", "Boerenkool", "Butter", "Milk", "", "");
+  dishes[48] = new Dish("Pasta Carbonara", "$", "3", "1", "", "", "Noodles", "Cheese", "Milk", "Pork", "Garlic", "");
+  dishes[49] = new Dish("Salmon Sushi roll", "$$$", "4", "1", "", "", "Rice", "Salmon", "Soy Sauce", "Avocado", "", "");
 
   // initiate ControlerP5
   Label.setUpperCaseDefault(false);
@@ -188,9 +194,7 @@ public void submit() {
     setUname();
 
     //print results in console
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+    print("\nusername: " + uname, "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
@@ -234,35 +238,33 @@ public void submit() {
   if (state == 1) {
     //collect values from the boxes (see helpers tab)
     setActual();
-    fetchData();
+    //fetchData();
 
     //print results in console
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+    print("\nusername: " + uname, "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
-      .data("preferred time", preftime)
-      .data("preferred kcal", prefkcal)
+      //.data("preferred time", preftime)
+      //.data("preferred kcal", prefkcal)
       .data("cuisine", prefcuisine)
-      .data("price", prefprice)
+      //.data("price", prefprice)
       .data("base ingredient", base)
-      .data("difficulty", diffrating)
-      .data("Spiciness", spicyrating)
+      //.data("difficulty", diffrating)
+      //.data("Spiciness", spicyrating)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
-      .data("preferred time", preftime)
-      .data("preferred kcal", prefkcal)
+      //.data("preferred time", preftime)
+      //.data("preferred kcal", prefkcal)
       .data("cuisine", prefcuisine)
-      .data("price", prefprice)
+      //.data("price", prefprice)
       .data("dietgoal", userdietgoal)
       .data("gender", usergender)
       .data("weekday (sun-sat)", weekday)
-      .data("difficulty", diffrating)
-      .data("Spiciness", spicyrating)
+      //.data("difficulty", diffrating)
+      //.data("Spiciness", spicyrating)
       .log();
 
     //CheckDish(base); was used before to suggest meals with a certain ingredient
@@ -279,12 +281,10 @@ public void submit() {
   if (state == 2) {
     //collect data from entries and data foundry
     setActual();
-    fetchData();
+    //fetchData();
 
     //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+    print("\nusername: " + uname, "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
@@ -304,10 +304,10 @@ public void submit() {
   if (state == 3) {
     //collect data from entries and data foundry
     setActual();
-    fetchData();
+    //fetchData();
 
     //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, "\nrating: " + rate, "\nactual time: " + acttime);
+    print("\nusername: " + uname, "\nrating: " + rate, "\nactual time: " + acttime);
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
@@ -334,26 +334,25 @@ public void submit() {
   /********************************************************************************************/
 }
 
-public void dish1(){
+public void dish1() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
-  
-  if (state == 2) {
-    //collect data from entries and data foundry
-    setActual();
-    fetchData();
 
-    //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+  if (state == 2) {
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      .data("meal choice", dishes[r1].name)
+      .data("price", dishes[r1].price)
+      .data("Spicyness", dishes[r1].spice)
+      .data("difficulty", dishes[r1].difficulty)
+      .data("kcal", dishes[r1].kcal)
+      .data("cooking time", dishes[r1].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      .data("meal choice", dishes[r1].name)
       .data("weekday (sun-sat)", weekday)
       .log();  
     setButtonStyle(submit, font, "Return");  
@@ -364,26 +363,25 @@ public void dish1(){
   }
 }
 
-public void dish2(){
+public void dish2() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
-  
-  if (state == 2) {
-    //collect data from entries and data foundry
-    setActual();
-    fetchData();
 
-    //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+  if (state == 2) {
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      .data("meal choice", dishes[r2].name)
+      .data("price", dishes[r2].price)
+      .data("Spicyness", dishes[r2].spice)
+      .data("difficulty", dishes[r2].difficulty)
+      .data("kcal", dishes[r2].kcal)
+      .data("cooking time", dishes[r2].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      .data("meal choice", dishes[r2].name)
       .data("weekday (sun-sat)", weekday)
       .log();  
     setButtonStyle(submit, font, "Return");  
@@ -394,26 +392,25 @@ public void dish2(){
   }
 }
 
-public void dish3(){
+public void dish3() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
-  
+  //price, spice, difficulty, kcal, time;
   if (state == 2) {
-    //collect data from entries and data foundry
-    setActual();
-    fetchData();
-
-    //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
-
+    print(dishes[r3].price);
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      .data("meal choice", dishes[r3].name)
+      .data("price", dishes[r3].price)
+      .data("Spicyness", dishes[r3].spice)
+      .data("difficulty", dishes[r3].difficulty)
+      .data("kcal", dishes[r3].kcal)
+      .data("cooking time", dishes[r3].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      .data("meal choice", dishes[r3].name)
       .data("weekday (sun-sat)", weekday)
       .log();  
     setButtonStyle(submit, font, "Return");  
@@ -424,26 +421,25 @@ public void dish3(){
   }
 }
 
-public void dish4(){
+public void dish4() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
-  
-  if (state == 2) {
-    //collect data from entries and data foundry
-    setActual();
-    fetchData();
 
-    //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+  if (state == 2) {
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      .data("meal choice", dishes[r4].name)
+      .data("price", dishes[r4].price)
+      .data("Spicyness", dishes[r4].spice)
+      .data("difficulty", dishes[r4].difficulty)
+      .data("kcal", dishes[r4].kcal)
+      .data("cooking time", dishes[r4].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      .data("meal choice", dishes[r4].name)
       .data("weekday (sun-sat)", weekday)
       .log();  
     setButtonStyle(submit, font, "Return");  
@@ -454,26 +450,25 @@ public void dish4(){
   }
 }
 
-public void dish5(){
+public void dish5() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);  
-  
-  if (state == 2) {
-    //collect data from entries and data foundry
-    setActual();
-    fetchData();
 
-    //print results of entries and calculations
-    print("\nusername: " + uname, "\npreferred time: " + preftime, 
-      "\npreferred cuisine: " + prefcuisine, "\nbase ingredient: " + base, 
-      "\ndifficulty: " + diffrating);
+  if (state == 2) {
 
     //send data to data foundry entity database
     entityDS.id(uname).token(uname);
     entityDS
+      .data("meal choice", dishes[r5].name)
+      .data("price", dishes[r5].price)
+      .data("Spicyness", dishes[r5].spice)
+      .data("difficulty", dishes[r5].difficulty)
+      .data("kcal", dishes[r5].kcal)
+      .data("cooking time", dishes[r5].time)
       .update();
     //send data to data foundry iot database
     iotDS.device(uname).activity("time")
+      .data("meal choice", dishes[r5].name)
       .data("weekday (sun-sat)", weekday)
       .log();  
     setButtonStyle(submit, font, "Return");  

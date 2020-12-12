@@ -1,13 +1,18 @@
 class Dish {
   //note: some of these variables are not used yet
-  String name, easeOfPrep, notes, type, link;
+  String name, price, spice, difficulty, kcal, time;
   String ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, ingredient6;
   int rating, prepTime;
   boolean containsIngredient;
 
   //The constructor takes the name of the dish, and 6 ingredients as argument.
-  Dish (String na, String in1, String in2, String in3, String in4, String in5, String in6) {
+  Dish (String na, String pr, String diff, String sp, String kc, String tm, String in1, String in2, String in3, String in4, String in5, String in6) {
     name = na;
+    price = pr;
+    difficulty = diff;
+    spice = sp;
+    kcal = kc;
+    time = tm;
     ingredient1 = in1;
     ingredient2 = in2;
     ingredient3 = in3;
@@ -52,20 +57,19 @@ void CheckDish(String ingr) {
 
 //sets the 5 dishlabels to a random dish
 void PickRandomDish() {
-  int r1 = int(random(50));
-  int r2 = int(random(50));
-  int r3 = int(random(50));
-  int r4 = int(random(50));
-  int r5 = int(random(50));
-  
+  r1 = int(random(50));
+  r2 = int(random(50));
+  r3 = int(random(50));
+  r4 = int(random(50));
+  r5 = int(random(50));
+
   //this loop makes sure that multiple dishlabels don't display the same dish
   while ((r2 == r1 || r2 == r3 || r2 == r4 || r2 == r5) || (r3 == r1 || r3 == r4 || r3 == r5) || (r4 == r1 || r4 == r5) || (r5 == r1)) {
     r2 = int(random(50));
     r3 = int(random(50));
     r4 = int(random(50));
     r5 = int(random(50));
-  }
-  
+  }  
   dishlabel1.setValue(dishes[r1].name);
   dishlabel2.setValue(dishes[r2].name);
   dishlabel3.setValue(dishes[r3].name);
