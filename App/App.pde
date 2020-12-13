@@ -1,10 +1,10 @@
 // ********************************************************
 // Author: Lars Giling 
-// Co-Author: Mervyn Franssen
-// Date: Nov. 30, 2020
+// Co-Authors: Mervyn Franssen, Jeroen Krukkert
+// Date: Dec. 13, 2020
 // Description: Code  to  collect and parse cooking data of
 //              users,  sending  interaction  data  to Data 
-//              Foundry and providing personalized feedback
+//              Foundry for providing personalized feedback
 // ********************************************************
 
 import java.util.Map;
