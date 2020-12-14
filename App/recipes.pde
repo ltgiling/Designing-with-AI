@@ -70,9 +70,39 @@ void PickRandomDish() {
     r4 = int(random(50));
     r5 = int(random(50));
   }  
-  dishlabel1.setValue(dishes[r1].name);
-  dishlabel2.setValue(dishes[r2].name);
-  dishlabel3.setValue(dishes[r3].name);
-  dishlabel4.setValue(dishes[r4].name);
-  dishlabel5.setValue(dishes[r5].name);
+  dishlabel1.setValue("1: " + dishes[r1].name);
+  dishlabel2.setValue("2: " + dishes[r2].name);
+  dishlabel3.setValue("3: " + dishes[r3].name);
+  dishlabel4.setValue("4: " + dishes[r4].name);
+  dishlabel5.setValue("5: " + dishes[r5].name);
+  
+  priceLabel1.setValue("price: " + dishes[r1].price);
+  difficultyLabel1.setValue("difficulty: " + dishes[r1].difficulty);
+  spicynessLabel1.setValue("spicy: " + dishes[r1].spice);
+  kcalLabel1.setValue("kcal: " + dishes[r1].kcal);
+  timetocookLabel1.setValue("time: " + dishes[r1].time);
+  
+  priceLabel2.setValue("price: " + dishes[r2].price);
+  difficultyLabel2.setValue("difficulty: " + dishes[r2].difficulty);
+  spicynessLabel2.setValue("spicy: " + dishes[r2].spice);
+  kcalLabel2.setValue("kcal: " + dishes[r2].kcal);
+  timetocookLabel2.setValue("time: " + dishes[r2].time);
+  
+  priceLabel3.setValue("price: " + dishes[r3].price);
+  difficultyLabel3.setValue("difficulty: " + dishes[r3].difficulty);
+  spicynessLabel3.setValue("spicy: " + dishes[r3].spice);
+  kcalLabel3.setValue("kcal: " + dishes[r3].kcal);
+  timetocookLabel3.setValue("time: " + dishes[r3].time);
+  
+  priceLabel4.setValue("price: " + dishes[r4].price);
+  difficultyLabel4.setValue("difficulty: " + dishes[r4].difficulty);
+  spicynessLabel4.setValue("spicy: " + dishes[r4].spice);
+  kcalLabel4.setValue("kcal: " + dishes[r4].kcal);
+  timetocookLabel4.setValue("time: " + dishes[r4].time);
+  
+  priceLabel5.setValue("price: " + dishes[r5].price);
+  difficultyLabel5.setValue("difficulty: " + dishes[r5].difficulty);
+  spicynessLabel5.setValue("spicy: " + dishes[r5].spice);
+  kcalLabel5.setValue("kcal: " + dishes[r5].kcal);
+  timetocookLabel5.setValue("time: " + dishes[r5].time);
 }
