@@ -113,6 +113,31 @@ controlP5.Textlabel dishlabel2;
 controlP5.Textlabel dishlabel3;
 controlP5.Textlabel dishlabel4;
 controlP5.Textlabel dishlabel5;
+controlP5.Textlabel priceLabel1;
+controlP5.Textlabel difficultyLabel1;
+controlP5.Textlabel spicynessLabel1;
+controlP5.Textlabel kcalLabel1;
+controlP5.Textlabel timetocookLabel1;
+controlP5.Textlabel priceLabel2;
+controlP5.Textlabel difficultyLabel2;
+controlP5.Textlabel spicynessLabel2;
+controlP5.Textlabel kcalLabel2;
+controlP5.Textlabel timetocookLabel2;
+controlP5.Textlabel priceLabel3;
+controlP5.Textlabel difficultyLabel3;
+controlP5.Textlabel spicynessLabel3;
+controlP5.Textlabel kcalLabel3;
+controlP5.Textlabel timetocookLabel3;
+controlP5.Textlabel priceLabel4;
+controlP5.Textlabel difficultyLabel4;
+controlP5.Textlabel spicynessLabel4;
+controlP5.Textlabel kcalLabel4;
+controlP5.Textlabel timetocookLabel4;
+controlP5.Textlabel priceLabel5;
+controlP5.Textlabel difficultyLabel5;
+controlP5.Textlabel spicynessLabel5;
+controlP5.Textlabel kcalLabel5;
+controlP5.Textlabel timetocookLabel5;
 //Scroll-lists
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList educationlvl;
@@ -597,7 +622,8 @@ public String checkProfileItem(Object profileItem, String defaultValue) {
 }
 public void cp5components() {
   PFont pfont = createFont("Arial", 18);
-  ControlFont font = new ControlFont(pfont, 18);  
+  ControlFont font = new ControlFont(pfont, 18);
+  ControlFont dishFont = new ControlFont(pfont, 12); 
 
   /*  cp5.addSlider("Difficulty")
    .setPosition(185, 325)
@@ -753,28 +779,158 @@ public void cp5components() {
     .setPosition(25, 75)
     .setFont(font)
     .setValue("")
+    .setColorValue(0xffffff00)
     .setId(11);
   dishlabel2 = cp5.addTextlabel("dishlabel2")
-    .setPosition(25, 95)
-    .setFont(font)
-    .setValue("")
-    .setId(12);
-  dishlabel3 = cp5.addTextlabel("dishlabel3")
     .setPosition(25, 115)
     .setFont(font)
     .setValue("")
-    .setId(13);
-  dishlabel4 = cp5.addTextlabel("dishlabel4")
-    .setPosition(25, 135)
-    .setFont(font)
-    .setValue("")
-    .setId(14);
-  dishlabel5 = cp5.addTextlabel("dishlabel5")
+    .setColorValue(0xffffff00)
+    .setId(12);
+  dishlabel3 = cp5.addTextlabel("dishlabel3")
     .setPosition(25, 155)
     .setFont(font)
     .setValue("")
+    .setColorValue(0xffffff00)
+    .setId(13);
+  dishlabel4 = cp5.addTextlabel("dishlabel4")
+    .setPosition(25, 195)
+    .setFont(font)
+    .setValue("")
+    .setColorValue(0xffffff00)
+    .setId(14);
+  dishlabel5 = cp5.addTextlabel("dishlabel5")
+    .setPosition(25, 235)
+    .setFont(font)
+    .setValue("")
+    .setColorValue(0xffffff00)
     .setId(15);
-  /*************************************************************/
+  /********************* attribute labels **********************/
+  priceLabel1 = cp5.addTextlabel("priceLabel1")
+    .setPosition(45, 95)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  difficultyLabel1 = cp5.addTextlabel("difficultyLabel1")
+    .setPosition(110, 95)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  spicynessLabel1 = cp5.addTextlabel("spicynessLabel1")
+    .setPosition(180, 95)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  kcalLabel1 = cp5.addTextlabel("kcalLabel1")
+    .setPosition(235, 95)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  timetocookLabel1 = cp5.addTextlabel("timetocookLabel1")
+    .setPosition(295, 95)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  priceLabel2 = cp5.addTextlabel("priceLabel2")
+    .setPosition(45, 135)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  difficultyLabel2 = cp5.addTextlabel("difficultyLabel2")
+    .setPosition(110, 135)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  spicynessLabel2 = cp5.addTextlabel("spicynessLabel2")
+    .setPosition(180, 135)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  kcalLabel2 = cp5.addTextlabel("kcalLabel2")
+    .setPosition(235, 135)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  timetocookLabel2 = cp5.addTextlabel("timetocookLabel2")
+    .setPosition(295, 135)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  priceLabel3 = cp5.addTextlabel("priceLabel3")
+    .setPosition(45, 175)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  difficultyLabel3 = cp5.addTextlabel("difficultyLabel3")
+    .setPosition(110, 175)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  spicynessLabel3 = cp5.addTextlabel("spicynessLabel3")
+    .setPosition(180, 175)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  kcalLabel3 = cp5.addTextlabel("kcalLabel3")
+    .setPosition(235, 175)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  timetocookLabel3 = cp5.addTextlabel("timetocookLabel3")
+    .setPosition(295, 175)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  priceLabel4 = cp5.addTextlabel("priceLabel4")
+    .setPosition(45, 215)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  difficultyLabel4 = cp5.addTextlabel("difficultyLabel4")
+    .setPosition(110, 215)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  spicynessLabel4 = cp5.addTextlabel("spicynessLabel4")
+    .setPosition(180, 215)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  kcalLabel4 = cp5.addTextlabel("kcalLabel4")
+    .setPosition(235, 215)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  timetocookLabel4 = cp5.addTextlabel("timetocookLabel4")
+    .setPosition(295, 215)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  priceLabel5 = cp5.addTextlabel("priceLabel5")
+    .setPosition(45, 255)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  difficultyLabel5 = cp5.addTextlabel("difficultyLabel5")
+    .setPosition(110, 255)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  spicynessLabel5 = cp5.addTextlabel("spicynessLabel5")
+    .setPosition(180, 255)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  kcalLabel5 = cp5.addTextlabel("kcalLabel5")
+    .setPosition(235, 255)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
+  timetocookLabel5 = cp5.addTextlabel("timetocookLabel5")
+    .setPosition(295, 255)
+    .setFont(dishFont)
+    .setValue("")
+    .setId(17);
   /*
   price = cp5.addScrollableList("price")
    .setPosition(185, 255)
@@ -939,6 +1095,32 @@ public void interface1() {
   cp5.getController("dishlabel3").hide();
   cp5.getController("dishlabel4").hide();
   cp5.getController("dishlabel5").hide();
+  //attribute labels
+  cp5.getController("priceLabel1").hide();
+  cp5.getController("difficultyLabel1").hide();
+  cp5.getController("spicynessLabel1").hide();
+  cp5.getController("kcalLabel1").hide();
+  cp5.getController("timetocookLabel1").hide();
+  cp5.getController("priceLabel2").hide();
+  cp5.getController("difficultyLabel2").hide();
+  cp5.getController("spicynessLabel2").hide();
+  cp5.getController("kcalLabel2").hide();
+  cp5.getController("timetocookLabel2").hide();
+  cp5.getController("priceLabel3").hide();
+  cp5.getController("difficultyLabel3").hide();
+  cp5.getController("spicynessLabel3").hide();
+  cp5.getController("kcalLabel3").hide();
+  cp5.getController("timetocookLabel3").hide();
+  cp5.getController("priceLabel4").hide();
+  cp5.getController("difficultyLabel4").hide();
+  cp5.getController("spicynessLabel4").hide();
+  cp5.getController("kcalLabel4").hide();
+  cp5.getController("timetocookLabel4").hide();
+  cp5.getController("priceLabel5").hide();
+  cp5.getController("difficultyLabel5").hide();
+  cp5.getController("spicynessLabel5").hide();
+  cp5.getController("kcalLabel5").hide();
+  cp5.getController("timetocookLabel5").hide();
 }
 public void interface2() {
   //show and hide components for second interface
@@ -1011,6 +1193,32 @@ public void interface3() {
   cp5.getController("dishlabel3").show();
   cp5.getController("dishlabel4").show();
   cp5.getController("dishlabel5").show();
+  //attribute labels
+  cp5.getController("priceLabel1").show();
+  cp5.getController("difficultyLabel1").show();
+  cp5.getController("spicynessLabel1").show();
+  cp5.getController("kcalLabel1").show();
+  cp5.getController("timetocookLabel1").show();
+  cp5.getController("priceLabel2").show();
+  cp5.getController("difficultyLabel2").show();
+  cp5.getController("spicynessLabel2").show();
+  cp5.getController("kcalLabel2").show();
+  cp5.getController("timetocookLabel2").show();
+  cp5.getController("priceLabel3").show();
+  cp5.getController("difficultyLabel3").show();
+  cp5.getController("spicynessLabel3").show();
+  cp5.getController("kcalLabel3").show();
+  cp5.getController("timetocookLabel3").show();
+  cp5.getController("priceLabel4").show();
+  cp5.getController("difficultyLabel4").show();
+  cp5.getController("spicynessLabel4").show();
+  cp5.getController("kcalLabel4").show();
+  cp5.getController("timetocookLabel4").show();
+  cp5.getController("priceLabel5").show();
+  cp5.getController("difficultyLabel5").show();
+  cp5.getController("spicynessLabel5").show();
+  cp5.getController("kcalLabel5").show();
+  cp5.getController("timetocookLabel5").show();
 }
 public void interface4() {
   //show and hide components for fourth interface
@@ -1047,6 +1255,32 @@ public void interface4() {
   cp5.getController("dishlabel3").hide();
   cp5.getController("dishlabel4").hide();
   cp5.getController("dishlabel5").hide();
+  //attribute labels
+  cp5.getController("priceLabel1").hide();
+  cp5.getController("difficultyLabel1").hide();
+  cp5.getController("spicynessLabel1").hide();
+  cp5.getController("kcalLabel1").hide();
+  cp5.getController("timetocookLabel1").hide();
+  cp5.getController("priceLabel2").hide();
+  cp5.getController("difficultyLabel2").hide();
+  cp5.getController("spicynessLabel2").hide();
+  cp5.getController("kcalLabel2").hide();
+  cp5.getController("timetocookLabel2").hide();
+  cp5.getController("priceLabel3").hide();
+  cp5.getController("difficultyLabel3").hide();
+  cp5.getController("spicynessLabel3").hide();
+  cp5.getController("kcalLabel3").hide();
+  cp5.getController("timetocookLabel3").hide();
+  cp5.getController("priceLabel4").hide();
+  cp5.getController("difficultyLabel4").hide();
+  cp5.getController("spicynessLabel4").hide();
+  cp5.getController("kcalLabel4").hide();
+  cp5.getController("timetocookLabel4").hide();
+  cp5.getController("priceLabel5").hide();
+  cp5.getController("difficultyLabel5").hide();
+  cp5.getController("spicynessLabel5").hide();
+  cp5.getController("kcalLabel5").hide();
+  cp5.getController("timetocookLabel5").hide();
 }
 class Dish {
   //note: some of these variables are not used yet
@@ -1120,11 +1354,41 @@ public void PickRandomDish() {
     r4 = PApplet.parseInt(random(50));
     r5 = PApplet.parseInt(random(50));
   }  
-  dishlabel1.setValue(dishes[r1].name);
-  dishlabel2.setValue(dishes[r2].name);
-  dishlabel3.setValue(dishes[r3].name);
-  dishlabel4.setValue(dishes[r4].name);
-  dishlabel5.setValue(dishes[r5].name);
+  dishlabel1.setValue("1: " + dishes[r1].name);
+  dishlabel2.setValue("2: " + dishes[r2].name);
+  dishlabel3.setValue("3: " + dishes[r3].name);
+  dishlabel4.setValue("4: " + dishes[r4].name);
+  dishlabel5.setValue("5: " + dishes[r5].name);
+  
+  priceLabel1.setValue("price: " + dishes[r1].price);
+  difficultyLabel1.setValue("difficulty: " + dishes[r1].difficulty);
+  spicynessLabel1.setValue("spicy: " + dishes[r1].spice);
+  kcalLabel1.setValue("kcal: " + dishes[r1].kcal);
+  timetocookLabel1.setValue("time: " + dishes[r1].time);
+  
+  priceLabel2.setValue("price: " + dishes[r2].price);
+  difficultyLabel2.setValue("difficulty: " + dishes[r2].difficulty);
+  spicynessLabel2.setValue("spicy: " + dishes[r2].spice);
+  kcalLabel2.setValue("kcal: " + dishes[r2].kcal);
+  timetocookLabel2.setValue("time: " + dishes[r2].time);
+  
+  priceLabel3.setValue("price: " + dishes[r3].price);
+  difficultyLabel3.setValue("difficulty: " + dishes[r3].difficulty);
+  spicynessLabel3.setValue("spicy: " + dishes[r3].spice);
+  kcalLabel3.setValue("kcal: " + dishes[r3].kcal);
+  timetocookLabel3.setValue("time: " + dishes[r3].time);
+  
+  priceLabel4.setValue("price: " + dishes[r4].price);
+  difficultyLabel4.setValue("difficulty: " + dishes[r4].difficulty);
+  spicynessLabel4.setValue("spicy: " + dishes[r4].spice);
+  kcalLabel4.setValue("kcal: " + dishes[r4].kcal);
+  timetocookLabel4.setValue("time: " + dishes[r4].time);
+  
+  priceLabel5.setValue("price: " + dishes[r5].price);
+  difficultyLabel5.setValue("difficulty: " + dishes[r5].difficulty);
+  spicynessLabel5.setValue("spicy: " + dishes[r5].spice);
+  kcalLabel5.setValue("kcal: " + dishes[r5].kcal);
+  timetocookLabel5.setValue("time: " + dishes[r5].time);
 }
 
 // styling of UI ---------------------------------------------------------------------------
