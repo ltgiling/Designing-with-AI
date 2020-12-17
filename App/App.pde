@@ -151,7 +151,7 @@ void setup() {
   dishes[5] = new Dish("White beans, tomatoes, and spinach", "$", "1", "1", "580", "20", "Rice", "Vegetarian", "Beans", "Eggs", "", "");
   dishes[6] = new Dish("Cashew Chicken with Noodles", "$$$", "3", "1", "575", "30", "Noodles", "Chicken", "", "", "", "");
   dishes[7] = new Dish("Asian Shredded Beef", "$$$", "4", "2", "640", "60", "Beef", "Noodles", "", "", "", "");
-  dishes[8] = new Dish("Shepherd's Pie", "$$$", "5", "1", "930", "100", "Beef", "Potatoes", "", "", "", "");
+  dishes[8] = new Dish("Shepherds Pie", "$$$", "5", "1", "930", "100", "Beef", "Potatoes", "", "", "", "");
   dishes[9] = new Dish("Thai Chicken", "$$", "3", "3", "710", "45", "Chicken", "Noodles", "Eggs", "", "", "");
   dishes[10] = new Dish("One Pot Chicken & Potatoes", "$$", "1", "1", "730", "40", "Potatoes", "Chicken", "Carrots", "Onion", "", "");
   dishes[11] = new Dish("Honey Lime Chicken", "$$", "2", "1", "680", "25", "Chicken", "Rice", "", "", "", "");
