@@ -1,0 +1,440 @@
+weight,age,cuisine,dietgoal,dietpref,educationlvl,gender,hunger,activity,Householdsize,'meal type'
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,pasta
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'average hunger','average activity',1,meat
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,meat
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,meat
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,meat
+76-85,26-35,Dutch,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,pasta
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,meat
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,meat
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,meat
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'little hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'little hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,meat
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,vegetarian
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,rice
+76-85,26-35,Asian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,meat
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,pasta
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,meat
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,rice
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegetarian,HBO,Female,'little hunger','average activity',2,vegetarian
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,pasta
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,vegetarian
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',1,potato
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,meat
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',1,potato
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,potato
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,meat
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,meat
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,meat
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',1,meat
+76-85,18-25,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',1,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'average hunger','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,potato
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,meat
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,pasta
+76-85,46-55,Dutch,'Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,vegetarian
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,vegetarian
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,meat
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,meat
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,pasta
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,meat
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,meat
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,pasta
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,rice
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,pasta
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,vegetarian
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'little hunger','highly active',2,vegetarian
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'little hunger','highly active',2,vegetarian
+55-65,26-35,Italian,'Gain Weight','No preference',WO,Female,'very hungry','highly active',2,pasta
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,rice
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,potato
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'little hunger','average activity',2,vegetarian
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+86-95,26-35,Dutch,'No preference','No preference','High School',Male,'average hunger','average activity',2,pasta
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,meat
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,rice
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,vegetarian
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,meat
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,meat
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,meat
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,meat
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,potato
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'average hunger','average activity',2,pasta
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'little hunger','average activity',2,vegetarian
+55-65,18-25,Dutch,'No preference','No preference',HBO,Female,'very hungry','average activity',2,pasta
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'average hunger','average activity',2,rice
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'little hunger','average activity',2,meat
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'little hunger','average activity',2,vegetarian
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'very hungry','average activity',2,pasta
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'little hunger','average activity',2,vegetarian
+55-65,18-25,Italian,'No preference','No preference',HBO,Female,'little hunger','average activity',2,meat
+66-75,18-25,Indian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,rice
+66-75,36-45,Indian,'Lose Weight','No preference',WO,Male,'average hunger','little activity',1,rice
+55-65,26-35,Dutch,'Maintain Weight','No preference',WO,Female,'average hunger','average activity',1,meat
+55-65,18-25,Dutch,'Maintain Weight','No preference',WO,Female,'average hunger','average activity',1,potato
+86-95,66-75,Dutch,'Lose Weight',Vegan,HBO,Female,'average hunger','little activity',1,meat
+86-95,66-75,Dutch,'Lose Weight',Vegan,HBO,Female,'little hunger','little activity',1,rice
+86-95,66-75,Dutch,'Lose Weight',Vegan,HBO,Female,'little hunger','little activity',1,vegetarian
+86-95,66-75,Dutch,'Lose Weight',Vegan,HBO,Female,'little hunger','little activity',1,vegetarian
+86-95,66-75,Dutch,'Lose Weight',Vegan,WO,Male,'little hunger','little activity',1,vegetarian
+86-95,66-75,Dutch,'Lose Weight',Vegetarian,WO,Male,'very hungry','little activity',1,potato
+86-95,36-45,Asian,'Maintain Weight',Vegetarian,WO,Male,'very hungry','average activity',1,pasta
+76-85,36-45,Asian,'Maintain Weight',Vegetarian,WO,Male,'very hungry','average activity',1,pasta
+76-85,18-25,Asian,'Maintain Weight','No preference',WO,Male,'very hungry','average activity',1,potato
+76-85,18-25,Asian,'Maintain Weight','No preference',WO,Male,'average hunger','average activity',1,meat
+66-75,18-25,Asian,'Gain Weight','No preference',HBO,Male,'average hunger','highly active',1,meat
+66-75,18-25,Asian,'Gain Weight','No preference',WO,Male,'average hunger','highly active',3,meat
+66-75,18-25,Asian,'Gain Weight','No preference',WO,Male,'average hunger','highly active',4,meat
+66-75,18-25,Asian,'Gain Weight','No preference',WO,Male,'average hunger','highly active',5,meat
+66-75,18-25,Asian,'Gain Weight','No preference','High School',Male,'average hunger','highly active',3,meat
+66-75,18-25,Asian,'Gain Weight','No preference','High School',Male,'average hunger','highly active',3,meat
+66-75,18-25,Asian,'Gain Weight','No preference','High School',Male,'average hunger','highly active',3,meat
+66-75,18-25,Asian,'Gain Weight','No preference','High School',Male,'average hunger','highly active',3,meat
+66-75,66-75,Asian,'Gain Weight','No preference','High School',Male,'average hunger','highly active',3,vegetarian
+66-75,66-75,Indian,'Maintain Weight',Meat,MBO,Female,'very hungry','average activity',1,meat
+66-75,66-75,Indian,'Maintain Weight',Meat,MBO,Female,'very hungry','average activity',1,meat
+66-75,66-75,Indian,'Maintain Weight',Meat,HBO,Female,'very hungry','average activity',1,meat
+66-75,66-75,Indian,'Maintain Weight',Meat,HBO,Female,'very hungry','average activity',1,meat
+66-75,66-75,Indian,'Maintain Weight',Meat,HBO,Male,'average hunger','average activity',1,potato
+66-75,66-75,'No preference','Maintain Weight','No preference',HBO,Male,'very hungry','average activity',1,potato
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',1,meat
+55-65,26-35,'No preference','Maintain Weight','No preference',HBO,Female,'little hunger','average activity',1,vegetarian
+55-65,26-35,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',1,meat
+55-65,26-35,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',1,potato
+55-65,26-35,'No preference','Maintain Weight',Meat,HBO,Female,'little hunger','average activity',3,potato
+55-65,26-35,'No preference','Gain Weight',Meat,MBO,Male,'little hunger','highly active',1,rice
+55-65,26-35,'No preference','Gain Weight',Meat,MBO,Male,'average hunger','highly active',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Female,'average hunger','average activity',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Female,'average hunger','average activity',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',HBO,Female,'average hunger','average activity',1,meat
+55-65,26-35,'No preference','Maintain Weight','No preference',WO,Female,'average hunger','average activity',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,meat
+55-65,26-35,Dutch,'Maintain Weight','No preference',MBO,Male,'very hungry','average activity',1,pasta
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Male,'very hungry','average activity',1,pasta
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,rice
+55-65,26-35,'No preference','Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,rice
+55-65,26-35,Asian,'Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,meat
+55-65,26-35,Asian,'Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,meat
+55-65,26-35,Asian,'Maintain Weight','No preference',MBO,Male,'average hunger','average activity',1,meat
+55-65,66-75,'No preference','Maintain Weight',Vegan,WO,Male,'very hungry','average activity',1,pasta
+55-65,18-25,'No preference','Maintain Weight',Vegan,WO,Male,'little hunger','average activity',1,vegetarian
+55-65,18-25,'No preference','Maintain Weight',Vegan,WO,Male,'little hunger','average activity',1,vegetarian
+55-65,18-25,'No preference','Maintain Weight',Vegan,WO,Male,'little hunger','average activity',1,vegetarian
+55-65,18-25,'No preference','Maintain Weight',Vegan,WO,Male,'little hunger','average activity',1,vegetarian
+55-65,36-45,'No preference','Maintain Weight',Vegan,WO,Male,'little hunger','average activity',1,vegetarian
+55-65,36-45,'No preference','Maintain Weight',Vegan,WO,Female,'little hunger','average activity',1,pasta
+55-65,36-45,'No preference','Maintain Weight',Vegetarian,WO,Female,'very hungry','average activity',1,pasta
+55-65,36-45,'No preference','Maintain Weight',Vegetarian,WO,Female,'little hunger','average activity',1,vegetarian
+55-65,36-45,'No preference','Maintain Weight',Vegetarian,WO,Female,'little hunger','average activity',1,vegetarian
+55-65,46-55,'No preference','Maintain Weight',Vegetarian,WO,Female,'little hunger','average activity',1,vegetarian
+55-65,76+,'No preference','Maintain Weight',Vegetarian,WO,Female,'little hunger','average activity',1,vegetarian
+55-65,76+,'No preference','Maintain Weight',Vegetarian,WO,Female,'little hunger','average activity',1,potato
+55-65,76+,'No preference','Maintain Weight',Vegetarian,WO,Female,'very hungry','average activity',1,potato
+55-65,66-75,'No preference','Maintain Weight','No preference',WO,Female,'average hunger','average activity',1,meat
+55-65,66-75,'No preference','Maintain Weight',Meat,WO,Female,'little hunger','average activity',1,meat
+55-65,66-75,'No preference','Maintain Weight',Meat,WO,Female,'little hunger','average activity',1,meat
+76-85,66-75,'No preference','Maintain Weight',Meat,WO,Female,'little hunger','average activity',1,meat
+76-85,66-75,'No preference','Maintain Weight',Meat,WO,Female,'little hunger','average activity',1,potato
+76-85,66-75,'No preference','Maintain Weight',Meat,WO,Female,'little hunger','average activity',1,meat
+76-85,66-75,'No preference','Maintain Weight',Meat,WO,Female,'very hungry','average activity',1,potato
+55-65,66-75,'No preference','Gain Weight',Meat,MBO,Female,'little hunger','highly active',1,vegetarian
+55-65,66-75,'No preference','Gain Weight',Meat,MBO,Female,'average hunger','highly active',1,rice
+55-65,46-55,'No preference','Gain Weight',Meat,MBO,Female,'average hunger','highly active',1,rice
+55-65,46-55,Dutch,'Gain Weight',Meat,MBO,Female,'very hungry','highly active',1,potato
+55-65,46-55,Dutch,'Gain Weight',Meat,WO,Female,'very hungry','highly active',1,potato
+76-85,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+76-85,26-35,Asian,'Gain Weight',Meat,MBO,Male,'average hunger','highly active',1,meat
+76-85,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+76-85,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',2,meat
+76-85,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',3,rice
+76-85,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',3,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,rice
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+106-115,26-35,'No preference','Lose Weight','No preference',WO,Female,'little hunger','little activity',3,potato
+106-115,46-55,'No preference','Lose Weight','No preference',WO,Female,'little hunger','little activity',3,rice
+106-115,46-55,'No preference','Lose Weight','No preference',WO,Female,'little hunger','little activity',3,vegetarian
+106-115,46-55,'No preference','Lose Weight','No preference',WO,Female,'little hunger','little activity',3,potato
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'little hunger','average activity',5,vegetarian
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'average hunger','average activity',5,rice
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'little hunger','average activity',5,rice
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'little hunger','average activity',5,vegetarian
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'little hunger','average activity',5,potato
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Female,'very hungry','average activity',5,potato
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'little hunger','average activity',2,potato
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'very hungry','average activity',2,potato
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'little hunger','average activity',2,meat
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'average hunger','average activity',2,rice
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'little hunger','average activity',2,pasta
+116+,56-65,'No preference','Maintain Weight','No preference','Primary School',Male,'little hunger','average activity',2,meat
+96-105,36-45,'No preference','Maintain Weight','No preference','High School',Male,'little hunger','average activity',4,vegetarian
+96-105,36-45,'No preference','Maintain Weight','No preference','High School',Male,'little hunger','average activity',4,meat
+96-105,36-45,'No preference','Maintain Weight','No preference','High School',Male,'little hunger','average activity',4,vegetarian
+96-105,36-45,'No preference','Maintain Weight','No preference','High School',Male,'very hungry','average activity',4,pasta
+55-65,18-25,Asian,'Lose Weight',Vegetarian,MBO,Female,'average hunger','little activity',1,rice
+96-105,36-45,'No preference','Maintain Weight','No preference','High School',Male,'little hunger','average activity',4,vegetarian
+55-65,18-25,Asian,'Lose Weight',Vegetarian,MBO,Female,'average hunger','little activity',1,meat
+96-105,56-65,'No preference','Maintain Weight','No preference',None,Female,'little hunger','average activity',4,meat
+55-65,18-25,Asian,'Lose Weight',Vegetarian,MBO,Female,'average hunger','little activity',1,pasta
+96-105,56-65,'No preference','Maintain Weight','No preference',None,Female,'little hunger','average activity',4,meat
+55-65,18-25,Asian,'Lose Weight',Vegetarian,MBO,Female,'average hunger','little activity',1,pasta
+96-105,56-65,'No preference','Maintain Weight','No preference',None,Female,'little hunger','average activity',4,meat
+96-105,56-65,'No preference','Maintain Weight','No preference',None,Female,'little hunger','average activity',4,vegetarian
+96-105,56-65,'No preference','Maintain Weight','No preference',None,Female,'little hunger','average activity',4,meat
+86-95,18-25,Italian,'Maintain Weight','No preference',None,Male,'little hunger','average activity',1,vegetarian
+86-95,18-25,Italian,'Maintain Weight','No preference',None,Male,'very hungry','average activity',1,pasta
+86-95,18-25,Italian,'Maintain Weight','No preference',None,Male,'little hunger','average activity',1,vegetarian
+86-95,18-25,Italian,'Maintain Weight','No preference',None,Male,'very hungry','average activity',1,pasta
+86-95,18-25,Italian,'Maintain Weight','No preference',None,Male,'little hunger','average activity',1,pasta
+55-65,18-25,Dutch,'Maintain Weight',Vegan,MBO,'No preference','very hungry','average activity',3,pasta
+66-75,36-45,Dutch,'Maintain Weight',Vegan,MBO,Female,'very hungry','average activity',2,pasta
+66-75,36-45,Asian,'Maintain Weight',Vegan,MBO,Female,'very hungry','average activity',2,pasta
+66-75,36-45,Asian,'Maintain Weight',Vegan,MBO,Female,'little hunger','average activity',2,vegetarian
+76-85,26-35,Indian,'No preference','No preference',None,Female,'average hunger','average activity',3,meat
+76-85,36-45,Italian,'Maintain Weight',Vegetarian,'Primary School',Male,'little hunger','average activity',3,vegetarian
+66-75,36-45,Indian,'Gain Weight',Vegetarian,'Primary School',Male,'very hungry','highly active',2,pasta
+66-75,36-45,Indian,'Lose Weight',Vegetarian,'Primary School',Female,'average hunger','little activity',2,rice
+66-75,18-25,Indian,'Gain Weight',Meat,'High School',Female,'very hungry','highly active',1,vegetarian
+86-95,18-25,Italian,'Lose Weight',Meat,'High School',Female,'average hunger','little activity',3,rice
+55-65,18-25,Italian,'Gain Weight',Vegetarian,'High School',Female,'very hungry','highly active',4,potato
+55-65,46-55,Italian,'Gain Weight',Vegan,WO,Female,'very hungry','highly active',4,potato
+55-65,46-55,Italian,'Gain Weight',Vegan,WO,Female,'average hunger','highly active',4,rice
+55-65,46-55,Italian,'Gain Weight',Vegan,WO,Female,'average hunger','highly active',4,rice
+66-75,76+,Italian,'Maintain Weight',Meat,WO,Female,'very hungry','average activity',5,pasta
+66-75,46-55,Asian,'Lose Weight',Meat,MBO,Female,'very hungry','little activity',5,rice
+66-75,46-55,Asian,'Maintain Weight',Meat,'Primary School',Male,'average hunger','average activity',3,vegetarian
+66-75,26-35,Asian,'Maintain Weight',Vegan,'High School',Female,'very hungry','average activity',4,potato
+116+,36-45,'No preference','Lose Weight',Vegan,'High School',Male,'little hunger','little activity',2,vegetarian
+116+,36-45,Asian,'Lose Weight',Vegan,'High School',Male,'little hunger','little activity',2,vegetarian
+116+,36-45,Asian,'Lose Weight',Vegan,'High School',Male,'little hunger','little activity',2,vegetarian
+116+,36-45,Asian,'Lose Weight',Vegan,'High School',Male,'little hunger','little activity',2,vegetarian
+86-95,36-45,Asian,'Lose Weight',Vegan,MBO,Male,'little hunger','little activity',3,vegetarian
+86-95,36-45,Asian,'Lose Weight',Vegan,MBO,Male,'average hunger','little activity',3,meat
+86-95,36-45,Asian,'Lose Weight',Vegan,MBO,Male,'average hunger','little activity',3,meat
+86-95,26-35,Italian,'Gain Weight',Vegan,MBO,Male,'average hunger','highly active',5,meat
+55-65,36-45,Asian,'Gain Weight',Vegetarian,WO,Male,'very hungry','highly active',5,potato
+76-85,36-45,Asian,'Gain Weight',Vegetarian,HBO,Male,'very hungry','highly active',3,potato
+86-95,26-35,Asian,'Gain Weight',Meat,'High School',Male,'very hungry','highly active',3,potato
+86-95,26-35,Italian,'Gain Weight',Meat,'High School',Male,'little hunger','highly active',3,potato
+86-95,26-35,Italian,'Gain Weight',Meat,'High School',Male,'very hungry','highly active',3,pasta
+86-95,26-35,Italian,'Gain Weight',Meat,'High School',Male,'very hungry','highly active',3,pasta
+55-65,26-35,Italian,'Maintain Weight',Meat,MBO,Male,'very hungry','average activity',4,vegetarian
+76-85,56-65,Italian,'Gain Weight',Meat,MBO,Male,'average hunger','highly active',4,meat
+76-85,26-35,Italian,'Lose Weight',Meat,MBO,Female,'average hunger','little activity',5,vegetarian
+55-65,36-45,Italian,'Maintain Weight',Vegetarian,MBO,Female,'very hungry','average activity',5,meat
+55-65,36-45,Italian,'Gain Weight',Vegetarian,MBO,Female,'average hunger','highly active',5,rice
+55-65,66-75,Italian,'Gain Weight',Vegetarian,MBO,Female,'little hunger','highly active',5,vegetarian
+55-65,46-55,Italian,'Gain Weight',Meat,MBO,Female,'little hunger','highly active',5,vegetarian
+55-65,46-55,Italian,'Gain Weight',Meat,MBO,Female,'average hunger','highly active',5,vegetarian
+55-65,46-55,Italian,'Gain Weight',Meat,MBO,Female,'average hunger','highly active',5,meat
+55-65,46-55,Italian,'Gain Weight',Meat,MBO,Female,'average hunger','highly active',5,meat
+76-85,46-55,Dutch,'Gain Weight',Meat,MBO,Female,'average hunger','highly active',5,rice
+86-95,46-55,Asian,'Lose Weight',Meat,MBO,Female,'average hunger','little activity',5,meat
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'average hunger','little activity',4,meat
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'very hungry','little activity',4,meat
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'very hungry','little activity',4,potato
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'very hungry','little activity',4,potato
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'little hunger','little activity',4,vegetarian
+66-75,46-55,Asian,'Lose Weight',Meat,'High School',Female,'little hunger','little activity',4,vegetarian
+66-75,26-35,Asian,'Lose Weight',Meat,'Primary School',Female,'very hungry','little activity',4,vegetarian
+66-75,26-35,Asian,'Lose Weight',Meat,'Primary School',Female,'very hungry','little activity',4,meat
+55-65,26-35,Asian,'Maintain Weight',Meat,HBO,Female,'very hungry','average activity',2,meat
+55-65,26-35,Asian,'Maintain Weight',Meat,HBO,Female,'average hunger','average activity',2,meat
+55-65,26-35,Asian,'Maintain Weight',Meat,HBO,Female,'average hunger','average activity',2,meat
+55-65,26-35,Asian,'Maintain Weight',Meat,HBO,Female,'average hunger','average activity',2,meat
+66-75,26-35,Dutch,'Maintain Weight',Meat,HBO,Female,'very hungry','average activity',2,potato
+66-75,36-45,Dutch,'Maintain Weight',Vegetarian,HBO,Female,'average hunger','average activity',2,meat
+66-75,46-55,Dutch,'Maintain Weight',Vegetarian,WO,Female,'very hungry','average activity',3,potato
+66-75,46-55,Dutch,'Maintain Weight',Vegetarian,WO,Female,'very hungry','average activity',1,pasta
+66-75,26-35,Dutch,'No preference',Vegetarian,WO,Female,'little hunger','average activity',1,vegetarian
+66-75,26-35,Dutch,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+66-75,36-45,Dutch,'Gain Weight',Meat,WO,Male,'average hunger','highly active',1,meat
+66-75,18-25,Asian,'Gain Weight',Meat,'High School',Male,'very hungry','highly active',1,rice
+66-75,18-25,Asian,'Gain Weight',Meat,HBO,Male,'little hunger','highly active',3,potato
+66-75,36-45,Asian,'Gain Weight',Meat,WO,Male,'average hunger','highly active',5,meat
+66-75,36-45,Asian,'Gain Weight',Meat,WO,Male,'little hunger','highly active',3,vegetarian
+66-75,18-25,Asian,'Gain Weight',Meat,'High School',Male,'average hunger','highly active',1,meat
+66-75,66-75,Italian,'Gain Weight',Meat,'High School',Male,'average hunger','highly active',5,potato
+66-75,66-75,Italian,'Gain Weight',Meat,'High School',Male,'average hunger','highly active',5,vegetarian
+66-75,46-55,Italian,'Gain Weight',Meat,'High School',Male,'average hunger','highly active',3,meat
+66-75,56-65,Italian,'Gain Weight',Meat,MBO,Male,'little hunger','highly active',4,vegetarian
+86-95,56-65,Italian,'Maintain Weight',Meat,'High School',Male,'average hunger','average activity',1,meat
+86-95,18-25,Italian,'Maintain Weight',Meat,'High School',Male,'average hunger','average activity',1,meat
+86-95,18-25,Italian,'Maintain Weight',Meat,'High School',Male,'average hunger','average activity',1,meat
+86-95,18-25,Italian,'Maintain Weight',Meat,'High School',Male,'very hungry','average activity',1,vegetarian
+86-95,26-35,Italian,'Maintain Weight',Meat,HBO,Male,'little hunger','average activity',3,vegetarian
+86-95,36-45,Italian,'Maintain Weight',Meat,MBO,Male,'little hunger','average activity',4,vegetarian
+86-95,36-45,Italian,'Maintain Weight',Meat,MBO,Male,'little hunger','average activity',4,vegetarian
+86-95,36-45,Italian,'Maintain Weight',Meat,MBO,Male,'average hunger','average activity',4,rice
+86-95,36-45,Italian,'Maintain Weight',Meat,MBO,Male,'average hunger','average activity',4,rice
+86-95,18-25,Italian,'Maintain Weight',Meat,'Primary School',Male,'very hungry','average activity',1,potato
+86-95,26-35,Italian,'Maintain Weight',Meat,MBO,Male,'very hungry','average activity',3,potato
+86-95,26-35,Italian,'Maintain Weight',Meat,MBO,Male,'very hungry','average activity',4,potato
+86-95,18-25,Italian,'Maintain Weight',Meat,MBO,Male,'very hungry','average activity',3,potato
+86-95,18-25,Italian,'Maintain Weight',Meat,MBO,Male,'little hunger','average activity',3,potato
+86-95,18-25,Italian,'Maintain Weight',Meat,MBO,Male,'little hunger','average activity',3,meat
+86-95,18-25,Italian,'Maintain Weight',Meat,MBO,Male,'little hunger','average activity',3,meat
+86-95,56-65,Asian,'Maintain Weight',Meat,WO,Male,'little hunger','average activity',4,vegetarian
+96-105,56-65,Asian,'Lose Weight',Meat,WO,Male,'average hunger','little activity',2,meat
+96-105,56-65,Asian,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',3,rice
+86-95,26-35,Asian,'Lose Weight',Meat,MBO,Male,'very hungry','little activity',3,vegetarian
+96-105,26-35,Asian,'Lose Weight',Meat,'Primary School',Male,'very hungry','little activity',2,meat
+96-105,26-35,Asian,'Lose Weight',Meat,'Primary School',Male,'very hungry','little activity',4,vegetarian
+96-105,36-45,Asian,'Lose Weight',Meat,'Primary School',Male,'very hungry','little activity',3,vegetarian
+96-105,46-55,Asian,'Lose Weight',Meat,'High School',Male,'very hungry','little activity',4,vegetarian
+106-115,46-55,Italian,'Lose Weight',Meat,'Primary School',Male,'very hungry','little activity',2,meat
+106-115,46-55,Italian,'Lose Weight',Meat,'Primary School',Male,'average hunger','little activity',4,meat
+106-115,46-55,Asian,'Lose Weight',Meat,'Primary School',Male,'average hunger','little activity',4,meat
+106-115,46-55,Asian,'Lose Weight',Meat,'Primary School',Male,'little hunger','little activity',4,vegetarian
+106-115,46-55,Asian,'Lose Weight',Meat,'Primary School',Male,'little hunger','little activity',4,vegetarian
+106-115,56-65,Asian,'Lose Weight',Meat,WO,Male,'average hunger','little activity',4,meat
+106-115,56-65,Dutch,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',2,rice
+96-105,36-45,Dutch,'Lose Weight',Meat,MBO,Male,'very hungry','little activity',4,meat
+96-105,36-45,Dutch,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',4,meat
+96-105,36-45,Dutch,'Lose Weight',Meat,MBO,Male,'very hungry','little activity',4,pasta
+96-105,36-45,Dutch,'Lose Weight',Meat,MBO,Male,'very hungry','little activity',4,pasta
+86-95,36-45,Dutch,'Lose Weight',Meat,MBO,Male,'very hungry','little activity',3,pasta
+86-95,36-45,Asian,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',3,pasta
+86-95,36-45,Asian,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',3,rice
+86-95,36-45,Asian,'Lose Weight',Meat,MBO,Male,'average hunger','little activity',3,rice
+86-95,26-35,Asian,'Lose Weight',Meat,'High School',Male,'average hunger','little activity',5,vegetarian
+86-95,26-35,Asian,'No preference',Meat,'High School',Male,'very hungry','average activity',5,potato
+66-75,26-35,Asian,'No preference',Meat,MBO,Male,'very hungry','average activity',3,rice
+66-75,26-35,Asian,'No preference',Meat,'High School',Male,'very hungry','average activity',4,rice
+66-75,26-35,Asian,'No preference',Meat,'High School',Male,'average hunger','average activity',4,rice
+66-75,26-35,Asian,'No preference',Meat,'High School',Male,'average hunger','average activity',4,meat
+66-75,26-35,Asian,'No preference',Meat,'High School',Male,'average hunger','average activity',4,meat
+66-75,36-45,Indian,'No preference',Meat,HBO,Male,'average hunger','average activity',4,rice
+66-75,36-45,Indian,'No preference',Meat,MBO,Male,'average hunger','average activity',5,rice
+66-75,36-45,Indian,'No preference',Meat,MBO,Male,'average hunger','average activity',5,meat
+66-75,36-45,Indian,'No preference',Meat,MBO,Male,'average hunger','average activity',5,meat
+66-75,26-35,Italian,'No preference',Meat,'High School',Male,'average hunger','average activity',2,vegetarian
+66-75,26-35,Dutch,'No preference',Meat,MBO,Male,'average hunger','average activity',4,potato
+66-75,26-35,Asian,'No preference',Meat,'Primary School',Male,'average hunger','average activity',2,vegetarian
+66-75,56-65,Dutch,'No preference',Meat,'High School',Male,'little hunger','average activity',5,vegetarian
+66-75,56-65,Dutch,'No preference',Vegan,'High School',Male,'little hunger','average activity',5,vegetarian
+66-75,56-65,Dutch,'No preference',Vegan,'High School',Male,'very hungry','average activity',5,vegetarian
+66-75,56-65,Dutch,'No preference',Vegan,'High School',Male,'very hungry','average activity',5,rice
+66-75,56-65,Dutch,'No preference',Vegan,MBO,Male,'very hungry','average activity',5,rice
+66-75,36-45,Dutch,'No preference',Vegan,MBO,Male,'little hunger','average activity',3,vegetarian
+66-75,36-45,Dutch,'No preference',Vegan,MBO,Male,'very hungry','average activity',5,pasta
+66-75,26-35,Dutch,'No preference',Vegan,MBO,Male,'very hungry','average activity',3,pasta
+66-75,26-35,Asian,'No preference',Vegan,MBO,Male,'little hunger','average activity',3,pasta
+66-75,26-35,Asian,'No preference',Vegan,MBO,Male,'little hunger','average activity',3,vegetarian
+66-75,26-35,Asian,'No preference',Vegan,MBO,Male,'little hunger','average activity',3,vegetarian
+66-75,26-35,Asian,'No preference',Vegan,'High School',Male,'little hunger','average activity',2,vegetarian
+66-75,26-35,Italian,'No preference',Vegan,'High School',Male,'little hunger','average activity',2,vegetarian
+66-75,26-35,Italian,'No preference',Vegan,'High School',Male,'very hungry','average activity',2,pasta
+66-75,26-35,Italian,'No preference',Vegan,'High School',Male,'very hungry','average activity',2,pasta
+66-75,26-35,Italian,'No preference',Vegan,MBO,Male,'very hungry','average activity',4,meat
+66-75,36-45,Italian,'No preference',Vegetarian,HBO,Male,'very hungry','average activity',4,vegetarian
+66-75,36-45,Italian,'No preference',Vegetarian,MBO,Male,'very hungry','average activity',2,pasta
+66-75,26-35,Asian,'No preference',Vegetarian,'High School',Male,'very hungry','average activity',4,vegetarian
+76-85,26-35,Asian,'No preference',Vegetarian,'High School',Male,'very hungry','average activity',4,vegetarian
+76-85,26-35,Dutch,'No preference',Vegetarian,'High School',Male,'very hungry','average activity',4,vegetarian
+76-85,26-35,Dutch,'No preference',Vegetarian,'High School',Male,'very hungry','average activity',4,potato
+76-85,26-35,Dutch,'No preference',Vegetarian,'High School',Male,'very hungry','average activity',4,potato
+76-85,36-45,Dutch,'No preference',Vegetarian,HBO,Male,'average hunger','average activity',2,vegetarian
+76-85,46-55,Dutch,'No preference',Vegetarian,HBO,Male,'average hunger','average activity',4,vegetarian
+76-85,46-55,Asian,'No preference',Vegetarian,HBO,Male,'average hunger','average activity',4,vegetarian
+76-85,46-55,Asian,'No preference',Vegetarian,HBO,Male,'average hunger','average activity',4,potato
+76-85,56-65,Asian,'No preference',Vegetarian,HBO,Male,'average hunger','average activity',3,potato
+76-85,56-65,Asian,'No preference',Vegetarian,HBO,Male,'little hunger','average activity',3,vegetarian
+76-85,56-65,Asian,'No preference',Vegetarian,HBO,Male,'little hunger','average activity',3,vegetarian
+66-75,26-35,Asian,'No preference',Vegetarian,'High School',Male,'little hunger','average activity',2,vegetarian
+66-75,26-35,Asian,'No preference',Vegetarian,'High School',Male,'average hunger','average activity',2,meat
+66-75,26-35,Asian,'No preference','No preference','High School',Male,'average hunger','average activity',2,meat
+66-75,26-35,Asian,'No preference','No preference','High School',Male,'very hungry','average activity',2,potato
+66-75,26-35,Asian,'No preference','No preference','High School',Male,'very hungry','average activity',2,potato
+66-75,26-35,Asian,'No preference','No preference',WO,Male,'very hungry','average activity',5,potato
+66-75,26-35,Asian,'No preference','No preference',WO,Male,'very hungry','average activity',5,potato
+66-75,26-35,Asian,'No preference','No preference',WO,Male,'average hunger','average activity',5,meat
+66-75,26-35,Asian,'No preference','No preference',WO,Male,'average hunger','average activity',5,meat
+66-75,46-55,Asian,'No preference','No preference',WO,Male,'average hunger','average activity',5,meat
+66-75,46-55,Dutch,'No preference','No preference',HBO,Male,'average hunger','average activity',4,meat
+66-75,56-65,Dutch,'No preference','No preference','Primary School',Male,'average hunger','average activity',2,meat
+66-75,66-75,Dutch,'No preference','No preference',WO,Male,'average hunger','average activity',5,meat
+66-75,66-75,Dutch,'No preference','No preference',WO,Male,'average hunger','average activity',5,meat
+66-75,66-75,Dutch,'No preference','No preference',WO,Male,'average hunger','average activity',5,vegetarian
+66-75,66-75,Dutch,'No preference','No preference',WO,Male,'average hunger','average activity',5,vegetarian
+86-95,18-25,Asian,'Lose Weight',Meat,WO,Male,'average hunger','little activity',4,rice
+86-95,18-25,Asian,'Lose Weight',Meat,WO,Male,'average hunger','little activity',1,rice
+86-95,18-25,Asian,'Lose Weight',Meat,WO,Male,'very hungry','little activity',1,rice
+86-95,18-25,Asian,'Lose Weight',Meat,WO,Male,'very hungry','little activity',1,potato
+86-95,18-25,Asian,'Lose Weight',Meat,WO,Male,'very hungry','little activity',1,potato
+86-95,18-25,Asian,'Lose Weight','No preference',WO,Male,'very hungry','little activity',1,potato
+86-95,18-25,Dutch,'Lose Weight','No preference',WO,Male,'very hungry','little activity',1,potato
+86-95,18-25,Dutch,'Lose Weight','No preference',WO,Male,'very hungry','little activity',1,potato
+86-95,18-25,Dutch,'Lose Weight','No preference',WO,Male,'very hungry','little activity',1,potato
+66-75,18-25,Dutch,'Maintain Weight','No preference',WO,Female,'very hungry','average activity',2,potato
+55-65,18-25,Dutch,'Gain Weight','No preference',WO,Female,'very hungry','highly active',1,potato
+55-65,18-25,'No preference','Gain Weight','No preference',WO,Female,'average hunger','highly active',1,potato
+55-65,18-25,'No preference','Gain Weight','No preference',WO,Female,'very hungry','highly active',1,pasta
+55-65,18-25,'No preference','Gain Weight','No preference',WO,Female,'average hunger','highly active',1,pasta
+55-65,18-25,'No preference','Gain Weight',Vegetarian,WO,Female,'average hunger','highly active',1,pasta
+55-65,18-25,Italian,'Gain Weight',Vegetarian,WO,Female,'very hungry','highly active',1,pasta
+55-65,18-25,Italian,'Gain Weight',Vegetarian,WO,Female,'very hungry','highly active',1,pasta
+55-65,18-25,Italian,'Gain Weight',Vegetarian,WO,Female,'very hungry','highly active',1,pasta
+55-65,18-25,Italian,'Gain Weight',Vegetarian,WO,Female,'little hunger','highly active',1,vegetarian
+55-65,18-25,Italian,'Gain Weight',Vegetarian,WO,Female,'little hunger','highly active',1,vegetarian
+66-75,18-25,Indian,'Lose Weight',Vegetarian,HBO,Female,'average hunger','little activity',2,meat
+66-75,18-25,Indian,'Lose Weight','No preference',HBO,Female,'average hunger','little activity',2,meat
+66-75,18-25,Indian,'Lose Weight','No preference',HBO,Female,'average hunger','little activity',2,meat
+66-75,18-25,Indian,'Lose Weight','No preference',HBO,Female,'average hunger','little activity',2,meat
+66-75,18-25,Indian,'Lose Weight','No preference',HBO,Female,'very hungry','little activity',2,pasta
+66-75,18-25,Indian,'Lose Weight','No preference',HBO,Female,'very hungry','little activity',2,pasta
+55-65,18-25,Indian,'Maintain Weight','No preference',HBO,Female,'very hungry','average activity',2,pasta
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',2,pasta
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'little hunger','average activity',2,vegetarian
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'little hunger','average activity',2,vegetarian
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',2,pasta
+55-65,18-25,'No preference','Maintain Weight','No preference',HBO,Female,'very hungry','average activity',2,pasta
+86-95,36-45,'No preference','Maintain Weight',Vegan,MBO,Male,'very hungry','average activity',2,pasta
+86-95,36-45,Dutch,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,pasta
+86-95,36-45,Dutch,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,meat
+86-95,36-45,Dutch,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,meat
+86-95,36-45,Asian,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,meat
+86-95,36-45,Asian,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,pasta
+86-95,36-45,Asian,'Maintain Weight',Vegan,MBO,Male,'average hunger','average activity',2,pasta
