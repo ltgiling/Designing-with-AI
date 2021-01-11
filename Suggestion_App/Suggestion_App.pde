@@ -3,6 +3,8 @@
 // Co-Authors: Mervyn Franssen, Jeroen Krukkert
 // Date: January 11, 2021
 // Description: Code to apply J48 ML model to user input
+//              and data from online database about said
+//              user in order to predict preferred meal.
 // *****************************************************
 
 import java.util.*;
