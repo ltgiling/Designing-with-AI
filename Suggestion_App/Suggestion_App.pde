@@ -23,6 +23,11 @@ DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 // ------------------------------------------------------------------------
 
 String uname = "";
+String db_dietgoal;
+String db_dietpref;
+String db_education;
+String db_gender;
+String db_weight; 
 int state = 1;
 
 ControlP5 cp5;
@@ -62,9 +67,7 @@ public void submit() {
     setUname();
     setButtonStyle(submit, font, "Submit");
   }
-  if (state == 2){
+  if (state == 2) {
     //mervyn's data input submit stuff.
   }
-  
-  
 }
