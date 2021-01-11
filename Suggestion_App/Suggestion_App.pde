@@ -23,11 +23,15 @@ DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 // ------------------------------------------------------------------------
 
 String uname = "";
+int state = 1;
 
 ControlP5 cp5;
 controlP5.Textfield username;
 controlP5.Textfield password;
 controlP5.Button submit;
+controlP5.Button register;
+controlP5.Textlabel title;
+controlP5.Textlabel welcome;
 
 void setup() {
   //loadData(dataPath("Learning_data_pruned.csv"));
@@ -37,7 +41,7 @@ void setup() {
   noStroke();
 
   cp5 = new ControlP5(this);
-    cp5components();
+  cp5components();
   //j48Train();
   //saveModel(dataPath("j48.model"), j48);
 
@@ -47,10 +51,20 @@ void setup() {
 }
 
 void draw() {
-background(0);
+  background(0);
 }
 
-
 public void submit() {
-  setUname();
+  PFont pfont = createFont("Arial", 18);
+  ControlFont font = new ControlFont(pfont, 18);
+
+  if (state == 1) {
+    setUname();
+    setButtonStyle(submit, font, "Submit");
+  }
+  if (state == 2){
+    //mervyn's data input submit stuff.
+  }
+  
+  
 }

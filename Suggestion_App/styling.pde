@@ -11,7 +11,7 @@ void setTextfieldStyle(controlP5.Textfield tf, ControlFont cf, String txt) {
 void setButtonStyle(controlP5.Button btn, ControlFont cf, String label) {
   btn.getCaptionLabel()
     .setFont(cf)
-    .setSize(24)
+    .setSize(20)
     .toUpperCase(false)
     .setText(label);
 }
