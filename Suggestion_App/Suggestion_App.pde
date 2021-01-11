@@ -33,6 +33,7 @@ String db_housesize;
 String app_cuisine;
 String app_hunger;
 String app_activity;
+String prediction;
 int state = 1;
 
 ControlP5 cp5;
@@ -61,7 +62,7 @@ void setup() {
 
   loadModel(dataPath("j48.model"));
   //println(predict("76-85", "26-35", "Asian", "Maintain Weight", "Vegetarian", 
-  //  "HBO", "Female", "little hunger", "average activity", "2"));
+  //  "HBO", "Female", "little hunger", "average activity", 2));
 }
 
 void draw() {
@@ -79,10 +80,9 @@ public void submit() {
   }
   if (state == 2) {
     //mervyn's data input submit stuff.
-    println("\ncuisine: " + app_cuisine, "\nhunger: " + app_hunger, "\nactivity: " + app_activity);
-    
-    //println(predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
-    //  db_education, db_gender, app_hunger, app_activity, db_housesize));
+    prediction = predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
+      db_education, db_gender, app_hunger, app_activity, 1);
+    println("\n" + prediction);
     return;
   }
 }
