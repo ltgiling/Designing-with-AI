@@ -12,7 +12,7 @@ DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 void setup() {
   size(100,100);
   background(100);
-  String uname = "Mervyn";
+  String uname = "Lars";
   entityDS.id(uname).token(uname);
   entityDS
   .data("weight", "85-95")
@@ -21,6 +21,7 @@ void setup() {
   .data("gender", "Male")
   .data("dietgoal", "Lose Weight")
   .data("dietpref", "Meat")
+  .data("householdsize", "4")
   .update();
 }
 

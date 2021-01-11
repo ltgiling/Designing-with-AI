@@ -31,7 +31,7 @@ void j48Train()
 }
 
 String predict(String w, String a, String c, String dg, String dp, 
-  String e, String ge, String h, String ac, double hh) {
+  String e, String ge, String h, String ac, String hh) {
   String r = "Sorry, unable to predict";
   if (j48 == null) return r;
 

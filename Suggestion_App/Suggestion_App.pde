@@ -27,7 +27,12 @@ String db_dietgoal;
 String db_dietpref;
 String db_education;
 String db_gender;
-String db_weight; 
+String db_age;
+String db_weight;
+String db_housesize;
+String app_cuisine;
+String app_hunger;
+String app_activity;
 int state = 1;
 
 ControlP5 cp5;
@@ -35,24 +40,28 @@ controlP5.Textfield username;
 controlP5.Textfield password;
 controlP5.Button submit;
 controlP5.Button register;
+controlP5.Button profile;
 controlP5.Textlabel title;
 controlP5.Textlabel welcome;
+controlP5.ScrollableList cuisine;
+controlP5.ScrollableList hunger;
+controlP5.ScrollableList activity;
 
 void setup() {
-  //loadData(dataPath("Learning_data_pruned.csv"));
+  loadData(dataPath("Learning_data_pruned.csv"));
   size(375, 500);
   background(0);
   frameRate(20);
   noStroke();
-
+  Label.setUpperCaseDefault(false);
   cp5 = new ControlP5(this);
   cp5components();
   //j48Train();
   //saveModel(dataPath("j48.model"), j48);
 
   loadModel(dataPath("j48.model"));
-  //println(predict("76-85", "26-35", "Asian", "Maintain Weight", 
-  //"Vegetarian", "HBO", "Female", "little hunger", "average activity", 2));
+  //println(predict("76-85", "26-35", "Asian", "Maintain Weight", "Vegetarian", 
+  //  "HBO", "Female", "little hunger", "average activity", "2"));
 }
 
 void draw() {
@@ -66,8 +75,14 @@ public void submit() {
   if (state == 1) {
     setUname();
     setButtonStyle(submit, font, "Submit");
+    return;
   }
   if (state == 2) {
     //mervyn's data input submit stuff.
+    println("\ncuisine: " + app_cuisine, "\nhunger: " + app_hunger, "\nactivity: " + app_activity);
+    
+    //println(predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
+    //  db_education, db_gender, app_hunger, app_activity, db_housesize));
+    return;
   }
 }
