@@ -22,31 +22,34 @@ DataFoundry df = new DataFoundry(host);
 DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 // ------------------------------------------------------------------------
 
-String uname;
+String uname = "";
 
 ControlP5 cp5;
 controlP5.Textfield username;
+controlP5.Textfield password;
+controlP5.Button submit;
 
 void setup() {
-  loadData(dataPath("Learning_data_pruned.csv"));
+  //loadData(dataPath("Learning_data_pruned.csv"));
   size(375, 500);
   background(0);
+  frameRate(20);
   noStroke();
-  cp5components();
 
-  Label.setUpperCaseDefault(false);
   cp5 = new ControlP5(this);
+    cp5components();
   //j48Train();
   //saveModel(dataPath("j48.model"), j48);
 
-  //loadModel(dataPath("j48.model"));
+  loadModel(dataPath("j48.model"));
   //println(predict("76-85", "26-35", "Asian", "Maintain Weight", 
   //"Vegetarian", "HBO", "Female", "little hunger", "average activity", 2));
 }
 
 void draw() {
-  submit();
+background(0);
 }
+
 
 public void submit() {
   setUname();
