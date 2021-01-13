@@ -38,6 +38,9 @@ String app_activity;
 String prediction;
 int state = 1;
 
+//create array of class (object) Dish (so it's easy to search through the dishes with a for-loop)
+Dish[] dishes = new Dish[50];
+
 ControlP5 cp5;
 controlP5.Textfield username;
 controlP5.Textfield password;
@@ -46,6 +49,9 @@ controlP5.Button register;
 controlP5.Button profile;
 controlP5.Textlabel title;
 controlP5.Textlabel welcome;
+controlP5.Textlabel mealLabel1;
+controlP5.Textlabel mealLabel2;
+controlP5.Textlabel mealLabel3;
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList hunger;
 controlP5.ScrollableList activity;
@@ -59,6 +65,7 @@ void setup() {
   Label.setUpperCaseDefault(false);
   cp5 = new ControlP5(this);
   cp5components();
+  InitiateMealDatabase();
   //j48Train();
   //saveModel(dataPath("j48.model"), j48);
 
@@ -84,7 +91,13 @@ public void submit() {
     //mervyn's data input submit stuff.
     prediction = predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
       db_education, db_gender, app_hunger, app_activity, 1);
-    println("\n" + prediction);
+    println(prediction);
+    
+   // CheckDish(prediction); // WEIRD: the [prediction] string is somehow not behaving like a normal string...
+    CheckDish("vegetarian");  // (this works fine)
+    
+    interface3();
+    
     return;
   }
 }

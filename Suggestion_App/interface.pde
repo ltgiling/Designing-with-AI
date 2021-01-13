@@ -102,6 +102,25 @@ void cp5components() {
   setButtonStyle(submit, font, "Login");
   setButtonStyle(register, font, "Register");
   setButtonStyle(profile, font, "Profile");
+    
+  mealLabel1 = cp5.addTextlabel("mealLabel1")
+    .setPosition(25, 110)
+    .setFont(font)
+    .setValue("")
+    .setId(10)
+    .hide();
+  mealLabel2 = cp5.addTextlabel("mealLabel2")
+    .setPosition(25, 145)
+    .setFont(font)
+    .setValue("")
+    .setId(10)
+    .hide();
+  mealLabel3 = cp5.addTextlabel("mealLabel3")
+    .setPosition(25, 180)
+    .setFont(font)
+    .setValue("")
+    .setId(10)
+    .hide();
 }
 void interface2() {
   cp5.getController("Username").hide();
@@ -113,6 +132,21 @@ void interface2() {
   cp5.getController("hunger").show();
   cp5.getController("activity").show();
   welcome.setValue("Welcome " + uname + ", what are you \neating today?");
+  cp5.getController("mealLabel1").hide();
+  cp5.getController("mealLabel2").hide();
+  cp5.getController("mealLabel3").hide();
 }
 void interface3() {
+  cp5.getController("Username").hide();
+  cp5.getController("Password").hide();
+  cp5.getController("register").hide();
+  cp5.getController("welcome").show();
+  cp5.getController("profile").hide();
+  cp5.getController("cuisine").hide();
+  cp5.getController("hunger").hide();
+  cp5.getController("activity").hide();
+  cp5.getController("mealLabel1").show();
+  cp5.getController("mealLabel2").show();
+  cp5.getController("mealLabel3").show();
+  welcome.setValue("Personal suggestions:");
 }

@@ -14,7 +14,7 @@ void setUname() {
     db_weight = (String) Data.get("weight");
     db_housesize = (String) Data.get("householdsize");
     println("\nname: " + uname);
-    print("gender: " + db_gender, "\ndiet goal :" + db_dietgoal);
+    print("gender: " + db_gender, "\ndiet goal: " + db_dietgoal + "\n");
     state = 2;
     interface2();
   } else {
