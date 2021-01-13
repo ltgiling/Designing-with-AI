@@ -37,6 +37,7 @@ String app_hunger;
 String app_activity;
 String prediction;
 int state = 1;
+int rating;
 
 //create array of class (object) Dish (so it's easy to search through the dishes with a for-loop)
 Dish[] dishes = new Dish[50];
@@ -46,15 +47,17 @@ controlP5.Textfield username;
 controlP5.Textfield password;
 controlP5.Button submit;
 controlP5.Button register;
-controlP5.Button profile;
+controlP5.Button Profile;
 controlP5.Textlabel title;
 controlP5.Textlabel welcome;
 controlP5.Textlabel mealLabel1;
 controlP5.Textlabel mealLabel2;
 controlP5.Textlabel mealLabel3;
+controlP5.Textlabel feedback;
 controlP5.ScrollableList cuisine;
 controlP5.ScrollableList hunger;
 controlP5.ScrollableList activity;
+Slider abc;
 
 void setup() {
   loadData(dataPath("Learning_data_pruned.csv"));
@@ -92,12 +95,19 @@ public void submit() {
     prediction = predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
       db_education, db_gender, app_hunger, app_activity, 1);
     println(prediction);
-    
-   // CheckDish(prediction); // WEIRD: the [prediction] string is somehow not behaving like a normal string...
+    String predic = prediction.toString();
+    //CheckDish(predic); // WEIRD: the [prediction] string is somehow not behaving like a normal string...
+    println("prediction now: " + predic);
     CheckDish("vegetarian");  // (this works fine)
-    
+    feedback.setValue("Suggestions were given based on \nyour preference for " + predic + " dishes");
     interface3();
-    
+      setButtonStyle(submit, font, "Cook!");
+    state = 3;
     return;
+  }
+  if (state == 3) {
+    interface1();
+    setButtonStyle(submit, font, "Submit");
+    state = 1;
   }
 }

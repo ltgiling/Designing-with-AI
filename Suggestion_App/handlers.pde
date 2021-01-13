@@ -31,6 +31,9 @@ void hunger(int index) {
 void activity(int index) {
   app_activity = cp5.get(ScrollableList.class, "activity").getItem(index).get("name").toString();
 }
+void Rating(int c_rate) {
+  rating = c_rate;
+}
 
 String checkProfileItem(Object profileItem, String defaultValue) {
   return profileItem != null && ((String) profileItem).length() != 0 ? (String) profileItem : defaultValue;

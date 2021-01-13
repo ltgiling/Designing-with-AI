@@ -1,6 +1,7 @@
 void cp5components() {
   PFont pfont = createFont("Arial", 18);
   ControlFont font = new ControlFont(pfont, 18);
+  ControlFont font2 = new ControlFont(pfont, 15);
 
   title = cp5.addTextlabel("title")
     .setPosition(25, 10)
@@ -89,10 +90,11 @@ void cp5components() {
   cuisine.getCaptionLabel().getStyle().marginTop = 5;
   cuisine.getValueLabel().getStyle().marginTop = 5;
 
-  profile = cp5.addButton("profile")
+  Profile = cp5.addButton("Profile")
     .setPosition(280, 88)
     .setSize(65, 26)
     .setId(5)
+    .setFont(font2)
     .hide();
 
   setTextfieldStyle(username, font, "User name");
@@ -101,8 +103,7 @@ void cp5components() {
   password.getCaptionLabel().getStyle().marginTop = -57;
   setButtonStyle(submit, font, "Login");
   setButtonStyle(register, font, "Register");
-  setButtonStyle(profile, font, "Profile");
-    
+
   mealLabel1 = cp5.addTextlabel("mealLabel1")
     .setPosition(25, 110)
     .setFont(font)
@@ -121,13 +122,49 @@ void cp5components() {
     .setValue("")
     .setId(10)
     .hide();
+
+  cp5.addSlider("Rating")
+    .setPosition(225, 455)
+    .setSize(100, 20)
+    .setRange(1, 5)
+    .setNumberOfTickMarks(5)
+    .setLabel("Rate your \nrecommendation:")
+    .setFont(font2)
+    .hide();
+  cp5.getController("Rating").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingX(0);
+  cp5.getController("Rating").getCaptionLabel().align(ControlP5.LEFT, ControlP5.TOP_OUTSIDE).setPaddingY(20);
+  
+   feedback = cp5.addTextlabel("feedback")
+    .setPosition(25, 365)
+    .setFont(createFont("Calibri", 18))
+    .setColorValue(0xffffff00)
+    .setValue("Suggestions were given based on \nyour preference for (placeholder) dishes")
+    .setId(7)
+    .hide(); 
+    
+}
+
+void interface1() {
+ cp5.getController("Username").show();
+  cp5.getController("Password").show();
+  cp5.getController("register").show();
+  cp5.getController("welcome").hide();
+  cp5.getController("Profile").hide();
+  cp5.getController("cuisine").hide();
+  cp5.getController("hunger").hide();
+  cp5.getController("activity").hide();
+  cp5.getController("mealLabel1").hide();
+  cp5.getController("mealLabel2").hide();
+  cp5.getController("mealLabel3").hide(); 
+    cp5.getController("Rating").hide();
+  cp5.getController("feedback").hide();
 }
 void interface2() {
   cp5.getController("Username").hide();
   cp5.getController("Password").hide();
   cp5.getController("register").hide();
   cp5.getController("welcome").show();
-  cp5.getController("profile").show();
+  cp5.getController("Profile").show();
   cp5.getController("cuisine").show();
   cp5.getController("hunger").show();
   cp5.getController("activity").show();
@@ -141,12 +178,14 @@ void interface3() {
   cp5.getController("Password").hide();
   cp5.getController("register").hide();
   cp5.getController("welcome").show();
-  cp5.getController("profile").hide();
+  cp5.getController("Profile").hide();
   cp5.getController("cuisine").hide();
   cp5.getController("hunger").hide();
   cp5.getController("activity").hide();
   cp5.getController("mealLabel1").show();
   cp5.getController("mealLabel2").show();
   cp5.getController("mealLabel3").show();
+  cp5.getController("Rating").show();
+  cp5.getController("feedback").show();
   welcome.setValue("Personal suggestions:");
 }
