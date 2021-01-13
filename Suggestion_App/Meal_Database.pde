@@ -22,36 +22,50 @@ class Dish {
     ingredient6 = in6;
   }
 }
+/*******************************************************************************************************************/
 
+//check which dishes match the mealType and copy them into a new array
 void CheckDish(String mt) {
-  println("checkdish");//
-  for (int i=0; i<dishes.length; i++) {
-    println("for loop");//
+  int count = 0;
+  
+  for (int i=0; i<dishes.length; i++) {    
     if (dishes[i].mealType == mt) {
-      println("if loop mealType");//
-      if (mealLabel1.getStringValue() != "") {
-        println("if loop mealLable1");//
-        if (mealLabel2.getStringValue() != "") {
-          println("if loop mealLabel2");//
-          if (mealLabel3.getStringValue() != "") {
-            println("if loop mealLabel3");//
-            return;
-          } else {
-            mealLabel3.setValue(dishes[i].name);
-            println(dishes[i].name);//
-          }
-        } else {
-          mealLabel2.setValue(dishes[i].name);
-          println(dishes[i].name);//
-        }
-      } else {
-        mealLabel1.setValue(dishes[i].name);
-        println(dishes[i].name);//
-      }
+      count++; //we need this counter to figure out the needed size of the new array with selected dishes
+    }
+  }
+  
+  selectedDishes = new Dish[count]; //initialize new array with selected dishes that match mealType
+  count = 0; //reset
+  
+  for (int i=0; i<dishes.length; i++) { //copy the matching dishes to a new array
+    if (dishes[i].mealType == mt) {
+      selectedDishes[count] = dishes[i];
+      count++;
     }
   }
 }
 
+
+//pick 3 random dishes of the array of selected dishes, and update the mealLabels
+void PickRandomDish() {
+  int r1, r2, r3;
+  
+  r1 = int(random(selectedDishes.length)); //pick 3 random numbers
+  r2 = int(random(selectedDishes.length));
+  r3 = int(random(selectedDishes.length));
+  
+  while (r1 == r2 || r1 == r3 || r2 == r3) { //make sure that there are 3 unique random numbers
+    r2 = int(random(selectedDishes.length));
+    r3 = int(random(selectedDishes.length));
+  }
+  
+  mealLabel1.setValue(selectedDishes[r1].name); //update the textlabel values
+  mealLabel2.setValue(selectedDishes[r2].name);
+  mealLabel3.setValue(selectedDishes[r3].name);
+}
+
+/*******************************************************************************************************************/
+//Meal database
 void InitiateMealDatabase() {
   //add dishes to the dishes array
   //careful: be sure to spellcheck the ingredients, as they have to match in all dishes

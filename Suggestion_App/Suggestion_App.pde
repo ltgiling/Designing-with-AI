@@ -41,6 +41,7 @@ int rating;
 
 //create array of class (object) Dish (so it's easy to search through the dishes with a for-loop)
 Dish[] dishes = new Dish[50];
+Dish[] selectedDishes;
 
 ControlP5 cp5;
 controlP5.Textfield username;
@@ -94,11 +95,17 @@ public void submit() {
     //mervyn's data input submit stuff.
     prediction = predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
       db_education, db_gender, app_hunger, app_activity, 1);
+      
+    /************************************/  
     println(prediction);
     String predic = prediction.toString();
     //CheckDish(predic); // WEIRD: the [prediction] string is somehow not behaving like a normal string...
     println("prediction now: " + predic);
     CheckDish("vegetarian");  // (this works fine)
+    /***************************************/
+    
+    PickRandomDish();
+    
     feedback.setValue("Suggestions were given based on \nyour preference for " + predic + " dishes");
     interface3();
       setButtonStyle(submit, font, "Cook!");
