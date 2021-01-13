@@ -29,7 +29,7 @@ void CheckDish(String mt) {
   int count = 0;
   
   for (int i=0; i<dishes.length; i++) {    
-    if (dishes[i].mealType == mt) {
+    if (dishes[i].mealType.equals(mt)) {
       count++; //we need this counter to figure out the needed size of the new array with selected dishes
     }
   }
@@ -38,7 +38,7 @@ void CheckDish(String mt) {
   count = 0; //reset
   
   for (int i=0; i<dishes.length; i++) { //copy the matching dishes to a new array
-    if (dishes[i].mealType == mt) {
+    if (dishes[i].mealType.equals(mt)) {
       selectedDishes[count] = dishes[i];
       count++;
     }

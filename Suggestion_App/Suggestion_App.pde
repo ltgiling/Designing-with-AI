@@ -96,17 +96,11 @@ public void submit() {
     prediction = predict(db_weight, db_age, app_cuisine, db_dietgoal, db_dietpref, 
       db_education, db_gender, app_hunger, app_activity, 1);
       
-    /************************************/  
     println(prediction);
-    String predic = prediction.toString();
-    //CheckDish(predic); // WEIRD: the [prediction] string is somehow not behaving like a normal string...
-    println("prediction now: " + predic);
-    CheckDish("vegetarian");  // (this works fine)
-    /***************************************/
-    
+    CheckDish(prediction);
     PickRandomDish();
     
-    feedback.setValue("Suggestions were given based on \nyour preference for " + predic + " dishes");
+    feedback.setValue("Suggestions were given based on \nyour preference for " + prediction + " dishes");
     interface3();
       setButtonStyle(submit, font, "Cook!");
     state = 3;
