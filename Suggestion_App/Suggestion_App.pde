@@ -49,6 +49,7 @@ controlP5.Textfield password;
 controlP5.Button submit;
 controlP5.Button register;
 controlP5.Button Profile;
+controlP5.Button seeMoreDishes;
 controlP5.Textlabel title;
 controlP5.Textlabel welcome;
 controlP5.Textlabel mealLabel1;

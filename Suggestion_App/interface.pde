@@ -142,6 +142,12 @@ void cp5components() {
     .setId(7)
     .hide(); 
     
+  seeMoreDishes = cp5.addButton("More suggestions >")
+    .setPosition(30, 215)
+    .setSize(140, 26)
+    .setId(11)
+    .setFont(font2)
+    .hide();
 }
 
 void interface1() {
@@ -158,6 +164,7 @@ void interface1() {
   cp5.getController("mealLabel3").hide(); 
     cp5.getController("Rating").hide();
   cp5.getController("feedback").hide();
+  cp5.getController("More suggestions >").hide();
 }
 void interface2() {
   cp5.getController("Username").hide();
@@ -172,6 +179,7 @@ void interface2() {
   cp5.getController("mealLabel1").hide();
   cp5.getController("mealLabel2").hide();
   cp5.getController("mealLabel3").hide();
+  cp5.getController("More suggestions >").hide();
 }
 void interface3() {
   cp5.getController("Username").hide();
@@ -188,4 +196,5 @@ void interface3() {
   cp5.getController("Rating").show();
   cp5.getController("feedback").show();
   welcome.setValue("Personal suggestions:");
+  cp5.getController("More suggestions >").show();
 }
