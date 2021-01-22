@@ -124,7 +124,7 @@ controlP5.ScrollableList dietpref;
 controlP5.ScrollableList basis;
 controlP5.ScrollableList age;
 controlP5.ScrollableList weight;
-//controlP5.ScrollableList price;
+controlP5.ScrollableList price;
 //Slider
 Slider abc;
 
@@ -383,6 +383,7 @@ public void dish1() {
     setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
+    cp5.getController("dishlabel1").show();
     state = 3;
     return;
   }
@@ -412,6 +413,7 @@ public void dish2() {
     setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
+        cp5.getController("dishlabel2").show();
     state = 3;
     return;
   }
@@ -441,6 +443,7 @@ public void dish3() {
     setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
+        cp5.getController("dishlabel3").show();
     state = 3;
     return;
   }
@@ -470,6 +473,7 @@ public void dish4() {
     setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
+        cp5.getController("dishlabel4").show();
     state = 3;
     return;
   }
@@ -499,6 +503,7 @@ public void dish5() {
     setButtonStyle(submit, font, "Return");  
     //Switch interface after Submit
     interface4();
+        cp5.getController("dishlabel5").show();
     state = 3;
     return;
   }

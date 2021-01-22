@@ -309,7 +309,7 @@ void cp5components() { //<>//
     .setFont(dishFont)
     .setValue("")
     .setId(17);
-  /*
+  
   price = cp5.addScrollableList("price")
    .setPosition(185, 255)
    .setFont(font)
@@ -321,11 +321,11 @@ void cp5components() { //<>//
    .addItem("$$", 3)
    .addItem("$$$", 4)
    .setValue(0)
-   .setLabel("price range");
+   .setLabel("Activity");
    this.price.setItemHeight(25);
    price.getCaptionLabel().getStyle().marginTop = 5;
    price.getValueLabel().getStyle().marginTop = 5;
-   */
+   
   basis = cp5.addScrollableList("basis")
     .setPosition(185, 215)
     .setFont(font)
@@ -339,7 +339,7 @@ void cp5components() { //<>//
     .addItem("Noodles", 5)
     .addItem("Lettuce", 6)
     .setValue(0)
-    .setLabel("Ingredient preference"); 
+    .setLabel("Hunger"); 
   this.basis.setItemHeight(25);
   basis.getCaptionLabel().getStyle().marginTop = 5;
   basis.getValueLabel().getStyle().marginTop = 5; 
@@ -356,7 +356,7 @@ void cp5components() { //<>//
     .addItem("Indian", 4)
     .addItem("Italian", 5)
     .setValue(0)
-    .setLabel("cuisine");
+    .setLabel("Cuisine");
   this.cuisine.setItemHeight(25);
   cuisine.getCaptionLabel().getStyle().marginTop = 5;
   cuisine.getValueLabel().getStyle().marginTop = 5;
@@ -455,7 +455,7 @@ void interface1() {
   cp5.getController("educationlvl").show();
   //cp5.getController("prefertime").hide();
   //cp5.getController("preferkcal").hide();
-  //cp5.getController("price").hide();
+  cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
@@ -517,7 +517,7 @@ void interface2() {
   cp5.getController("Householdsize").hide();
   cp5.getController("educationlvl").hide();
   //cp5.getController("preferkcal").show();
-  //cp5.getController("price").show();
+  cp5.getController("price").show();
   cp5.getController("cuisine").show();
   //cp5.getController("prefertime").show();
   cp5.getController("basis").show();
@@ -553,7 +553,7 @@ void interface3() {
   cp5.getController("educationlvl").hide();
   //cp5.getController("prefertime").hide();
   //cp5.getController("preferkcal").hide();
-  //cp5.getController("price").hide();
+  cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
@@ -615,7 +615,7 @@ void interface4() {
   cp5.getController("educationlvl").hide();
   //cp5.getController("prefertime").hide();
   //cp5.getController("preferkcal").hide();
-  //cp5.getController("price").hide();
+  cp5.getController("price").hide();
   cp5.getController("cuisine").hide();
   //cp5.getController("Spiciness").hide();
   cp5.getController("basis").hide();
