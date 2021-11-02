@@ -1,9 +1,9 @@
 import nl.tue.id.datafoundry.*;
 
 // ------------------------------------------------------------------------
-String host = "data.id.tue.nl";
-String entity_api_token = "txyLQdlbhNlZqUkEY9XvzfwgqFwN85whZgXbFMniyg6HmFvujRZ0aYN4dFfUWtw/";
-long entity_id = 907;
+String host = "**********";
+String entity_api_token = "***************";
+long entity_id = ***;
 // ------------------------------------------------------------------------
 
 DataFoundry df = new DataFoundry(host);
@@ -12,7 +12,7 @@ DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 void setup() {
   size(100,100);
   background(100);
-  String uname = "Lars";
+  String uname = "****";
   entityDS.id(uname).token(uname);
   entityDS
   .data("weight", "85-95")
