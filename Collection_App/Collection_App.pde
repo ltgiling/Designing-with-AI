@@ -1,6 +1,6 @@
 // ********************************************************
-// Author: Lars Giling 
-// Co-Authors: Mervyn Franssen, Jeroen Krukkert
+// Author: Lars G***** 
+// Co-Authors: Mervyn F*****, Jeroen K*****
 // Date: Dec. 13, 2020
 // Description: Code  to  collect and parse cooking data of
 //              users,  sending  interaction  data  to Data 
@@ -14,11 +14,11 @@ import nl.tue.id.datafoundry.*;
 
 // ------------------------------------------------------------------------
 // settings for DataFoundry library
-String host = "data.id.tue.nl";
-String iot_api_token = "lm4yJj+L6hGNi5QAcvjKEqxv6KMV0uYidtbtocBtfYx6W4VkMcSBaxMvfvWoXFap";
-String entity_api_token = "KPVgGbT9MHTZuPSKf3ApVRGKh6MaRtrPNwGA5d2jeIJcfhfQO2muAzVpxsKuWlz/";
-long iot_id = 733;
-long entity_id = 734;
+String host = "************";
+String iot_api_token = "*************************";
+String entity_api_token = "*************************";
+long iot_id = ***;
+long entity_id = ***;
 // ------------------------------------------------------------------------
 
 // data foundry connection
