@@ -1,6 +1,6 @@
 // *****************************************************
-// Author: Lars Giling 
-// Co-Authors: Mervyn Franssen, Jeroen Krukkert
+// Author: Lars G***** 
+// Co-Authors: Mervyn F*****, Jeroen K*****
 // Date: January 11, 2021
 // Description: Code to apply J48 ML model to user input
 //              and data from online database about said
@@ -17,9 +17,9 @@ Instances data = null;
 
 // ------------------------------------------------------------------------
 // settings for DataFoundry library
-String host = "data.id.tue.nl";
-String entity_api_token = "txyLQdlbhNlZqUkEY9XvzfwgqFwN85whZgXbFMniyg6HmFvujRZ0aYN4dFfUWtw/";
-long entity_id = 907;
+String host = "***********";
+String entity_api_token = "*******************";
+long entity_id = ***;
 DataFoundry df = new DataFoundry(host);
 DFDataset entityDS = df.dataset(entity_id, entity_api_token);
 // ------------------------------------------------------------------------
